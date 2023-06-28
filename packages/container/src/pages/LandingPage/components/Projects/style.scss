@@ -1,0 +1,67 @@
+@import '~src/styles/variables';
+
+.project {
+    &__title {
+        margin-bottom: $p10;
+    }
+
+    &__item {
+        display: flex;
+        margin-bottom: 32px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &-image {
+            margin-right: $p20;
+
+        }
+
+        &-data {
+            &-title {
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+
+        &-image {
+            margin-right: 20px;
+        }
+
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, mobile)) {
+
+    .project {
+        &__item {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            &-image {
+                margin-right: 0;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, tablet)) {
+    .project {
+        &__item {
+            flex-direction: row;
+            align-items: initial;
+            gap: 0;
+
+            &-image {
+                margin-right: $p20;
+            }
+        }
+
+    }
+}

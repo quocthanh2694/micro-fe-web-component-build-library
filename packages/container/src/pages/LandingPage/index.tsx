@@ -1,19 +1,81 @@
-// import { Profile } from "../../components/Profile";
-
+import { Footer } from "src/components/layout/Footer";
+import { Hobbies } from "./components/Hobbies";
 import { Profile } from "./components/Profile";
+import { Projects } from "./components/Projects";
+import { WorkExperience } from "./components/WorkExperience";
 import "./style.scss";
 import CustomButton from "src/components/CustomButton";
+import { NavigationBar } from "src/components/layout/NavigationBar";
+import React, { useRef } from "react";
+import { BookIcon, HomeIcon, MusicIcon, PieIcon } from "src/icons";
+
+const ShoppingNow = () => {
+  return (
+    <div className="container">
+      <div className="layout__header">
+        <CustomButton>Shopping Now</CustomButton>
+      </div>
+    </div>
+  );
+};
+
+const Header = React.forwardRef<HTMLDivElement, {}>((props, ref) => (
+  <div ref={ref} className="layout__background"></div>
+));
 
 export const LandingPage = () => {
+  const headerRef = useRef<HTMLDivElement>(null);
+
+  const handleScroll = (element: HTMLDivElement | null) => {
+    if (!element) return;
+    const top = element.getBoundingClientRect().top + window.scrollY;
+    window.scroll({
+      top,
+      behavior: "smooth",
+    });
+  };
+
+  const menus = [
+    {
+      id: 1,
+      label: "Home",
+      icon: <HomeIcon />,
+      onClick: () => handleScroll(headerRef.current),
+    },
+    {
+      id: 2,
+      label: "Work",
+      icon: <BookIcon />,
+      onClick: () => headerRef.current?.scrollIntoView(),
+    },
+    {
+      id: 3,
+      label: "Project",
+      icon: <PieIcon />,
+      onClick: () => headerRef.current?.scrollIntoView(),
+    },
+
+    {
+      id: 4,
+      label: "Hobby",
+      icon: <MusicIcon />,
+      onClick: () => headerRef.current?.scrollIntoView(),
+    },
+  ];
+
   return (
     <div className="layout">
-      <div className="layout__background"></div>
-      <div className="container">
-        <div className="layout__header">
-          <CustomButton>Shopping Now</CustomButton>
-        </div>
-      </div>
+      <NavigationBar menus={menus} />
+
+      <Header ref={headerRef} />
+      <ShoppingNow />
+
       <Profile />
+      <WorkExperience />
+      <Projects />
+      <Hobbies />
+
+      <Footer />
     </div>
   );
 };

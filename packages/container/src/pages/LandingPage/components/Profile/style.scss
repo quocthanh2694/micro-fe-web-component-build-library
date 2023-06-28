@@ -2,14 +2,9 @@
 
 .profile {
     margin-top: 40px;
-    padding: $p20;
-    background-color: $white;
-    border-radius: map-get($borderRadius, md);
 
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 40px;
 
     &__user {
         flex: 1;
@@ -17,12 +12,15 @@
         display: flex;
 
         &-avatar {
+            margin-top: -60px;
             margin-right: $p20;
             width: 130px;
             height: 130px;
         }
 
-        &-info {}
+        &-info-contact-info {
+            min-width: 318px;
+        }
 
         &-info-title {
             margin-top: 4px;
@@ -32,5 +30,53 @@
 
     &__welcome {
         flex: 1;
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, mobile)) {
+    .profile {
+        flex-direction: column;
+        gap: 20px;
+
+        &__user {
+            &-avatar {
+                margin-right: 4px;
+            }
+
+            &-info-contact-info {
+                min-width: 318px;
+                margin-left: -134px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, tablet)) {
+    .profile {
+        flex-direction: column;
+        gap: 20px;
+
+        &__user {
+            &-avatar {
+                margin-right: 4px;
+            }
+
+            &-info-contact-info {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, desktop)) {
+    .profile {
+        flex-direction: row;
+        gap: 40px;
+
+        &__user {
+            &-avatar {
+                margin-right: $p20;
+            }
+        }
     }
 }

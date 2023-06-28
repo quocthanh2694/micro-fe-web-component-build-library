@@ -1,11 +1,13 @@
  @import '../../styles//variables';
 
  .layout {
+
      &__background {
          height: 250px;
          background: $primary;
          position: absolute;
-         width: 100vw;
+         left: 0;
+         right: 0;
          z-index: -1;
      }
 

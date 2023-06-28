@@ -7,13 +7,19 @@ interface ImageProps {
   width: string;
   height: string;
   alt?: string;
-  radius?: "50%" | "0";
+  radius?: "50%" | "0" | "8px";
 }
 
 const Image = memo(({ src, width, height, alt, radius = "0" }: ImageProps) => {
   return (
-    <div className="image" style={{ borderRadius: radius }}>
-      <img src={src} alt={alt} width={width} height={height} />
+    <div className="image">
+      <img
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+        style={{ borderRadius: radius }}
+      />
     </div>
   );
 });

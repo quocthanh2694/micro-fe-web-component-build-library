@@ -37,6 +37,14 @@ module.exports = (env, argv) => {
     module: {
       rules: [
         {
+          test: /\.(png|jpe?g|gif)$/i,
+          use: [
+            {
+              loader: 'file-loader',
+            },
+          ],
+        },
+        {
           test: /\.scss$/,
           use: [
             "style-loader", // 3. Inject styles into DOM

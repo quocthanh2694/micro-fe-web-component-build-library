@@ -1,8 +1,6 @@
 ## Pj1
-Workflow:
-
-- `shop` expose CounterAppOne component.
-- `container` import CounterAppOne and CounterAppTwo component.
+- `shop` Shopping center
+- `container` Container (also is a Landing page)
 
 ## Running
 

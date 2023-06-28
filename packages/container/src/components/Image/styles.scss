@@ -1,50 +1,5 @@
 @import '../../styles/variables';
 
-.button-wrapper {
-    &>button {
-        padding: 5px 24px;
-        justify-content: center;
-        align-items: center;
-
-        border-radius: map-get($borderRadius, xxs);
-        height: 45px;
-        font-size: 25px;
-        color: white;
-        outline: none;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: none;
-
-        cursor: pointer;
-    }
-
-    // size
-    &__default {}
-
-    &__md button {
-        height: 32px;
-        font-size: 16px;
-    }
-
-    &__xs button {
-        height: 26px;
-        font-size: 12px;
-    }
-
-    // variants
-    &__primary button {
-        background: $secondary;
-
-    }
-
-    &__disabled button {
-        background: $border;
-        color: $bodyText;
-        pointer-events: none;
-    }
-
-
-
+.image {
+    display: flex;
 }

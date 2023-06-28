@@ -1,0 +1,45 @@
+@import '~src/styles/variables';
+
+.hobbies {
+    &__title {
+        margin-bottom: $p10;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-wrap {
+            margin: 20px;
+        }
+
+        &-image {}
+
+        &-label {
+            text-align: center;
+            font-size: 25px;
+            line-height: 140%;
+            color: $secondary;
+            margin-top: 4px;
+        }
+
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, mobile)) {
+    .hobbies {
+        &__item {
+            flex-direction: column;
+        }
+
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, tablet)) {
+    .hobbies {
+        &__item {
+            flex-direction: row;
+        }
+    }
+}

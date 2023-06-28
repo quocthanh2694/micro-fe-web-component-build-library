@@ -1,33 +1,49 @@
-import React, { memo } from "react";
+import { memo } from "react";
 import "./style.scss";
 import Image from "src/components/Image";
-// const thanhAvatar = require("src/assets/images/thanh.png");
+const thanhAvatar = require("src/assets/images/thanh.png");
 
-interface ProfileProps {}
+const ContactInfo = () => {
+  return (
+    <div className="profile__user-info-contact-info">
+      <span className="text-xs text-primary d-block">
+        Email: thanhtran@strongtie.com
+      </span>
+      <span className="text-xs text-primary d-block">
+        Phone: (+84) 356 975 240
+      </span>
+      <span className="text-xs text-primary d-block">
+        Address: Binh Thanh, HCMC
+      </span>
+    </div>
+  );
+};
 
-export const Profile = memo(({}: ProfileProps) => {
+interface Props {}
+
+export const Profile = memo(({}: Props) => {
   return (
     <section className="profile container box">
       <div className="profile__user">
         <div className="profile__user-avatar">
-          {/* <Image src={thanhAvatar} width="130px" height="130px" /> */}
+          <Image
+            radius="50%"
+            src={thanhAvatar.default}
+            width="130px"
+            height="130px"
+          />
         </div>
         <div className="profile__user-info">
-          <h4>TRAN QUOC THANH</h4>
+          <h5>TRAN QUOC THANH</h5>
           <span className="text-xs profile__user-info-title text-primary d-block">
             Software Engineer
           </span>
-          <span className="text-xs text-primary d-block">
-            Email: thanhtran@strongtie.com
-          </span>
-          <span className="text-xs text-primary d-block">
-            Phone: (+84) 356 975 240
-          </span>
-          <span className="text-xs text-primary d-block">
-            Address: Binh Thanh, HCMC
-          </span>
+          <ContactInfo />
         </div>
       </div>
+
+      <div className="line"></div>
+
       <div className="profile__welcome">
         <h4>Welcome to my blog!</h4>
         <span className="text-xs text-primary d-block">

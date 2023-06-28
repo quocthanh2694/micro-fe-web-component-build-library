@@ -1,0 +1,49 @@
+@import '~src/styles/variables';
+
+.experience {
+    &__title {
+        margin-bottom: $p10;
+    }
+
+    &__content {
+        display: flex;
+
+        &-image {
+            margin-right: 20px;
+        }
+
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, mobile)) {
+    .experience {
+        &__content {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+
+            &-image {
+                margin-right: 20px;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, tablet)) {
+    .experience {
+        &__content {
+            flex-direction: row;
+            align-items: initial;
+            justify-content: initial;
+            gap: 0;
+
+            &-image {
+                margin-right: 20px;
+            }
+
+        }
+    }
+}

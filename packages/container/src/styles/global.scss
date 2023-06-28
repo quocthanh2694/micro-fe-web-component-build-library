@@ -12,6 +12,21 @@ body {
     margin: 0;
 }
 
+body {
+    padding-bottom: 120px;
+    position: relative;
+}
+
+ul {
+    margin: 0;
+    padding-left: 19px;
+
+    li>span {
+        position: relative;
+        left: -4px;
+    }
+}
+
 h1,
 h2,
 h3,
@@ -81,10 +96,6 @@ span.text-xxs {
     color: $secondary;
 }
 
-.text-link {
-    color: $link;
-}
-
 .text-sub {
     color: $bodyTextSub;
 }
@@ -101,6 +112,11 @@ span.text-xxs {
     color: $white;
 }
 
+.text-link {
+    color: $secondary;
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 // display
 .d-block {
@@ -114,8 +130,20 @@ span.text-xxs {
     margin: 0 auto;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .box {
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.20);
+    padding: $p20;
+    background-color: $white;
+    border-radius: map-get($borderRadius, md);
+    margin-top: 40px;
+}
+
+.line {
+    border-bottom: 1px solid $border;
 }
 
 // media
