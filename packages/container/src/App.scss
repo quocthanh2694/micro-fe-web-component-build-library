@@ -1,0 +1,9 @@
+@import '~styles/_variables';
+
+a {
+    color: red;
+
+    &:hover {
+        color: $secondary;
+    }
+}

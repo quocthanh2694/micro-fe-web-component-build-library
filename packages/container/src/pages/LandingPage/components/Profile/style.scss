@@ -1,0 +1,36 @@
+@import '~src/styles/variables';
+
+.profile {
+    margin-top: 40px;
+    padding: $p20;
+    background-color: $white;
+    border-radius: map-get($borderRadius, md);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    &__user {
+        flex: 1;
+
+        display: flex;
+
+        &-avatar {
+            margin-right: $p20;
+            width: 130px;
+            height: 130px;
+        }
+
+        &-info {}
+
+        &-info-title {
+            margin-top: 4px;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__welcome {
+        flex: 1;
+    }
+}

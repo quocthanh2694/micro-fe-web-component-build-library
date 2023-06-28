@@ -1,0 +1,138 @@
+@import './variables';
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 140%;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 140%;
+    margin: 0;
+    font-weight: 400;
+}
+
+// typo
+h1 {
+    font-size: map-get($fontSize, h1);
+}
+
+h2 {
+    font-size: map-get($fontSize, h2);
+}
+
+
+h3 {
+    font-size: map-get($fontSize, h3);
+}
+
+
+h4 {
+    font-size: map-get($fontSize, h4);
+}
+
+h5 {
+    font-size: map-get($fontSize, h5);
+}
+
+h6 {
+    font-size: map-get($fontSize, h6);
+}
+
+// body text
+span {
+    font-size: map-get($fontSize, span);
+    line-height: 140%;
+}
+
+span.text-xs {
+    font-size: map-get($fontSize, text-xs);
+    line-height: 140%;
+}
+
+span.text-xxs {
+    font-size: map-get($fontSize, text-xxs);
+    line-height: 140%;
+}
+
+
+// radius
+.radius-2 {
+    border-radius: 2px;
+}
+
+// text color
+.text-primary {
+    color: $primary;
+}
+
+.text-secondary {
+    color: $secondary;
+}
+
+.text-link {
+    color: $link;
+}
+
+.text-sub {
+    color: $bodyTextSub;
+}
+
+.text-border {
+    color: $border;
+}
+
+.text-danger {
+    color: $danger;
+}
+
+.text-white {
+    color: $white;
+}
+
+
+// display
+.d-block {
+    display: block;
+}
+
+
+
+// common style
+.container {
+    margin: 0 auto;
+}
+
+.box {
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.20);
+}
+
+// media
+@media screen and (min-width: map-get($breakpoints, mobile)) {
+    .container {
+        max-width: map-get($maxContainer, mobile);
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, tablet)) {
+    .container {
+        max-width: map-get($maxContainer, tablet);
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, desktop)) {
+    .container {
+        max-width: map-get($maxContainer, desktop);
+    }
+}

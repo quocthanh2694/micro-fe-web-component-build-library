@@ -1,0 +1,46 @@
+$primary: #4A5568;
+$secondary: #ED8936;
+$link: #2B6CB0;
+$bodyText: #000000;
+$bodyTextSub: #4A5568;
+$border: #D9D9D9;
+$danger: #DE3535;
+$white: #FFFFFF;
+
+$breakpoints: (
+    // max 1100px
+    desktop: 1440px,
+    // max 874px
+    tablet: 1024px,
+    // max 358px
+    mobile: 390px
+);
+$maxContainer: (
+    desktop: 1100px,
+    tablet: 874px,
+    mobile: 358px,
+);
+
+$borderRadius: (
+    xxs: 2px,
+    xs: 4px,
+    sm: 6px,
+    md: 8px,
+    lg: 16px,
+    xl: 32px,
+    50: 50%,
+);
+
+$fontSize: (
+    h1: 3rem,
+    h2: 2.25rem,
+    h3: 2rem,
+    h4: 1.5rem,
+    h5: 1.25rem,
+    h6: 1rem,
+    span: 1rem, // 16px
+    text-xs: 0.875rem, // 14px
+    text-xxs: 0.75rem,
+);
+
+$p20: 20px;

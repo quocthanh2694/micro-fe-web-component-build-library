@@ -1,0 +1,17 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <!-- <input id="username" type="text" formControlName="username" required /> -->
+  <div>
+    <pj1-input formControlName="username" id="username" ngDefaultControl />
+    <div class="error"
+      *ngIf="form.controls.username.invalid && (form.controls.username.dirty || form.controls.username.touched)">
+      Required</div>
+  </div>
+  <button class="button" type="submit" [disabled]="form.invalid">submit</button>
+</form>
+
+<br>
+
+<div>
+  <pj1-input [value]="pj1Input" (onchange)="onChangeInputWC($event)" />
+  <div>WC Input value: {{pj1Input}}</div>
+</div>

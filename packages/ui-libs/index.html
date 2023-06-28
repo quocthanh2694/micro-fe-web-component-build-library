@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test UI libs</title>
+</head>
+
+<style>
+  input {
+    background: lightgreen;
+  }
+</style>
+
+<body>
+  <pj1-input type="text" value="xxxx" placeholder="Placeholder test" onchange="onCheckHandler(event)"></pj1-input>
+  <br>
+  <pj1-input type="text" value="xxxx" placeholder="Placeholder test" onChange="onCheckHandler(event)"></pj1-input>
+</body>
+
+<script>
+  console.log('@@Init');
+
+  // by func
+  function onCheckHandler(event) {
+    console.log('xuat sac onCheckHandler: %O', event.detail.target.value);
+
+  }
+
+  // by add event listener
+  // const el = document.querySelector('pj1-input');
+  // el.addEventListener("onChange", (evt) => {
+  //   console.log('input event from the outside.', evt.target.value);
+  // });
+
+</script>
+<script src="./pr1-input.js"></script>
+
+</html>

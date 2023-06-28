@@ -1,0 +1,18 @@
+ @import '../../styles//variables';
+
+ .layout {
+     &__background {
+         height: 250px;
+         background: $primary;
+         position: absolute;
+         width: 100vw;
+         z-index: -1;
+     }
+
+     &__header {
+         padding: $p20 0;
+         display: flex;
+         justify-content: flex-end;
+         align-items: center;
+     }
+ }
