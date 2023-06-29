@@ -146,21 +146,24 @@ span.text-xxs {
     border-bottom: 1px solid $border;
 }
 
-// media
-@media screen and (min-width: map-get($breakpoints, mobile)) {
+// media queries
+// mobile
+@media (max-width: $screenTablet) {
     .container {
-        max-width: map-get($maxContainer, mobile);
+        max-width: $containerMobile;
     }
 }
 
-@media screen and (min-width: map-get($breakpoints, tablet)) {
+// tablet
+@media (min-width: $screenTablet) and (max-width: $screenDesktop) {
     .container {
-        max-width: map-get($maxContainer, tablet);
+        max-width: $containerTablet;
     }
 }
 
-@media screen and (min-width: map-get($breakpoints, desktop)) {
+// desktop
+@media (min-width: $screenDesktop) {
     .container {
-        max-width: map-get($maxContainer, desktop);
+        max-width: $containerDesktop;
     }
 }

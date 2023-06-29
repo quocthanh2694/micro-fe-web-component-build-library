@@ -35,7 +35,8 @@
     }
 }
 
-@media screen and (min-width: map-get($breakpoints, mobile)) {
+// mobile
+@media (max-width: $screenTablet) {
 
     .project {
         &__item {
@@ -50,8 +51,8 @@
 
     }
 }
-
-@media screen and (min-width: map-get($breakpoints, tablet)) {
+// tablet
+@media (min-width: $screenTablet) and (max-width: $screenDesktop) {
     .project {
         &__item {
             flex-direction: row;

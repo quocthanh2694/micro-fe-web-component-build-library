@@ -14,8 +14,8 @@
 
     }
 }
-
-@media screen and (min-width: map-get($breakpoints, mobile)) {
+// mobile
+@media (max-width: $screenTablet) {
     .experience {
         &__content {
             flex-direction: column;
@@ -31,8 +31,8 @@
         }
     }
 }
-
-@media screen and (min-width: map-get($breakpoints, tablet)) {
+// tablet
+@media (min-width: $screenTablet) and (max-width: $screenDesktop) {
     .experience {
         &__content {
             flex-direction: row;

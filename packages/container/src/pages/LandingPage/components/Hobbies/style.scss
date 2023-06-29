@@ -27,7 +27,8 @@
     }
 }
 
-@media screen and (min-width: map-get($breakpoints, mobile)) {
+// mobile
+@media (max-width: $screenTablet) {
     .hobbies {
         &__item {
             flex-direction: column;
@@ -36,7 +37,8 @@
     }
 }
 
-@media screen and (min-width: map-get($breakpoints, tablet)) {
+// tablet
+@media (min-width: $screenTablet) and (max-width: $screenDesktop) {
     .hobbies {
         &__item {
             flex-direction: row;

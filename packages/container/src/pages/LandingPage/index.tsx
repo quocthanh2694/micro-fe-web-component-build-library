@@ -25,6 +25,9 @@ const Header = React.forwardRef<HTMLDivElement, {}>((props, ref) => (
 
 export const LandingPage = () => {
   const headerRef = useRef<HTMLDivElement>(null);
+  const workExpRef = useRef<HTMLDivElement>(null);
+  const projectRef = useRef<HTMLDivElement>(null);
+  const hobbyRef = useRef<HTMLDivElement>(null);
 
   const handleScroll = (element: HTMLDivElement | null) => {
     if (!element) return;
@@ -46,20 +49,20 @@ export const LandingPage = () => {
       id: 2,
       label: "Work",
       icon: <BookIcon />,
-      onClick: () => headerRef.current?.scrollIntoView(),
+      onClick: () => handleScroll(workExpRef.current),
     },
     {
       id: 3,
       label: "Project",
       icon: <PieIcon />,
-      onClick: () => headerRef.current?.scrollIntoView(),
+      onClick: () => handleScroll(projectRef.current),
     },
 
     {
       id: 4,
       label: "Hobby",
       icon: <MusicIcon />,
-      onClick: () => headerRef.current?.scrollIntoView(),
+      onClick: () => handleScroll(hobbyRef.current),
     },
   ];
 
@@ -71,9 +74,9 @@ export const LandingPage = () => {
       <ShoppingNow />
 
       <Profile />
-      <WorkExperience />
-      <Projects />
-      <Hobbies />
+      <WorkExperience ref={workExpRef} />
+      <Projects ref={projectRef} />
+      <Hobbies ref={hobbyRef} />
 
       <Footer />
     </div>
