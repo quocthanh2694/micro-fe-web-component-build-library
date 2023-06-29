@@ -1,0 +1,45 @@
+@import '../../styles/variables';
+
+.desktop-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 40px;
+
+    * {
+        text-decoration: none;
+        color: $white;
+    }
+
+    &__item {
+        margin-right: 31px;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+}
+
+.desktop-menu.is-mobile {
+    flex-direction: column;
+
+    .desktop-menu__item {
+        margin-top: 20px;
+        margin-right: 0;
+    }
+}

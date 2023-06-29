@@ -3,5 +3,14 @@
 .header {
     background-color: $primary;
     height: 60px;
-    padding: 10px 20px;
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 100%;
+    }
+
+    @include media(mobile) {}
 }

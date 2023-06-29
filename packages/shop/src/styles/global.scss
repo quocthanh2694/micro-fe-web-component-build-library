@@ -136,7 +136,7 @@ span.text-xxs {
 }
 
 .box {
-    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 0px 16px 0px $backdropColor;
     padding: $p20;
     background-color: $white;
     border-radius: map-get($borderRadius, md);
@@ -145,6 +145,11 @@ span.text-xxs {
 
 .line {
     border-bottom: 1px solid $border;
+}
+
+.backdrop {
+    position: absolute;
+    background-color: $backdropColor;
 }
 
 // media queries
