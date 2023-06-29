@@ -1,4 +1,4 @@
-@import '../../utils/variables';
+@import '../../styles/variables';
 
 .button-wrapper {
     &>button {
@@ -35,7 +35,7 @@
 
     // variants
     &__primary button {
-        background: $third;
+        background: $secondary;
 
     }
 

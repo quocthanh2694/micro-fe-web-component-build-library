@@ -10,10 +10,14 @@ import React, { useRef } from "react";
 import { BookIcon, HomeIcon, MusicIcon, PieIcon } from "src/icons";
 
 const ShoppingNow = () => {
+  const handleShoppingNow = () => {
+    window.location.href = "/shop";
+  };
+
   return (
     <div className="container">
       <div className="layout__header">
-        <CustomButton>Shopping Now</CustomButton>
+        <CustomButton onClick={handleShoppingNow}>Shopping Now</CustomButton>
       </div>
     </div>
   );

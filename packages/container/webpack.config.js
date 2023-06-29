@@ -1,12 +1,10 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
-const webpack = require("webpack"); // only add this if you don't have yet
+const webpack = require("webpack");
 const { ModuleFederationPlugin } = webpack.container;
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const deps = require("./package.json").dependencies;
 require("dotenv").config({ path: "./.env" });
-
-const buildDate = new Date().toLocaleString();
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === "production";
@@ -82,7 +80,7 @@ module.exports = (env, argv) => {
     },
 
     plugins: [
-      new webpack.EnvironmentPlugin({ BUILD_DATE: buildDate }),
+      new webpack.EnvironmentPlugin({}),
       new webpack.DefinePlugin({
         "process.env": JSON.stringify(process.env),
       }),

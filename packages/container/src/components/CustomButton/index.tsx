@@ -8,6 +8,7 @@ interface CustomButtonProps {
   variant?: "primary";
   type?: "submit" | "button";
   disabled?: boolean;
+  onClick?: () => void;
 }
 
 const CustomButton = memo(
@@ -16,6 +17,7 @@ const CustomButton = memo(
     size = "default",
     variant = "primary",
     disabled = false,
+    onClick,
   }: CustomButtonProps) => {
     return (
       <div
@@ -26,7 +28,9 @@ const CustomButton = memo(
           `button-wrapper__${disabled && "disabled"}`,
         ])}
       >
-        <button disabled={disabled}>{children}</button>
+        <button disabled={disabled} onClick={onClick}>
+          {children}
+        </button>
       </div>
     );
   }
