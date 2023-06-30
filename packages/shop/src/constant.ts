@@ -11,3 +11,6 @@ export const SCREEN_BREAKPOINTS = {
     tablet: 1024,
     desktop: 1440,
 }
+
+export const CURRENCY = '$';
+export const PAGE_LIMIT = 5;

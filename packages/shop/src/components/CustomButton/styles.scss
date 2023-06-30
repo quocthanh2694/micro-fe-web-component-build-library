@@ -45,6 +45,8 @@
         pointer-events: none;
     }
 
-
+    &__fullWidth>button {
+        width: 100%;
+    }
 
 }

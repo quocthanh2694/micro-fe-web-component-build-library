@@ -68,8 +68,9 @@ const Router = () => {
           </CustomButton>
         </form>
         <h1>APP-1</h1> */}
-        <Routes>
-          {/* <Route
+        <div className="shop-layout__body">
+          <Routes>
+            {/* <Route
             index
             element={
               <div>
@@ -82,9 +83,10 @@ const Router = () => {
               </div>
             }
           /> */}
-          <Route index element={<ShopPage />} />
-          {/* <Route path={URI.product} element={<CounterAppOne />} /> */}
-        </Routes>
+            <Route index element={<ShopPage />} />
+            {/* <Route path={URI.product} element={<CounterAppOne />} /> */}
+          </Routes>
+        </div>
         <Footer />
       </Layout>
     </>

@@ -16,11 +16,12 @@ const MenuModal = memo(({ show, onToggle }: Props) => {
         "menu-modal backdrop": true,
         show: show,
       })}
+      onClick={onToggle}
     >
       <div className="backdrop"></div>
       <div className="menu-modal__menu">
         <div className="container">
-          <div className="menu-modal__menu-close" onClick={onToggle}>
+          <div className="menu-modal__menu-close">
             <MenuIcon isClose />
           </div>
           <DesktopMenu isMobile />

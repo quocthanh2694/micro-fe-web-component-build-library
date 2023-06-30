@@ -1,0 +1,51 @@
+@import '../../styles/variables';
+
+.pagination {
+
+    button {
+        padding: 0 8px;
+        min-width: 23px;
+
+        &:disabled {
+            min-width: 26px;
+        }
+    }
+
+    @mixin pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    &__pages {
+        @include pagination();
+
+        &-button {
+            height: 26px;
+            user-select: none;
+
+            &-selected button {
+                background-color: $primary;
+                color: $white;
+
+                &:disabled {
+                    min-width: 23px;
+                }
+            }
+        }
+    }
+
+    &__goto {
+        @include pagination();
+        align-items: start;
+        margin-top: 10px;
+
+        button {
+            padding: 0;
+            width: 74px;
+            white-space: nowrap;
+        }
+    }
+
+}

@@ -22,6 +22,11 @@ module.exports = {
     port: 3001,
     open: true,
     open: ['/shop'],
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+      "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
+    }
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js"],

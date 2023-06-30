@@ -1,14 +1,19 @@
-import { memo, useEffect, useRef } from "react";
+import { ChangeEvent, memo, useEffect, useRef } from "react";
 import "./styles.scss";
 const CustomInputWC: any = "pj1-input";
 
 interface CustomInputProps {
-  value: string;
-  onChange: Function;
+  value?: string;
+  onChange?: (event: string | ChangeEvent<Element>) => void;
+  onBlur: () => void;
+  type: string;
+  placeholder?: string;
   errors?: any; // error object depend on yup validator
   name?: string;
   pattern?: string;
   label?: string;
+  size?: string;
+  width?: string;
 }
 
 const CustomInput = memo(
