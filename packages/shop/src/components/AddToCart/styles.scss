@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+
+    &__quantity {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        @mixin button {
+            width: 26px;
+            height: 26px;
+            border-radius: 2px;
+            border: 1px solid $border;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        &-minus {
+            @include button;
+        }
+
+        &-plus {
+            @include button;
+        }
+
+    }
+
+    &__button {}
+}

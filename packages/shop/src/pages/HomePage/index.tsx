@@ -7,7 +7,7 @@ import Pagination from "src/components/Pagination";
 import HotSale from "src/components/HotSale";
 const Watch = require("src/assets/images/watch.png").default;
 
-export const ShopPage = () => {
+export const HomePage = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const [categoryId, setCategoryId] = useState("all");

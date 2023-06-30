@@ -2,7 +2,8 @@ import { memo } from "react";
 import CustomButton from "../CustomButton";
 import Image from "../Image";
 import "./styles.scss";
-import { CURRENCY } from "src/constant";
+import { BASE_URL, CURRENCY, URI, getPageURI } from "src/constant";
+import { generatePath, useNavigate } from "react-router-dom";
 
 export interface Product {
   id: number;
@@ -20,8 +21,15 @@ interface Props {
   product: Product;
 }
 const Product = memo(({ product }: Props) => {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    const path = generatePath(getPageURI(URI.product), { id: product.id });
+    navigate(path);
+  };
+
   return (
-    <div className="product">
+    <div className="product" onClick={handleNavigate}>
       <span className="product__discount">{product.discountPercent}%</span>
       <div className="product__image">
         <Image src={product.image} width="196px" height="196px" />

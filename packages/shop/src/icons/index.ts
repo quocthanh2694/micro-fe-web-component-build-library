@@ -1,6 +1,7 @@
 import ArrowIcon from "./ArrowIcon";
 import BookIcon from "./BookIcon";
 import CartIcon from "./CartIcon";
+import CollapsedIcon from "./CollapsedIcon";
 import DeleteIcon from "./DeleteIcon";
 import HomeIcon from "./HomeIcon";
 import LoadingIcon from "./LoadingIcon";
@@ -24,4 +25,5 @@ export {
     PieIcon,
     MusicIcon,
     ArrowIcon,
+    CollapsedIcon,
 }

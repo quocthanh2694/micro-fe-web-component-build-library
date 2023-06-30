@@ -1,7 +1,7 @@
 import { memo } from "react";
 import "./styles.scss";
 import { Link } from "react-router-dom";
-import { URI } from "src/constant";
+import { URI, getPageURI } from "src/constant";
 import ShoppingCart from "../ShoppingCart";
 import { LogoutIcon, UserIcon } from "src/icons";
 import classNames from "classnames";
@@ -30,7 +30,7 @@ const DesktopMenu = memo(({ isMobile = false }: Props) => {
       })}
     >
       <h4 className="desktop-menu__item">
-        <Link to={URI.shop}>Products</Link>
+        <Link to={getPageURI(URI.shop)}>Products</Link>
       </h4>
 
       <h4 className="desktop-menu__item">
@@ -38,7 +38,7 @@ const DesktopMenu = memo(({ isMobile = false }: Props) => {
       </h4>
 
       <h4 className="desktop-menu__item">
-        <Link to={URI.cart}>
+        <Link to={getPageURI(URI.cart)}>
           <ShoppingCart quantity={100} />
         </Link>
       </h4>

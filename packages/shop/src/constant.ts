@@ -1,9 +1,14 @@
 
-export const URI = {
-    shop: '/shop',
-    product: '/shop/product',
-    cart: '/shop/cart',
-    aboutUs: '/',
+export const BASE_URL = '/shop';
+export enum URI {
+    shop = '/',
+    product = '/product/:id',
+    cart = '/cart',
+    aboutUs = '/',
+}
+
+export const getPageURI = (target: URI) => {
+    return `${BASE_URL}${target}`
 }
 
 export const SCREEN_BREAKPOINTS = {

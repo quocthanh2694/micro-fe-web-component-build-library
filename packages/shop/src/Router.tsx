@@ -5,11 +5,12 @@ import { Controller, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { validationScheme } from "./validationScheme";
 import { CustomButton, CustomInput } from "./components";
-import { URI } from "./constant";
-import { ShopPage } from "./pages/ShopPage";
+import { BASE_URL, URI } from "./constant";
+import { HomePage } from "./pages/HomePage";
 import { Layout } from "./components/layout/Layout";
 import { Footer } from "./components/layout/Footer";
 import { Header } from "./components/layout/Header";
+import { ProductPage } from "./pages/ProductPage";
 
 const Router = () => {
   const navigate = useNavigate();
@@ -83,8 +84,8 @@ const Router = () => {
               </div>
             }
           /> */}
-            <Route index element={<ShopPage />} />
-            {/* <Route path={URI.product} element={<CounterAppOne />} /> */}
+            <Route index element={<HomePage />} />
+            <Route path={URI.product} element={<ProductPage />} />
           </Routes>
         </div>
         <Footer />

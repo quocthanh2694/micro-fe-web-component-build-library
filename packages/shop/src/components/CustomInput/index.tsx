@@ -5,8 +5,8 @@ const CustomInputWC: any = "pj1-input";
 interface CustomInputProps {
   value?: string;
   onChange?: (event: string | ChangeEvent<Element>) => void;
-  onBlur: () => void;
-  type: string;
+  onBlur?: () => void;
+  type?: string;
   placeholder?: string;
   errors?: any; // error object depend on yup validator
   name?: string;
@@ -14,6 +14,7 @@ interface CustomInputProps {
   label?: string;
   size?: string;
   width?: string;
+  align?: "center" | "left" | "right";
 }
 
 const CustomInput = memo(

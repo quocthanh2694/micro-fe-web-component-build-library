@@ -46,7 +46,7 @@ const size = {
 class MyEl extends HTMLElement {
 
     static get observedAttributes() {
-        return ['placeholder', 'value', 'size', 'name', 'onchange', 'error', 'required', 'pattern', 'type', 'width'];
+        return ['placeholder', 'value', 'size', 'name', 'onchange', 'error', 'required', 'pattern', 'type', 'width', 'align'];
     }
 
     constructor() {
@@ -136,6 +136,8 @@ class MyEl extends HTMLElement {
                 break;
             case attrName === 'width':
                 this.updateStyle('width', newVal);
+            case attrName === 'align':
+                this.updateStyle('text-align', newVal);
                 break;
             case attrName === 'error':
                 this.handleError(newVal);

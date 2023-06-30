@@ -144,7 +144,16 @@ span.text-xxs {
 }
 
 .line {
-    border-bottom: 1px solid $border;
+    @mixin line {
+        border-bottom: 1px solid $border;
+    }
+
+    @include line;
+
+    &-2 {
+        @include line;
+        border-bottom-width: 2px;
+    }
 }
 
 .backdrop {

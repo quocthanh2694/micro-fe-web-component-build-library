@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+
+.collapsed-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        cursor: pointer;
+        border-bottom: 1px solid $border;
+
+        &-icon {
+            width: 24px;
+        }
+    }
+
+    &__body {
+        align-self: flex-start;
+    }
+}
