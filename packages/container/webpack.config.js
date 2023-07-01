@@ -12,6 +12,7 @@ module.exports = (env, argv) => {
     entry: "./src/index.ts",
     mode: process.env.NODE_ENV || "development",
     devServer: {
+      hot: true,
       port: 3000,
       historyApiFallback: true,
       open: true,

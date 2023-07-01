@@ -2,7 +2,6 @@ import React from "react";
 import { LandingPage } from "./pages/LandingPage";
 import { Routes, Route } from "react-router-dom";
 
-import "../../ui-libs/pr1-input";
 import "./App.scss";
 import "./styles/global.scss";
 

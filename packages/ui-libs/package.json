@@ -1,0 +1,34 @@
+{
+  "name": "thanh-pj1-ui-lib",
+  "version": "1.0.17",
+  "description": "",
+  "type":"commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "publish-pj": "npm publish",
+    "link-pj": "tsc && npm link",
+    "pack-pj": "npm pack",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quocthanh2694/thanh-pj1-ui-lib.git"
+  },
+  "author": "Thanh Tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quocthanh2694/thanh-pj1-ui-lib/issues"
+  },
+  "homepage": "https://github.com/quocthanh2694/thanh-pj1-ui-lib#readme",
+  "dependencies": {
+    "user": "^0.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}

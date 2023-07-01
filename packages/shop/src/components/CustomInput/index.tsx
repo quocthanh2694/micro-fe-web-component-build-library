@@ -1,5 +1,7 @@
 import { ChangeEvent, memo, useEffect, useRef } from "react";
 import "./styles.scss";
+import { helloWorld } from "thanh-pj1-ui-lib";
+helloWorld();
 const CustomInputWC: any = "pj1-input";
 
 interface CustomInputProps {
