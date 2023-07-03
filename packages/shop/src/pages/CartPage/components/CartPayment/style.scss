@@ -1,0 +1,37 @@
+ @import '../../../../styles/variables';
+
+ .cart-payment {
+
+     &__wrap {
+
+         width: 358px;
+         border: 1px solid $border;
+         border-radius: 4px;
+
+         padding: 10px;
+         margin-left: auto;
+
+         @mixin row {
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+
+             margin-bottom: 10px;
+         }
+
+         &-fee {
+             @include row;
+         }
+
+         &-total {
+             @include row;
+
+         }
+
+         &-submit {
+             >* {
+                 margin-left: auto;
+             }
+         }
+     }
+ }

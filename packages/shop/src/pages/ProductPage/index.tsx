@@ -1,14 +1,8 @@
-import Slider from "src/components/Slider";
-import "./style.scss";
-import Product from "src/components/Product";
-import Category, { CategoryType } from "src/components/Category";
-import { useCallback, useState } from "react";
-import Pagination from "src/components/Pagination";
-import HotSale from "src/components/HotSale";
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Breadcrumb from "src/components/Breadcrumb";
 import ProductDetail from "src/components/ProductDetail";
 import SuggestedProduct from "src/components/SuggestedProduct";
+import "./style.scss";
 const Watch = require("src/assets/images/watch.png").default;
 const Banner = require("src/assets/images/banner1.png").default;
 

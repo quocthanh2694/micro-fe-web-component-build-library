@@ -1,6 +1,7 @@
 import { ChangeEvent, memo, useEffect, useRef } from "react";
 import "./styles.scss";
 import { helloWorld } from "thanh-pj1-ui-lib";
+import classNames from "classnames";
 helloWorld();
 const CustomInputWC: any = "pj1-input";
 
@@ -13,10 +14,12 @@ interface CustomInputProps {
   errors?: any; // error object depend on yup validator
   name?: string;
   pattern?: string;
-  label?: string;
+  label?: string | React.ReactNode;
   size?: string;
   width?: string;
   align?: "center" | "left" | "right";
+  className?: string;
+  required?: boolean;
 }
 
 const CustomInput = memo(
@@ -27,6 +30,8 @@ const CustomInput = memo(
     name = "",
     pattern,
     label,
+    className,
+    required,
     ...props
   }: CustomInputProps) => {
     const errMsg = errors?.[name]?.message;
@@ -45,8 +50,13 @@ const CustomInput = memo(
     }, [onChange]);
 
     return (
-      <div className="input-wrapper">
-        {!!label && <label>{label}</label>}
+      <div className={classNames(["input-wrapper", className])}>
+        {!!label && (
+          <label>
+            {label}
+            {required ? <span className="text-danger"> *</span> : ``}
+          </label>
+        )}
         <CustomInputWC
           ref={ref}
           value={value}

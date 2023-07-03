@@ -9,6 +9,7 @@ interface CustomButtonProps {
   type?: "submit" | "button";
   disabled?: boolean;
   fullWidth?: boolean;
+  width?: string;
   onClick?: (e: any) => void;
   className?: string;
 }
@@ -22,6 +23,7 @@ const CustomButton = memo(
     fullWidth,
     className = "",
     onClick = () => {},
+    width,
     type,
   }: CustomButtonProps) => {
     return (
@@ -35,6 +37,7 @@ const CustomButton = memo(
           fullWidth ? `button-wrapper__fullWidth` : "",
         ])}
         onClick={!disabled ? onClick : undefined}
+        style={{ width }}
       >
         <button disabled={disabled} type={type}>
           {children}

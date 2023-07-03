@@ -1,16 +1,15 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
-import CounterAppOne from "./components/CounterAppOne";
-import { Route, Routes, Link, useNavigate, Navigate } from "react-router-dom";
-import { Controller, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { validationScheme } from "./validationScheme";
-import { CustomButton, CustomInput } from "./components";
-import { BASE_URL, URI } from "./constant";
-import { HomePage } from "./pages/HomePage";
-import { Layout } from "./components/layout/Layout";
+import { useCallback, useState } from "react";
+import { useForm } from "react-hook-form";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import { Footer } from "./components/layout/Footer";
 import { Header } from "./components/layout/Header";
+import { Layout } from "./components/layout/Layout";
+import { URI } from "./constant";
+import { HomePage } from "./pages/HomePage";
 import { ProductPage } from "./pages/ProductPage";
+import { validationScheme } from "./validationScheme";
+import CartPage from "./pages/CartPage";
 
 const Router = () => {
   const navigate = useNavigate();
@@ -87,7 +86,7 @@ const Router = () => {
           /> */}
             <Route index element={<HomePage />} />
             <Route path={URI.product} element={<ProductPage />} />
-            <Route path={URI.cart} element={<div>Cart page</div>} />
+            <Route path={URI.cart} element={<CartPage />} />
           </Routes>
         </div>
         <Footer />

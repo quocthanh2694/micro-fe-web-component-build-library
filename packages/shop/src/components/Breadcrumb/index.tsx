@@ -14,7 +14,9 @@ const Breadcrumb = memo(({ list }: Props) => {
       {list.map((item, i) => (
         <div key={item.title} className="breadcrumb__item">
           <span className="text-xxs text-primary">
-            &nbsp;{i > 0 && ">"}&nbsp;
+            {i > 0 && (
+              <span className="text-xxs text-primary">&nbsp;&gt;&nbsp;</span>
+            )}
             {item.title}
           </span>
         </div>

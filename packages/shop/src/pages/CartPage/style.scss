@@ -1,0 +1,15 @@
+ @import '../../styles/variables';
+
+ .cart-page {
+     @include media(desktop) {
+         max-width: 874px !important;
+     }
+
+     &>div {
+         margin-bottom: 10px;
+
+         &:last-child {
+             margin-bottom: 0;
+         }
+     }
+ }

@@ -1,0 +1,17 @@
+ @import '../../../../styles/variables';
+
+ .cart-product {
+
+     &__title {
+        margin: 0 10px;
+     }
+
+     &__list {
+         margin-top: 10px;
+         border-top: 1px solid $border;
+     }
+
+     &__subtotal {
+         margin-top: 10px;
+     }
+ }
