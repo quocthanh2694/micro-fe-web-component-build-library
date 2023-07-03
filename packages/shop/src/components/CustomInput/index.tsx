@@ -1,14 +1,14 @@
 import { ChangeEvent, memo, useEffect, useRef } from "react";
 import "./styles.scss";
-import { helloWorld } from "thanh-pj1-ui-lib";
+// import "thanh-pj1-ui-lib";
+import "../../../../ui-libs/src/pr1-input";
 import classNames from "classnames";
-helloWorld();
 const CustomInputWC: any = "pj1-input";
 
 interface CustomInputProps {
   value?: string;
   onChange?: (event: string | ChangeEvent<Element>) => void;
-  onBlur?: () => void;
+  onBlur?: (event: any) => void;
   type?: string;
   placeholder?: string;
   errors?: any; // error object depend on yup validator

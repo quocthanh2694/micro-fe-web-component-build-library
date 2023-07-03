@@ -1,24 +1,26 @@
-import { memo } from "react";
+import { memo, useContext } from "react";
 import { MenuIcon } from "src/icons";
 import "./styles.scss";
 import DesktopMenu from "src/components/DesktopMenu";
 import classNames from "classnames";
+import { ModalContextType } from "../type";
+import { ModalContext } from "../Modal";
 
 interface Props {
   show?: boolean;
-  onToggle: () => void;
 }
 
-const MenuModal = memo(({ show, onToggle }: Props) => {
+const MenuModal = memo(({ show }: Props) => {
+  const { setToggleShowModal } = useContext<ModalContextType>(ModalContext);
+
   return (
     <div
       className={classNames({
-        "menu-modal backdrop": true,
+        "menu-modal modal backdrop": true,
         show: show,
       })}
-      onClick={onToggle}
+      onClick={() => setToggleShowModal("isShowMenuModal", false)}
     >
-      <div className="backdrop"></div>
       <div className="menu-modal__menu">
         <div className="container">
           <div className="menu-modal__menu-close">

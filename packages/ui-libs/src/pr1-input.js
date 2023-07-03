@@ -72,7 +72,6 @@ class MyEl extends HTMLElement {
             });
             if (this.dispatchEvent(changeEvent)) {
                 // Do default operation here
-                console.log('Performing default operation');
             }
 
         });

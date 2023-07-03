@@ -4,7 +4,7 @@ import "./styles.scss";
 
 interface CustomButtonProps {
   children?: string | React.ReactNode;
-  size?: "default" | "md" | "xs";
+  size?: "default" | "md" | "sm" | "xs";
   variant?: "primary";
   type?: "submit" | "button";
   disabled?: boolean;

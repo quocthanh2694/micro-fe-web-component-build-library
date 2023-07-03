@@ -1,15 +1,21 @@
-import { memo } from "react";
+import { memo, useContext } from "react";
 import { Link } from "react-router-dom";
 import { URI } from "src/constant";
 import { MenuIcon } from "src/icons";
 import ShoppingCart from "../ShoppingCart";
 import "./styles.scss";
 import { getPageURI } from "src/utils/utils";
+import { ModalContextType } from "src/Modals/type";
+import { ModalContext } from "src/Modals/Modal";
 
-interface Props {
-  onToggle?: () => void;
-}
-const MobileMenu = memo(({ onToggle }: Props) => {
+interface Props {}
+const MobileMenu = memo(({}: Props) => {
+  const { setToggleShowModal } = useContext<ModalContextType>(ModalContext);
+
+  const handleOpenMenu = () => {
+    setToggleShowModal("isShowMenuModal", true);
+  };
+
   return (
     <div className="mobile-menu">
       <h4 className="mobile-menu__item">
@@ -17,7 +23,7 @@ const MobileMenu = memo(({ onToggle }: Props) => {
           <ShoppingCart quantity={100} />
         </Link>
       </h4>
-      <h4 className="mobile-menu__item" onClick={onToggle}>
+      <h4 className="mobile-menu__item" onClick={handleOpenMenu}>
         <MenuIcon />
       </h4>
     </div>

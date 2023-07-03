@@ -13,6 +13,7 @@ const CartPage = () => {
   const methods = useForm({
     defaultValues: {},
     resolver: yupResolver(validationScheme()),
+    mode: "all",
   });
   const onSubmit = (data: any) => {
     console.log(data);

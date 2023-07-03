@@ -160,10 +160,47 @@ span.text-xxs {
     }
 }
 
-.backdrop {
-    position: absolute;
-    background-color: $backdropColor;
+// modal 
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -10;
+
+    transition: 0.2s ease-in opacity;
+    opacity: 0;
+
+    &.backdrop {
+        background-color: $backdropColor;
+    }
+
+    &.show {
+        opacity: 1;
+        z-index: 10;
+    }
+
+    &.modal-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-body {
+        background: $white;
+        border-radius: 8px;
+        padding: 20px;
+    }
+
+    &.modal-xs {
+        .modal-body {
+            width: 380px;
+        }
+    }
 }
+
+
 
 // media queries
 @include media(mobile) {

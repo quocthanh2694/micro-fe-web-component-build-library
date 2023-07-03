@@ -8,17 +8,13 @@ import useWindowDimensions from "src/hooks/useWindowSize";
 import "./style.scss";
 import MenuModal from "src/Modals/MenuModal";
 import { getPageURI } from "src/utils/utils";
+import AuthModal from "src/Modals/AuthModal";
 const Logo = require("src/assets/images/logo.png").default;
 
 interface Props {}
 
 export const Header = memo(({}: Props) => {
   const { width } = useWindowDimensions();
-  const [isShowMobileMenu, setIsShowMobileMenu] = useState(false);
-
-  const handleToggleMenu = useCallback(() => {
-    setIsShowMobileMenu((prev) => !prev);
-  }, []);
 
   return (
     <section className="header">
@@ -34,8 +30,7 @@ export const Header = memo(({}: Props) => {
             <DesktopMenu />
           ) : (
             <>
-              <MobileMenu onToggle={handleToggleMenu} />
-              <MenuModal show={isShowMobileMenu} onToggle={handleToggleMenu} />
+              <MobileMenu />
             </>
           )}
         </div>

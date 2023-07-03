@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+
+.auth-modal {
+
+    &__body {
+        padding: 50px 80px !important;
+        position: relative;
+
+        &-close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+
+            cursor: pointer;
+        }
+
+
+
+    }
+}
