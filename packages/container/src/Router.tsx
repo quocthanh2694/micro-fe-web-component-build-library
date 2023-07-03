@@ -5,7 +5,6 @@ import { Routes, Route } from "react-router-dom";
 import "./App.scss";
 import "./styles/global.scss";
 
-// const CounterAppOne = React.lazy(() => import("shop/CounterAppOne"));
 const Shop = React.lazy(() => import("shop/Shop"));
 
 const Router = () => {
@@ -20,7 +19,6 @@ const Router = () => {
         }
       />
       <Route path="/shop/*" element={<Shop />} />
-      {/* <Route path="shop/*" element={<CounterAppOne />} /> */}
     </Routes>
   );
 };

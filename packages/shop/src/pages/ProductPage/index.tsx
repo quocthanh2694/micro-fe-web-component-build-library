@@ -10,6 +10,7 @@ import Breadcrumb from "src/components/Breadcrumb";
 import ProductDetail from "src/components/ProductDetail";
 import SuggestedProduct from "src/components/SuggestedProduct";
 const Watch = require("src/assets/images/watch.png").default;
+const Banner = require("src/assets/images/banner1.png").default;
 
 export const ProductPage = () => {
   const params = useParams();

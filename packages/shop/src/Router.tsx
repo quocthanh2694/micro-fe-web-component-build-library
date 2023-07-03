@@ -70,6 +70,7 @@ const Router = () => {
         </form>
         <h1>APP-1</h1> */}
         <div className="shop-layout__body">
+          {/* <Link to={URI.cart} >to cart</Link> */}
           <Routes>
             {/* <Route
             index
@@ -86,6 +87,7 @@ const Router = () => {
           /> */}
             <Route index element={<HomePage />} />
             <Route path={URI.product} element={<ProductPage />} />
+            <Route path={URI.cart} element={<div>Cart page</div>} />
           </Routes>
         </div>
         <Footer />

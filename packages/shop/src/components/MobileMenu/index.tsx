@@ -1,9 +1,10 @@
 import { memo } from "react";
 import { Link } from "react-router-dom";
-import { URI, getPageURI } from "src/constant";
+import { URI } from "src/constant";
 import { MenuIcon } from "src/icons";
 import ShoppingCart from "../ShoppingCart";
 import "./styles.scss";
+import { getPageURI } from "src/utils/utils";
 
 interface Props {
   onToggle?: () => void;

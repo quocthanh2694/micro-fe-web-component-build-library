@@ -1,14 +1,9 @@
 import { memo } from "react";
-import CustomButton from "../CustomButton";
-import Image from "../Image";
-import "./styles.scss";
-import { BASE_URL, CURRENCY, URI, getPageURI } from "src/constant";
-import { generatePath, useNavigate } from "react-router-dom";
+import AddToCart from "../AddToCart";
+import CollapseContent from "../CollapseContent";
 import { Product } from "../Product";
 import ProductImage from "../ProductImage";
-import SuggestedProduct from "../SuggestedProduct";
-import CollapseContent from "../CollapseContent";
-import AddToCart from "../AddToCart";
+import "./styles.scss";
 
 interface Props {
   product: Product;

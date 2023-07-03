@@ -2,8 +2,9 @@ import { memo } from "react";
 import CustomButton from "../CustomButton";
 import Image from "../Image";
 import "./styles.scss";
-import { BASE_URL, CURRENCY, URI, getPageURI } from "src/constant";
+import { BASE_URL, CURRENCY, URI } from "src/constant";
 import { generatePath, useNavigate } from "react-router-dom";
+import { getPageURI } from "src/utils/utils";
 
 export interface Product {
   id: number;

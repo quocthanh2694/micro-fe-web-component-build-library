@@ -1,10 +1,11 @@
 import { memo } from "react";
 import "./styles.scss";
 import { Link } from "react-router-dom";
-import { URI, getPageURI } from "src/constant";
+import { URI } from "src/constant";
 import ShoppingCart from "../ShoppingCart";
 import { LogoutIcon, UserIcon } from "src/icons";
 import classNames from "classnames";
+import { getPageURI } from "src/utils/utils";
 
 const AccountSection = memo(() => {
   return (
