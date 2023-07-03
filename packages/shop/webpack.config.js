@@ -2,7 +2,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
 const { ModuleFederationPlugin } = require("webpack").container;
 const path = require("path");
+const CopyPlugin = require("copy-webpack-plugin");
 const deps = require("./package.json").dependencies;
+
 require("dotenv").config({ path: "./.env" });
 
 module.exports = {
@@ -19,6 +21,7 @@ module.exports = {
   devServer: {
     hot: true,
     historyApiFallback: true,
+    allowedHosts: 'all',
     port: 3001,
     open: true,
     open: ['/shop'],
@@ -41,6 +44,12 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+              context: path.resolve(__dirname, "src/"),
+              publicPath: '../',
+              useRelativePaths: true,
+            }
           },
         ],
       },
@@ -48,8 +57,16 @@ module.exports = {
         test: /\.scss$/,
         use: [
           "style-loader", // 3. Inject styles into DOM
-          "css-loader", // 2. Turns css into commonjs
-          "sass-loader", // 1. Turns sass into css
+          {
+            loader: "css-loader", // 2. Turns css into commonjs
+            options: {
+              url: false,
+              import: true,
+            }
+          },
+          {
+            loader: "sass-loader", // 1. Turns sass into css
+          },
         ],
       },
       {
@@ -107,6 +124,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'public', 'index.html'), // "./public/index.html",
       favicon: "./public/favicon.ico"
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: "src/assets", to: "assets" },
+      ],
     }),
   ],
 };

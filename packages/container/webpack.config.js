@@ -3,6 +3,7 @@ const path = require("path");
 const webpack = require("webpack");
 const { ModuleFederationPlugin } = webpack.container;
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 const deps = require("./package.json").dependencies;
 require("dotenv").config({ path: "./.env" });
 
@@ -15,6 +16,7 @@ module.exports = (env, argv) => {
       hot: true,
       port: 3000,
       historyApiFallback: true,
+      allowedHosts: 'all',
       open: true,
       headers: {
         "Access-Control-Allow-Origin": "*",
@@ -42,6 +44,12 @@ module.exports = (env, argv) => {
           use: [
             {
               loader: 'file-loader',
+              options: {
+                name: '[path][name].[ext]',
+                context: path.resolve(__dirname, "src/"),
+                publicPath: '../',
+                useRelativePaths: true,
+              }
             },
           ],
         },
@@ -112,6 +120,11 @@ module.exports = (env, argv) => {
         favicon: "./public/favicon.ico"
       }),
       new ForkTsCheckerWebpackPlugin(),
+      new CopyPlugin({
+        patterns: [
+          { from: "src/assets", to: "assets" },
+        ],
+      }),
     ],
   };
 };
