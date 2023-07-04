@@ -2,7 +2,7 @@ import { memo } from "react";
 import CustomButton from "../CustomButton";
 import Image from "../Image";
 import "./styles.scss";
-import { CURRENCY } from "src/constant";
+import { CURRENCY } from "src/constants/constant";
 import classNames from "classnames";
 
 export interface CategoryType {

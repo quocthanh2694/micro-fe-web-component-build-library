@@ -20,5 +20,14 @@
 
         margin: 20px;
         padding-bottom: 8px;
+
+        @include media(mobile) {
+            flex-direction: column;
+            gap: 10px;
+
+            &>div {
+                width: 100%;
+            }
+        }
     }
 }

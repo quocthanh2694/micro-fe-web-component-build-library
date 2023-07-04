@@ -3,12 +3,15 @@
  .cart-product {
 
      &__title {
-        margin: 0 10px;
+         margin: 0 10px;
      }
 
      &__list {
          margin-top: 10px;
          border-top: 1px solid $border;
+
+         max-height: 474px;
+         overflow: auto;
      }
 
      &__subtotal {

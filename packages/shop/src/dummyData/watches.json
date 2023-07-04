@@ -1,0 +1,72 @@
+[
+    {
+        "id": "watch1",
+        "name": "ROLEX OYSTER PERPETUAL 41MM - FULL SET 2020 - REF. 124300",
+        "description": "",
+        "images": [
+            "assets/images/products/watch1-1.png",
+            "assets/images/products/watch1-2.png",
+            "assets/images/products/watch1-3.png"
+        ],
+        "price": "8780",
+        "discountPercent": "10",
+        "type": "watch",
+        "details": [
+            {
+                "key": "Code",
+                "value": "233051.1"
+            },
+            {
+                "key": "Brand",
+                "value": "Rolex"
+            },
+            {
+                "key": "Model",
+                "value": "Oyster Perpetual 41"
+            },
+            {
+                "key": "Case",
+                "value": "Stainless steel"
+            },
+            {
+                "key": "Diameter",
+                "value": "41 MM"
+            }
+        ]
+    },
+    {
+        "id": "watch2",
+        "name": "APPLE WATCH SE 2022 - RETINA",
+        "description": "<iframe width=\"100%\" height=\"auto\" src=\"https://www.youtube.com/embed/WzPNK6v5dok\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe><p>While the Series 8 is our top pick for most people and the Ultra is aimed at outdoor adventurers, the Watch SE is positioned as the sensible choice for first-time smartwatch users, as well as older adults, children, and budget-conscious buyers. All three models in Apple's current smartwatch lineup require an iPhone 8 or later running at least iOS 16.</p><img src='https://i.pcmag.com/imagery/reviews/052mIuvYgv4rXkeLMZAu5xh-2.fit_lim.size_960x.jpg' /> <p>The new Watch SE comes in 40mm (small/medium) or 44mm (large) sizes and features a 100% recycled aluminum case in Midnight (a deep navy blue), Silver, or Starlight (champagne). The Series 8 is a touch bigger, at 41mm or 45mm, and comes in aluminum or stainless steel. </p>        ",
+        "images": [
+            "assets/images/products/watch2-1.png",
+            "assets/images/products/watch2-2.png",
+            "assets/images/products/watch2-3.png"
+        ],
+        "price": "280",
+        "discountPercent": "20",
+        "type": "watch",
+        "details": [
+            {
+                "key": "Display",
+                "value": "Retina"
+            },
+            {
+                "key": "Size",
+                "value": "1.78 inches"
+            },
+            {
+                "key": "Memory",
+                "value": "32GB"
+            },
+            {
+                "key": "Sound",
+                "value": "Yes"
+            },
+            {
+                "key": "Battery",
+                "value": "Li-Ion 296 mAh"
+            }
+        ]
+    }
+]

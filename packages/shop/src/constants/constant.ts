@@ -7,6 +7,8 @@ export enum URI {
     aboutUs = '',
 }
 
+export const DELAY_API = 500;
+
 export const SCREEN_BREAKPOINTS = {
     mobile: 390,
     tablet: 1024,
@@ -14,4 +16,7 @@ export const SCREEN_BREAKPOINTS = {
 }
 
 export const CURRENCY = '$';
+
+// PAGINATION
 export const PAGE_LIMIT = 5;
+export const FETCH_LIMIT = 12;

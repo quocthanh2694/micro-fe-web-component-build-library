@@ -1,10 +1,10 @@
-import { memo, useCallback, useEffect, useState } from "react";
 import classNames from "classnames";
+import { memo, useCallback, useState } from "react";
 
-import "./styles.scss";
-import SliderArrowIcon from "src/icons/SliderArrowIcon";
 import useInterval from "src/hooks/useInterval";
+import SliderArrowIcon from "src/icons/SliderArrowIcon";
 import Image from "../Image";
+import "./styles.scss";
 
 const Banner1 = require("src/assets/images/banner1.png").default;
 const Banner2 = require("src/assets/images/banner2.png").default;
@@ -42,9 +42,12 @@ const Slider = memo(({}: Props) => {
     (n = 0) => {
       setSlideIndex((prev) => {
         let nextIndex = prev + n;
-        if (prev > sliders.length - 1) {
+        if (nextIndex > sliders.length) {
           nextIndex = 1;
+        } else if (nextIndex < 1) {
+          nextIndex = sliders?.length;
         }
+        // reset interval next slide
         reset();
         return nextIndex;
       });

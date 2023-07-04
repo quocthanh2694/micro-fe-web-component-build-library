@@ -1,0 +1,72 @@
+[
+    {
+        "id": "phone1",
+        "name": "IPHONE 14 PRO MAX 128GB",
+        "description": "",
+        "images": [
+            "assets/images/products/phone1-1.png",
+            "assets/images/products/phone1-2.png",
+            "assets/images/products/phone1-3.png"
+        ],
+        "price": "1500",
+        "discountPercent": "10",
+        "type": "phone",
+        "details": [
+            {
+                "key": "Memory",
+                "value": "128gb"
+            },
+            {
+                "key": "Battery",
+                "value": "4323mA"
+            },
+            {
+                "key": "Chipset",
+                "value": "Apple A16"
+            },
+            {
+                "key": "Weight",
+                "value": "240g"
+            },
+            {
+                "key": "Size",
+                "value": "6.7inches"
+            }
+        ]
+    },
+    {
+        "id": "phone2",
+        "name": "SAMSUNG S23 ULTRA 5G 256GB",
+        "description": "",
+        "images": [
+            "assets/images/products/phone2-1.png",
+            "assets/images/products/phone2-2.png",
+            "assets/images/products/phone2-3.png"
+        ],
+        "price": "1400",
+        "discountPercent": "10",
+        "type": "phone",
+        "details": [
+            {
+                "key": "Memory",
+                "value": "256gb"
+            },
+            {
+                "key": "Battery",
+                "value": "5000mA"
+            },
+            {
+                "key": "Chipset",
+                "value": "Snapdragon 8"
+            },
+            {
+                "key": "Weight",
+                "value": "223g"
+            },
+            {
+                "key": "Size",
+                "value": "6.8inches"
+            }
+        ]
+    }
+]

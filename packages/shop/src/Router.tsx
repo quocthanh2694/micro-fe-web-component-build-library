@@ -5,7 +5,7 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 import { Footer } from "./components/layout/Footer";
 import { Header } from "./components/layout/Header";
 import { Layout } from "./components/layout/Layout";
-import { URI } from "./constant";
+import { URI } from "./constants/constant";
 import { HomePage } from "./pages/HomePage";
 import { ProductPage } from "./pages/ProductPage";
 import { validationScheme } from "./validationScheme";

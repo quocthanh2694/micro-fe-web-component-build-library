@@ -1,4 +1,4 @@
-import { Product } from "src/components/Product";
+import { IProduct } from "src/interface/product";
 
 export interface CartForm {
     fullname: string;
@@ -12,5 +12,5 @@ export interface CartForm {
 
 export interface CartFormItem {
     quantity: number;
-    product: Product;
+    product: IProduct;
 }

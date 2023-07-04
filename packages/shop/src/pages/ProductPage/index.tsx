@@ -3,13 +3,18 @@ import Breadcrumb from "src/components/Breadcrumb";
 import ProductDetail from "src/components/ProductDetail";
 import SuggestedProduct from "src/components/SuggestedProduct";
 import "./style.scss";
-const Watch = require("src/assets/images/watch.png").default;
-const Banner = require("src/assets/images/banner1.png").default;
+import useProductDetail from "src/hooks/useProductDetail";
+import { useEffect } from "react";
 
 export const ProductPage = () => {
   const params = useParams();
 
-  console.log("@@id", params.id);
+  const { getProductDetail, loading, product } = useProductDetail();
+
+  useEffect(() => {
+    if (!params.id) return;
+    getProductDetail(params.id);
+  }, [params.id]);
 
   return (
     <div className="product-page container">
@@ -23,30 +28,7 @@ export const ProductPage = () => {
           },
         ]}
       />
-      <br />
-      <ProductDetail
-        product={{
-          id: 1,
-          name: "ROLEX OYSTER AUTO 41 ",
-          discountPercent: 32,
-          image: Watch,
-          price: 10000,
-          details: [
-            {
-              key: "Type",
-              value: "Analog",
-            },
-            {
-              key: "Water Resistance",
-              value: "50 M",
-            },
-            {
-              key: "Some others",
-              value: "Value",
-            },
-          ],
-        }}
-      />
+      {!!product?.id && <ProductDetail product={product} />}
 
       <SuggestedProduct />
     </div>

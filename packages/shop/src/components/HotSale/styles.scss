@@ -4,6 +4,8 @@
     background-color: $danger;
     border-radius: 8px;
     padding-bottom: 0.1px;
+    overflow: hidden;
+    min-height: 517px;
 
     &__header {
         text-align: center;
@@ -14,7 +16,7 @@
         align-items: center;
         justify-content: center;
 
-        background-image: url('../../assets/images/hotsale.png');
+        background-image: url('assets/images/hotsale.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center

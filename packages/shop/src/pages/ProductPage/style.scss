@@ -1,6 +1,8 @@
  @import '../../styles//variables';
 
  .product-page {
+     &>* {
+         margin-top: 20px;
+     }
 
-     
  }

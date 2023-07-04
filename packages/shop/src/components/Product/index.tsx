@@ -1,25 +1,14 @@
 import { memo } from "react";
+import { generatePath, useNavigate } from "react-router-dom";
+import { CURRENCY, URI } from "src/constants/constant";
+import { IProduct } from "src/interface/product";
+import { getPageURI } from "src/utils/utils";
 import CustomButton from "../CustomButton";
 import Image from "../Image";
 import "./styles.scss";
-import { BASE_URL, CURRENCY, URI } from "src/constant";
-import { generatePath, useNavigate } from "react-router-dom";
-import { getPageURI } from "src/utils/utils";
-
-export interface Product {
-  id: number;
-  image: string;
-  name: string;
-  price: number;
-  discountPercent: number;
-  details: Array<{
-    key: string;
-    value: string;
-  }>;
-}
 
 interface Props {
-  product: Product;
+  product: IProduct;
 }
 const Product = memo(({ product }: Props) => {
   const navigate = useNavigate();
@@ -27,13 +16,19 @@ const Product = memo(({ product }: Props) => {
   const handleNavigate = () => {
     const path = generatePath(getPageURI(URI.product), { id: product.id });
     navigate(path);
+    window.scroll(0, 0);
   };
 
   return (
     <div className="product" onClick={handleNavigate}>
       <span className="product__discount">{product.discountPercent}%</span>
       <div className="product__image">
-        <Image src={product.image} width="196px" height="196px" />
+        <Image
+          src={product.images?.[0]}
+          width="196px"
+          height="196px"
+          radius="4px"
+        />
       </div>
       <div className="product__info">
         <span className="product__info-name" title={product.name}>

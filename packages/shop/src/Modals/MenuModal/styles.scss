@@ -7,8 +7,10 @@
 
         &-close {
             display: flex;
+            align-items: center;
             justify-content: flex-end;
             cursor: pointer;
+            height: 59px;
         }
     }
 }

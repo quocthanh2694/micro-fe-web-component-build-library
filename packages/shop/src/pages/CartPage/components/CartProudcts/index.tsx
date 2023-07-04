@@ -62,6 +62,110 @@ const CartProduct = memo(() => {
               quantity: 1000,
             }}
           />
+           <CartItem
+            cartItem={{
+              product: {
+                id: 1,
+                name: "ROLEX OYSTER AUTO 41 ",
+                discountPercent: 32,
+                image: Watch,
+                price: 10000,
+                details: [
+                  {
+                    key: "Type",
+                    value: "Analog",
+                  },
+                  {
+                    key: "Water Resistance",
+                    value: "50 M",
+                  },
+                  {
+                    key: "Some others",
+                    value: "Value",
+                  },
+                ],
+              },
+              quantity: 1000,
+            }}
+          />
+           <CartItem
+            cartItem={{
+              product: {
+                id: 1,
+                name: "ROLEX OYSTER AUTO 41 ",
+                discountPercent: 32,
+                image: Watch,
+                price: 10000,
+                details: [
+                  {
+                    key: "Type",
+                    value: "Analog",
+                  },
+                  {
+                    key: "Water Resistance",
+                    value: "50 M",
+                  },
+                  {
+                    key: "Some others",
+                    value: "Value",
+                  },
+                ],
+              },
+              quantity: 1000,
+            }}
+          />
+           <CartItem
+            cartItem={{
+              product: {
+                id: 1,
+                name: "ROLEX OYSTER AUTO 41 ",
+                discountPercent: 32,
+                image: Watch,
+                price: 10000,
+                details: [
+                  {
+                    key: "Type",
+                    value: "Analog",
+                  },
+                  {
+                    key: "Water Resistance",
+                    value: "50 M",
+                  },
+                  {
+                    key: "Some others",
+                    value: "Value",
+                  },
+                ],
+              },
+              quantity: 1000,
+            }}
+          />
+           <CartItem
+            cartItem={{
+              product: {
+                id: 1,
+                name: "ROLEX OYSTER AUTO 41 ",
+                discountPercent: 32,
+                image: Watch,
+                price: 10000,
+                details: [
+                  {
+                    key: "Type",
+                    value: "Analog",
+                  },
+                  {
+                    key: "Water Resistance",
+                    value: "50 M",
+                  },
+                  {
+                    key: "Some others",
+                    value: "Value",
+                  },
+                ],
+              },
+              quantity: 1000,
+            }}
+          />
         </div>
       </div>
 

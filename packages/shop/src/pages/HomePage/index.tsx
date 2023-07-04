@@ -2,15 +2,22 @@ import Slider from "src/components/Slider";
 import "./style.scss";
 import Product from "src/components/Product";
 import Category, { CategoryType } from "src/components/Category";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Pagination from "src/components/Pagination";
 import HotSale from "src/components/HotSale";
-const Watch = require("src/assets/images/watch.png").default;
+import useProducts from "src/hooks/useProducts";
+import { FETCH_LIMIT, PAGE_LIMIT } from "src/constants/constant";
+import Image from "src/components/Image";
+import useHotSaleProduct from "src/hooks/useHotSaleProduct";
+const Loading = require("src/assets/images/loading.gif").default;
 
 export const HomePage = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
+  const { loading, items: products, totalPages, getProducts } = useProducts();
+
   const [categoryId, setCategoryId] = useState("all");
+
   const categories = [
     {
       id: "all",
@@ -38,52 +45,66 @@ export const HomePage = () => {
     },
   ];
 
+  // init get products
+  useEffect(() => {
+    getProducts({
+      skipCount: 0,
+      type: "all",
+    });
+  }, []);
+
   const handleSelectCategory = useCallback((c: CategoryType) => {
     setCategoryId(c.id);
+    setCurrentPage(1);
+    getProducts({
+      skipCount: 0,
+      type: c.id,
+    });
   }, []);
 
   const onChangePage = (page: number) => {
     setCurrentPage(page);
+    getProducts({
+      skipCount: (page - 1) * FETCH_LIMIT,
+      type: categoryId,
+    });
   };
 
   return (
-    <div className="shop container">
-      <Slider />
-      <br />
-      <HotSale />
-      <br />
-      <Category
-        categories={categories}
-        selectedId={categoryId}
-        onSelect={handleSelectCategory}
-      />
+    <div className="home container">
+      <div className="home__slider">
+        <Slider />
+      </div>
 
-      <br />
-      <Pagination currentPage={currentPage} onChangePage={onChangePage} />
-      <br />
-      <Product
-        product={{
-          id: 1,
-          name: "ROLEX OYSTER AUTO PERPETUAL 41 ROLEX OYSTER AUTO PERPETUAL 42 ROLEX OYSTER AUTO PERPETUAL 43",
-          discountPercent: 32,
-          image: Watch,
-          price: 10000,
-          details: [
-            {
-              key: "Type",
-              value: "Analog",
-            },
-            {
-              key: "Water Resistance",
-              value: "50 M",
-            },
-            {
-              key: "Some others",
-              value: "Value",
-            },
-          ],
-        }}
-      />
+      <div className="home__hotsale">
+        <HotSale />
+      </div>
+
+      <div className="home__category">
+        <Category
+          categories={categories}
+          selectedId={categoryId}
+          onSelect={handleSelectCategory}
+        />
+      </div>
+
+      <div className="home__products">
+        {products?.map((p) => (
+          <Product key={p.id} product={p} />
+        ))}
+      </div>
+
+      <div className="home__loading">
+        {loading && <Image src={Loading} width="40px" height="40px" />}
+      </div>
+
+      <div className="home__pagination">
+        <Pagination
+          currentPage={currentPage}
+          onChangePage={onChangePage}
+          totalPages={totalPages}
+        />
+      </div>
     </div>
   );
 };

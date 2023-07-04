@@ -11,7 +11,7 @@ interface Props {}
 const LoginForm = memo(({}: Props) => {
   const {
     control,
-    formState: { errors, isValid, isDirty, isSubmitted },
+    formState: { errors, isValid },
     handleSubmit,
     reset,
   } = useForm<LoginFormType>({
@@ -23,7 +23,7 @@ const LoginForm = memo(({}: Props) => {
   const onSubmit = useCallback(
     (data: LoginFormType) => {
       console.log("@@@submit login", data);
-      // reset();
+      reset();
     },
     [reset]
   );

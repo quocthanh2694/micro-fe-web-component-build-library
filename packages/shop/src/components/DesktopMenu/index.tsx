@@ -1,7 +1,7 @@
 import { memo, useCallback, useContext, useState } from "react";
 import "./styles.scss";
 import { Link } from "react-router-dom";
-import { URI } from "src/constant";
+import { URI } from "src/constants/constant";
 import ShoppingCart from "../ShoppingCart";
 import { LogoutIcon, UserIcon } from "src/icons";
 import classNames from "classnames";

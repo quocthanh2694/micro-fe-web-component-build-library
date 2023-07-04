@@ -6,6 +6,15 @@
         display: flex;
         gap: 20px;
 
+        @include media(mobile) {
+            flex-direction: column;
+
+            &-info,
+            &-image {
+                max-width: 100% !important;
+            }
+        }
+
         &-image {
             flex: 1;
             max-width: calc(50% - 10px);
@@ -44,7 +53,16 @@
     }
 
     &__body {
-        margin-top: 10px;
+        margin-top: 20px;
+
+        iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+        }
+
+        img {
+            max-width: 100%;
+        }
     }
 
 }

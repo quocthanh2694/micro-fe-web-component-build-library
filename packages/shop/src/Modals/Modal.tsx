@@ -5,7 +5,7 @@ import { ModalContextType } from "./type";
 
 export const modalContextInitValue: ModalContextType = {
   setToggleShowModal(key, val) {},
-  isShowAuthModal: true,
+  isShowAuthModal: false,
   isShowMenuModal: false,
 };
 

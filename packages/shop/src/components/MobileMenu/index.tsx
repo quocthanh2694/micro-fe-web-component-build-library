@@ -1,6 +1,6 @@
 import { memo, useContext } from "react";
 import { Link } from "react-router-dom";
-import { URI } from "src/constant";
+import { URI } from "src/constants/constant";
 import { MenuIcon } from "src/icons";
 import ShoppingCart from "../ShoppingCart";
 import "./styles.scss";

@@ -1,21 +1,22 @@
 import { memo } from "react";
 import AddToCart from "../AddToCart";
 import CollapseContent from "../CollapseContent";
-import { Product } from "../Product";
 import ProductImage from "../ProductImage";
 import "./styles.scss";
+import { IProduct } from "src/interface/product";
 
 interface Props {
-  product: Product;
+  product: IProduct;
 }
 const ProductDetail = memo(({ product }: Props) => {
-  const { name, price, details, discountPercent, image } = product || {};
+  const { name, price, details, discountPercent, images, description } =
+    product || {};
 
   return (
     <div className="product-detail">
       <div className="product-detail__wrap">
         <div className="product-detail__wrap-image">
-          <ProductImage images={[image, image, image]} />
+          <ProductImage images={images} />
         </div>
         <div className="product-detail__wrap-info">
           <h4 className="text-center">{name}</h4>
@@ -28,7 +29,10 @@ const ProductDetail = memo(({ product }: Props) => {
           <div className="product-detail__wrap-info-more">
             <h4>More Information</h4>
             {details?.map((detail) => (
-              <div className="product-detail__wrap-info-more-row">
+              <div
+                key={detail.key}
+                className="product-detail__wrap-info-more-row"
+              >
                 <div>{detail.key}</div>
                 <div className="text-primary">{detail.value}</div>
               </div>
@@ -37,7 +41,7 @@ const ProductDetail = memo(({ product }: Props) => {
         </div>
       </div>
       <div className="product-detail__body">
-        <CollapseContent title={name} body={`<>body</>`} />
+        <CollapseContent title={`Review: ${name}`} body={description} />
       </div>
     </div>
   );
