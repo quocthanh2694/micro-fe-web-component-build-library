@@ -1,0 +1,3527 @@
+[
+    {
+        "parentId": "01",
+        "id": "001",
+        "name": "Quan Ba Dinh"
+    },
+    {
+        "parentId": "01",
+        "id": "002",
+        "name": "Quan Hoan Kiem"
+    },
+    {
+        "parentId": "01",
+        "id": "003",
+        "name": "Quan Tay Ho"
+    },
+    {
+        "parentId": "01",
+        "id": "004",
+        "name": "Quan Long Bien"
+    },
+    {
+        "parentId": "01",
+        "id": "005",
+        "name": "Quan Cau Giay"
+    },
+    {
+        "parentId": "01",
+        "id": "006",
+        "name": "Quan Dong Da"
+    },
+    {
+        "parentId": "01",
+        "id": "007",
+        "name": "Quan Hai Ba Trung"
+    },
+    {
+        "parentId": "01",
+        "id": "008",
+        "name": "Quan Hoang Mai"
+    },
+    {
+        "parentId": "01",
+        "id": "009",
+        "name": "Quan Thanh Xuan"
+    },
+    {
+        "parentId": "01",
+        "id": "016",
+        "name": "Huyen Soc Son"
+    },
+    {
+        "parentId": "01",
+        "id": "017",
+        "name": "Huyen Dong Anh"
+    },
+    {
+        "parentId": "01",
+        "id": "018",
+        "name": "Huyen Gia Lam"
+    },
+    {
+        "parentId": "01",
+        "id": "019",
+        "name": "Quan Nam Tu Liem"
+    },
+    {
+        "parentId": "01",
+        "id": "020",
+        "name": "Huyen Thanh Tri"
+    },
+    {
+        "parentId": "01",
+        "id": "021",
+        "name": "Quan Bac Tu Liem"
+    },
+    {
+        "parentId": "01",
+        "id": "250",
+        "name": "Huyen Me Linh"
+    },
+    {
+        "parentId": "01",
+        "id": "268",
+        "name": "Quan Ha Dong"
+    },
+    {
+        "parentId": "01",
+        "id": "269",
+        "name": "Thi xa Son Tay"
+    },
+    {
+        "parentId": "01",
+        "id": "271",
+        "name": "Huyen Ba Vi"
+    },
+    {
+        "parentId": "01",
+        "id": "272",
+        "name": "Huyen Phuc Tho"
+    },
+    {
+        "parentId": "01",
+        "id": "273",
+        "name": "Huyen Dan Phuong"
+    },
+    {
+        "parentId": "01",
+        "id": "274",
+        "name": "Huyen Hoai Duc"
+    },
+    {
+        "parentId": "01",
+        "id": "275",
+        "name": "Huyen Quoc Oai"
+    },
+    {
+        "parentId": "01",
+        "id": "276",
+        "name": "Huyen Thach That"
+    },
+    {
+        "parentId": "01",
+        "id": "277",
+        "name": "Huyen Chuong My"
+    },
+    {
+        "parentId": "01",
+        "id": "278",
+        "name": "Huyen Thanh Oai"
+    },
+    {
+        "parentId": "01",
+        "id": "279",
+        "name": "Huyen Thuong Tin"
+    },
+    {
+        "parentId": "01",
+        "id": "280",
+        "name": "Huyen Phu Xuyen"
+    },
+    {
+        "parentId": "01",
+        "id": "281",
+        "name": "Huyen Ung Hoa"
+    },
+    {
+        "parentId": "01",
+        "id": "282",
+        "name": "Huyen My Duc"
+    },
+    {
+        "parentId": "02",
+        "id": "024",
+        "name": "Thanh pho Ha Giang"
+    },
+    {
+        "parentId": "02",
+        "id": "026",
+        "name": "Huyen Dong Van"
+    },
+    {
+        "parentId": "02",
+        "id": "027",
+        "name": "Huyen Meo Vac"
+    },
+    {
+        "parentId": "02",
+        "id": "028",
+        "name": "Huyen Yen Minh"
+    },
+    {
+        "parentId": "02",
+        "id": "029",
+        "name": "Huyen Quan Ba"
+    },
+    {
+        "parentId": "02",
+        "id": "030",
+        "name": "Huyen Vi Xuyen"
+    },
+    {
+        "parentId": "02",
+        "id": "031",
+        "name": "Huyen Bac Me"
+    },
+    {
+        "parentId": "02",
+        "id": "032",
+        "name": "Huyen Hoang Su Phi"
+    },
+    {
+        "parentId": "02",
+        "id": "033",
+        "name": "Huyen Xin Man"
+    },
+    {
+        "parentId": "02",
+        "id": "034",
+        "name": "Huyen Bac Quang"
+    },
+    {
+        "parentId": "02",
+        "id": "035",
+        "name": "Huyen Quang Binh"
+    },
+    {
+        "parentId": "04",
+        "id": "040",
+        "name": "Thanh pho Cao Bang"
+    },
+    {
+        "parentId": "04",
+        "id": "042",
+        "name": "Huyen Bao Lam"
+    },
+    {
+        "parentId": "04",
+        "id": "043",
+        "name": "Huyen Bao Lac"
+    },
+    {
+        "parentId": "04",
+        "id": "045",
+        "name": "Huyen Ha Quang"
+    },
+    {
+        "parentId": "04",
+        "id": "047",
+        "name": "Huyen Trung Khanh"
+    },
+    {
+        "parentId": "04",
+        "id": "048",
+        "name": "Huyen Ha Lang"
+    },
+    {
+        "parentId": "04",
+        "id": "049",
+        "name": "Huyen Quang Hoa"
+    },
+    {
+        "parentId": "04",
+        "id": "051",
+        "name": "Huyen Hoa An"
+    },
+    {
+        "parentId": "04",
+        "id": "052",
+        "name": "Huyen Nguyen Binh"
+    },
+    {
+        "parentId": "04",
+        "id": "053",
+        "name": "Huyen Thach An"
+    },
+    {
+        "parentId": "06",
+        "id": "058",
+        "name": "Thanh Pho Bac Kan"
+    },
+    {
+        "parentId": "06",
+        "id": "060",
+        "name": "Huyen Pac Nam"
+    },
+    {
+        "parentId": "06",
+        "id": "061",
+        "name": "Huyen Ba Be"
+    },
+    {
+        "parentId": "06",
+        "id": "062",
+        "name": "Huyen Ngan Son"
+    },
+    {
+        "parentId": "06",
+        "id": "063",
+        "name": "Huyen Bach Thong"
+    },
+    {
+        "parentId": "06",
+        "id": "064",
+        "name": "Huyen Cho Don"
+    },
+    {
+        "parentId": "06",
+        "id": "065",
+        "name": "Huyen Cho Moi"
+    },
+    {
+        "parentId": "06",
+        "id": "066",
+        "name": "Huyen Na Ri"
+    },
+    {
+        "parentId": "08",
+        "id": "070",
+        "name": "Thanh pho Tuyen Quang"
+    },
+    {
+        "parentId": "08",
+        "id": "071",
+        "name": "Huyen Lam Binh"
+    },
+    {
+        "parentId": "08",
+        "id": "072",
+        "name": "Huyen Na Hang"
+    },
+    {
+        "parentId": "08",
+        "id": "073",
+        "name": "Huyen Chiem Hoa"
+    },
+    {
+        "parentId": "08",
+        "id": "074",
+        "name": "Huyen Ham Yen"
+    },
+    {
+        "parentId": "08",
+        "id": "075",
+        "name": "Huyen Yen Son"
+    },
+    {
+        "parentId": "08",
+        "id": "076",
+        "name": "Huyen Son Duong"
+    },
+    {
+        "parentId": "10",
+        "id": "080",
+        "name": "Thanh pho Lao Cai"
+    },
+    {
+        "parentId": "10",
+        "id": "082",
+        "name": "Huyen Bat Xat"
+    },
+    {
+        "parentId": "10",
+        "id": "083",
+        "name": "Huyen Muong Khuong"
+    },
+    {
+        "parentId": "10",
+        "id": "084",
+        "name": "Huyen Si Ma Cai"
+    },
+    {
+        "parentId": "10",
+        "id": "085",
+        "name": "Huyen Bac Ha"
+    },
+    {
+        "parentId": "10",
+        "id": "086",
+        "name": "Huyen Bao Thang"
+    },
+    {
+        "parentId": "10",
+        "id": "087",
+        "name": "Huyen Bao Yen"
+    },
+    {
+        "parentId": "10",
+        "id": "088",
+        "name": "Thi xa Sa Pa"
+    },
+    {
+        "parentId": "10",
+        "id": "089",
+        "name": "Huyen Van Ban"
+    },
+    {
+        "parentId": "11",
+        "id": "094",
+        "name": "Thanh pho Dien Bien Phu"
+    },
+    {
+        "parentId": "11",
+        "id": "095",
+        "name": "Thi Xa Muong Lay"
+    },
+    {
+        "parentId": "11",
+        "id": "096",
+        "name": "Huyen Muong Nhe"
+    },
+    {
+        "parentId": "11",
+        "id": "097",
+        "name": "Huyen Muong Cha"
+    },
+    {
+        "parentId": "11",
+        "id": "098",
+        "name": "Huyen Tua Chua"
+    },
+    {
+        "parentId": "11",
+        "id": "099",
+        "name": "Huyen Tuan Giao"
+    },
+    {
+        "parentId": "11",
+        "id": "100",
+        "name": "Huyen Dien Bien"
+    },
+    {
+        "parentId": "11",
+        "id": "101",
+        "name": "Huyen Dien Bien Dong"
+    },
+    {
+        "parentId": "11",
+        "id": "102",
+        "name": "Huyen Muong Ang"
+    },
+    {
+        "parentId": "11",
+        "id": "103",
+        "name": "Huyen Nam Po"
+    },
+    {
+        "parentId": "12",
+        "id": "105",
+        "name": "Thanh pho Lai Chau"
+    },
+    {
+        "parentId": "12",
+        "id": "106",
+        "name": "Huyen Tam Duong"
+    },
+    {
+        "parentId": "12",
+        "id": "107",
+        "name": "Huyen Muong Te"
+    },
+    {
+        "parentId": "12",
+        "id": "108",
+        "name": "Huyen Sin Ho"
+    },
+    {
+        "parentId": "12",
+        "id": "109",
+        "name": "Huyen Phong Tho"
+    },
+    {
+        "parentId": "12",
+        "id": "110",
+        "name": "Huyen Than Uyen"
+    },
+    {
+        "parentId": "12",
+        "id": "111",
+        "name": "Huyen Tan Uyen"
+    },
+    {
+        "parentId": "12",
+        "id": "112",
+        "name": "Huyen Nam Nhun"
+    },
+    {
+        "parentId": "14",
+        "id": "116",
+        "name": "Thanh pho Son La"
+    },
+    {
+        "parentId": "14",
+        "id": "118",
+        "name": "Huyen Quynh Nhai"
+    },
+    {
+        "parentId": "14",
+        "id": "119",
+        "name": "Huyen Thuan Chau"
+    },
+    {
+        "parentId": "14",
+        "id": "120",
+        "name": "Huyen Muong La"
+    },
+    {
+        "parentId": "14",
+        "id": "121",
+        "name": "Huyen Bac Yen"
+    },
+    {
+        "parentId": "14",
+        "id": "122",
+        "name": "Huyen Phu Yen"
+    },
+    {
+        "parentId": "14",
+        "id": "123",
+        "name": "Huyen Moc Chau"
+    },
+    {
+        "parentId": "14",
+        "id": "124",
+        "name": "Huyen Yen Chau"
+    },
+    {
+        "parentId": "14",
+        "id": "125",
+        "name": "Huyen Mai Son"
+    },
+    {
+        "parentId": "14",
+        "id": "126",
+        "name": "Huyen Song Ma"
+    },
+    {
+        "parentId": "14",
+        "id": "127",
+        "name": "Huyen Sop Cop"
+    },
+    {
+        "parentId": "14",
+        "id": "128",
+        "name": "Huyen Van Ho"
+    },
+    {
+        "parentId": "15",
+        "id": "132",
+        "name": "Thanh pho Yen Bai"
+    },
+    {
+        "parentId": "15",
+        "id": "133",
+        "name": "Thi xa Nghia Lo"
+    },
+    {
+        "parentId": "15",
+        "id": "135",
+        "name": "Huyen Luc Yen"
+    },
+    {
+        "parentId": "15",
+        "id": "136",
+        "name": "Huyen Van Yen"
+    },
+    {
+        "parentId": "15",
+        "id": "137",
+        "name": "Huyen Mu Cang Chai"
+    },
+    {
+        "parentId": "15",
+        "id": "138",
+        "name": "Huyen Tran Yen"
+    },
+    {
+        "parentId": "15",
+        "id": "139",
+        "name": "Huyen Tram Tau"
+    },
+    {
+        "parentId": "15",
+        "id": "140",
+        "name": "Huyen Van Chan"
+    },
+    {
+        "parentId": "15",
+        "id": "141",
+        "name": "Huyen Yen Binh"
+    },
+    {
+        "parentId": "17",
+        "id": "148",
+        "name": "Thanh pho Hoa Binh"
+    },
+    {
+        "parentId": "17",
+        "id": "150",
+        "name": "Huyen Da Bac"
+    },
+    {
+        "parentId": "17",
+        "id": "152",
+        "name": "Huyen Luong Son"
+    },
+    {
+        "parentId": "17",
+        "id": "153",
+        "name": "Huyen Kim Boi"
+    },
+    {
+        "parentId": "17",
+        "id": "154",
+        "name": "Huyen Cao Phong"
+    },
+    {
+        "parentId": "17",
+        "id": "155",
+        "name": "Huyen Tan Lac"
+    },
+    {
+        "parentId": "17",
+        "id": "156",
+        "name": "Huyen Mai Chau"
+    },
+    {
+        "parentId": "17",
+        "id": "157",
+        "name": "Huyen Lac Son"
+    },
+    {
+        "parentId": "17",
+        "id": "158",
+        "name": "Huyen Yen Thuy"
+    },
+    {
+        "parentId": "17",
+        "id": "159",
+        "name": "Huyen Lac Thuy"
+    },
+    {
+        "parentId": "19",
+        "id": "164",
+        "name": "Thanh pho Thai Nguyen"
+    },
+    {
+        "parentId": "19",
+        "id": "165",
+        "name": "Thanh pho Song Cong"
+    },
+    {
+        "parentId": "19",
+        "id": "167",
+        "name": "Huyen Dinh Hoa"
+    },
+    {
+        "parentId": "19",
+        "id": "168",
+        "name": "Huyen Phu Luong"
+    },
+    {
+        "parentId": "19",
+        "id": "169",
+        "name": "Huyen Dong Hy"
+    },
+    {
+        "parentId": "19",
+        "id": "170",
+        "name": "Huyen Vo Nhai"
+    },
+    {
+        "parentId": "19",
+        "id": "171",
+        "name": "Huyen Dai Tu"
+    },
+    {
+        "parentId": "19",
+        "id": "172",
+        "name": "Thanh pho Pho Yen"
+    },
+    {
+        "parentId": "19",
+        "id": "173",
+        "name": "Huyen Phu Binh"
+    },
+    {
+        "parentId": "20",
+        "id": "178",
+        "name": "Thanh pho Lang Son"
+    },
+    {
+        "parentId": "20",
+        "id": "180",
+        "name": "Huyen Trang Dinh"
+    },
+    {
+        "parentId": "20",
+        "id": "181",
+        "name": "Huyen Binh Gia"
+    },
+    {
+        "parentId": "20",
+        "id": "182",
+        "name": "Huyen Van Lang"
+    },
+    {
+        "parentId": "20",
+        "id": "183",
+        "name": "Huyen Cao Loc"
+    },
+    {
+        "parentId": "20",
+        "id": "184",
+        "name": "Huyen Van Quan"
+    },
+    {
+        "parentId": "20",
+        "id": "185",
+        "name": "Huyen Bac Son"
+    },
+    {
+        "parentId": "20",
+        "id": "186",
+        "name": "Huyen Huu Lung"
+    },
+    {
+        "parentId": "20",
+        "id": "187",
+        "name": "Huyen Chi Lang"
+    },
+    {
+        "parentId": "20",
+        "id": "188",
+        "name": "Huyen Loc Binh"
+    },
+    {
+        "parentId": "20",
+        "id": "189",
+        "name": "Huyen Dinh Lap"
+    },
+    {
+        "parentId": "22",
+        "id": "193",
+        "name": "Thanh pho Ha Long"
+    },
+    {
+        "parentId": "22",
+        "id": "194",
+        "name": "Thanh pho Mong Cai"
+    },
+    {
+        "parentId": "22",
+        "id": "195",
+        "name": "Thanh pho Cam Pha"
+    },
+    {
+        "parentId": "22",
+        "id": "196",
+        "name": "Thanh pho Uong Bi"
+    },
+    {
+        "parentId": "22",
+        "id": "198",
+        "name": "Huyen Binh Lieu"
+    },
+    {
+        "parentId": "22",
+        "id": "199",
+        "name": "Huyen Tien Yen"
+    },
+    {
+        "parentId": "22",
+        "id": "200",
+        "name": "Huyen Dam Ha"
+    },
+    {
+        "parentId": "22",
+        "id": "201",
+        "name": "Huyen Hai Ha"
+    },
+    {
+        "parentId": "22",
+        "id": "202",
+        "name": "Huyen Ba Che"
+    },
+    {
+        "parentId": "22",
+        "id": "203",
+        "name": "Huyen Van Don"
+    },
+    {
+        "parentId": "22",
+        "id": "205",
+        "name": "Thi xa Dong Trieu"
+    },
+    {
+        "parentId": "22",
+        "id": "206",
+        "name": "Thi xa Quang Yen"
+    },
+    {
+        "parentId": "22",
+        "id": "207",
+        "name": "Huyen Co To"
+    },
+    {
+        "parentId": "24",
+        "id": "213",
+        "name": "Thanh pho Bac Giang"
+    },
+    {
+        "parentId": "24",
+        "id": "215",
+        "name": "Huyen Yen The"
+    },
+    {
+        "parentId": "24",
+        "id": "216",
+        "name": "Huyen Tan Yen"
+    },
+    {
+        "parentId": "24",
+        "id": "217",
+        "name": "Huyen Lang Giang"
+    },
+    {
+        "parentId": "24",
+        "id": "218",
+        "name": "Huyen Luc Nam"
+    },
+    {
+        "parentId": "24",
+        "id": "219",
+        "name": "Huyen Luc Ngan"
+    },
+    {
+        "parentId": "24",
+        "id": "220",
+        "name": "Huyen Son Dong"
+    },
+    {
+        "parentId": "24",
+        "id": "221",
+        "name": "Huyen Yen Dung"
+    },
+    {
+        "parentId": "24",
+        "id": "222",
+        "name": "Huyen Viet Yen"
+    },
+    {
+        "parentId": "24",
+        "id": "223",
+        "name": "Huyen Hiep Hoa"
+    },
+    {
+        "parentId": "25",
+        "id": "227",
+        "name": "Thanh pho Viet Tri"
+    },
+    {
+        "parentId": "25",
+        "id": "228",
+        "name": "Thi xa Phu Tho"
+    },
+    {
+        "parentId": "25",
+        "id": "230",
+        "name": "Huyen Doan Hung"
+    },
+    {
+        "parentId": "25",
+        "id": "231",
+        "name": "Huyen Ha Hoa"
+    },
+    {
+        "parentId": "25",
+        "id": "232",
+        "name": "Huyen Thanh Ba"
+    },
+    {
+        "parentId": "25",
+        "id": "233",
+        "name": "Huyen Phu Ninh"
+    },
+    {
+        "parentId": "25",
+        "id": "234",
+        "name": "Huyen Yen Lap"
+    },
+    {
+        "parentId": "25",
+        "id": "235",
+        "name": "Huyen Cam Khe"
+    },
+    {
+        "parentId": "25",
+        "id": "236",
+        "name": "Huyen Tam Nong"
+    },
+    {
+        "parentId": "25",
+        "id": "237",
+        "name": "Huyen Lam Thao"
+    },
+    {
+        "parentId": "25",
+        "id": "238",
+        "name": "Huyen Thanh Son"
+    },
+    {
+        "parentId": "25",
+        "id": "239",
+        "name": "Huyen Thanh Thuy"
+    },
+    {
+        "parentId": "25",
+        "id": "240",
+        "name": "Huyen Tan Son"
+    },
+    {
+        "parentId": "26",
+        "id": "243",
+        "name": "Thanh pho Vinh Yen"
+    },
+    {
+        "parentId": "26",
+        "id": "244",
+        "name": "Thanh pho Phuc Yen"
+    },
+    {
+        "parentId": "26",
+        "id": "246",
+        "name": "Huyen Lap Thach"
+    },
+    {
+        "parentId": "26",
+        "id": "247",
+        "name": "Huyen Tam Duong"
+    },
+    {
+        "parentId": "26",
+        "id": "248",
+        "name": "Huyen Tam Dao"
+    },
+    {
+        "parentId": "26",
+        "id": "249",
+        "name": "Huyen Binh Xuyen"
+    },
+    {
+        "parentId": "26",
+        "id": "251",
+        "name": "Huyen Yen Lac"
+    },
+    {
+        "parentId": "26",
+        "id": "252",
+        "name": "Huyen Vinh Tuong"
+    },
+    {
+        "parentId": "26",
+        "id": "253",
+        "name": "Huyen Song Lo"
+    },
+    {
+        "parentId": "27",
+        "id": "256",
+        "name": "Thanh pho Bac Ninh"
+    },
+    {
+        "parentId": "27",
+        "id": "258",
+        "name": "Huyen Yen Phong"
+    },
+    {
+        "parentId": "27",
+        "id": "259",
+        "name": "Thi xa Que Vo"
+    },
+    {
+        "parentId": "27",
+        "id": "260",
+        "name": "Huyen Tien Du"
+    },
+    {
+        "parentId": "27",
+        "id": "261",
+        "name": "Thanh pho Tu Son"
+    },
+    {
+        "parentId": "27",
+        "id": "262",
+        "name": "Thi xa Thuan Thanh"
+    },
+    {
+        "parentId": "27",
+        "id": "263",
+        "name": "Huyen Gia Binh"
+    },
+    {
+        "parentId": "27",
+        "id": "264",
+        "name": "Huyen Luong Tai"
+    },
+    {
+        "parentId": "30",
+        "id": "288",
+        "name": "Thanh pho Hai Duong"
+    },
+    {
+        "parentId": "30",
+        "id": "290",
+        "name": "Thanh pho Chi Linh"
+    },
+    {
+        "parentId": "30",
+        "id": "291",
+        "name": "Huyen Nam Sach"
+    },
+    {
+        "parentId": "30",
+        "id": "292",
+        "name": "Thi xa Kinh Mon"
+    },
+    {
+        "parentId": "30",
+        "id": "293",
+        "name": "Huyen Kim Thanh"
+    },
+    {
+        "parentId": "30",
+        "id": "294",
+        "name": "Huyen Thanh Ha"
+    },
+    {
+        "parentId": "30",
+        "id": "295",
+        "name": "Huyen Cam Giang"
+    },
+    {
+        "parentId": "30",
+        "id": "296",
+        "name": "Huyen Binh Giang"
+    },
+    {
+        "parentId": "30",
+        "id": "297",
+        "name": "Huyen Gia Loc"
+    },
+    {
+        "parentId": "30",
+        "id": "298",
+        "name": "Huyen Tu Ky"
+    },
+    {
+        "parentId": "30",
+        "id": "299",
+        "name": "Huyen Ninh Giang"
+    },
+    {
+        "parentId": "30",
+        "id": "300",
+        "name": "Huyen Thanh Mien"
+    },
+    {
+        "parentId": "31",
+        "id": "303",
+        "name": "Quan Hong Bang"
+    },
+    {
+        "parentId": "31",
+        "id": "304",
+        "name": "Quan Ngo Quyen"
+    },
+    {
+        "parentId": "31",
+        "id": "305",
+        "name": "Quan Le Chan"
+    },
+    {
+        "parentId": "31",
+        "id": "306",
+        "name": "Quan Hai An"
+    },
+    {
+        "parentId": "31",
+        "id": "307",
+        "name": "Quan Kien An"
+    },
+    {
+        "parentId": "31",
+        "id": "308",
+        "name": "Quan Do Son"
+    },
+    {
+        "parentId": "31",
+        "id": "309",
+        "name": "Quan Duong Kinh"
+    },
+    {
+        "parentId": "31",
+        "id": "311",
+        "name": "Huyen Thuy Nguyen"
+    },
+    {
+        "parentId": "31",
+        "id": "312",
+        "name": "Huyen An Duong"
+    },
+    {
+        "parentId": "31",
+        "id": "313",
+        "name": "Huyen An Lao"
+    },
+    {
+        "parentId": "31",
+        "id": "314",
+        "name": "Huyen Kien Thuy"
+    },
+    {
+        "parentId": "31",
+        "id": "315",
+        "name": "Huyen Tien Lang"
+    },
+    {
+        "parentId": "31",
+        "id": "316",
+        "name": "Huyen Vinh Bao"
+    },
+    {
+        "parentId": "31",
+        "id": "317",
+        "name": "Huyen Cat Hai"
+    },
+    {
+        "parentId": "31",
+        "id": "318",
+        "name": "Huyen Bach Long Vi"
+    },
+    {
+        "parentId": "33",
+        "id": "323",
+        "name": "Thanh pho Hung Yen"
+    },
+    {
+        "parentId": "33",
+        "id": "325",
+        "name": "Huyen Van Lam"
+    },
+    {
+        "parentId": "33",
+        "id": "326",
+        "name": "Huyen Van Giang"
+    },
+    {
+        "parentId": "33",
+        "id": "327",
+        "name": "Huyen Yen My"
+    },
+    {
+        "parentId": "33",
+        "id": "328",
+        "name": "Thi xa My Hao"
+    },
+    {
+        "parentId": "33",
+        "id": "329",
+        "name": "Huyen An Thi"
+    },
+    {
+        "parentId": "33",
+        "id": "330",
+        "name": "Huyen Khoai Chau"
+    },
+    {
+        "parentId": "33",
+        "id": "331",
+        "name": "Huyen Kim Dong"
+    },
+    {
+        "parentId": "33",
+        "id": "332",
+        "name": "Huyen Tien Lu"
+    },
+    {
+        "parentId": "33",
+        "id": "333",
+        "name": "Huyen Phu Cu"
+    },
+    {
+        "parentId": "34",
+        "id": "336",
+        "name": "Thanh pho Thai Binh"
+    },
+    {
+        "parentId": "34",
+        "id": "338",
+        "name": "Huyen Quynh Phu"
+    },
+    {
+        "parentId": "34",
+        "id": "339",
+        "name": "Huyen Hung Ha"
+    },
+    {
+        "parentId": "34",
+        "id": "340",
+        "name": "Huyen Dong Hung"
+    },
+    {
+        "parentId": "34",
+        "id": "341",
+        "name": "Huyen Thai Thuy"
+    },
+    {
+        "parentId": "34",
+        "id": "342",
+        "name": "Huyen Tien Hai"
+    },
+    {
+        "parentId": "34",
+        "id": "343",
+        "name": "Huyen Kien Xuong"
+    },
+    {
+        "parentId": "34",
+        "id": "344",
+        "name": "Huyen Vu Thu"
+    },
+    {
+        "parentId": "35",
+        "id": "347",
+        "name": "Thanh pho Phu Ly"
+    },
+    {
+        "parentId": "35",
+        "id": "349",
+        "name": "Thi xa Duy Tien"
+    },
+    {
+        "parentId": "35",
+        "id": "350",
+        "name": "Huyen Kim Bang"
+    },
+    {
+        "parentId": "35",
+        "id": "351",
+        "name": "Huyen Thanh Liem"
+    },
+    {
+        "parentId": "35",
+        "id": "352",
+        "name": "Huyen Binh Luc"
+    },
+    {
+        "parentId": "35",
+        "id": "353",
+        "name": "Huyen Ly Nhan"
+    },
+    {
+        "parentId": "36",
+        "id": "356",
+        "name": "Thanh pho Nam Dinh"
+    },
+    {
+        "parentId": "36",
+        "id": "358",
+        "name": "Huyen My Loc"
+    },
+    {
+        "parentId": "36",
+        "id": "359",
+        "name": "Huyen Vu Ban"
+    },
+    {
+        "parentId": "36",
+        "id": "360",
+        "name": "Huyen Y Yen"
+    },
+    {
+        "parentId": "36",
+        "id": "361",
+        "name": "Huyen Nghia Hung"
+    },
+    {
+        "parentId": "36",
+        "id": "362",
+        "name": "Huyen Nam Truc"
+    },
+    {
+        "parentId": "36",
+        "id": "363",
+        "name": "Huyen Truc Ninh"
+    },
+    {
+        "parentId": "36",
+        "id": "364",
+        "name": "Huyen Xuan Truong"
+    },
+    {
+        "parentId": "36",
+        "id": "365",
+        "name": "Huyen Giao Thuy"
+    },
+    {
+        "parentId": "36",
+        "id": "366",
+        "name": "Huyen Hai Hau"
+    },
+    {
+        "parentId": "37",
+        "id": "369",
+        "name": "Thanh pho Ninh Binh"
+    },
+    {
+        "parentId": "37",
+        "id": "370",
+        "name": "Thanh pho Tam Diep"
+    },
+    {
+        "parentId": "37",
+        "id": "372",
+        "name": "Huyen Nho Quan"
+    },
+    {
+        "parentId": "37",
+        "id": "373",
+        "name": "Huyen Gia Vien"
+    },
+    {
+        "parentId": "37",
+        "id": "374",
+        "name": "Huyen Hoa Lu"
+    },
+    {
+        "parentId": "37",
+        "id": "375",
+        "name": "Huyen Yen Khanh"
+    },
+    {
+        "parentId": "37",
+        "id": "376",
+        "name": "Huyen Kim Son"
+    },
+    {
+        "parentId": "37",
+        "id": "377",
+        "name": "Huyen Yen Mo"
+    },
+    {
+        "parentId": "38",
+        "id": "380",
+        "name": "Thanh pho Thanh Hoa"
+    },
+    {
+        "parentId": "38",
+        "id": "381",
+        "name": "Thi xa Bim Son"
+    },
+    {
+        "parentId": "38",
+        "id": "382",
+        "name": "Thanh pho Sam Son"
+    },
+    {
+        "parentId": "38",
+        "id": "384",
+        "name": "Huyen Muong Lat"
+    },
+    {
+        "parentId": "38",
+        "id": "385",
+        "name": "Huyen Quan Hoa"
+    },
+    {
+        "parentId": "38",
+        "id": "386",
+        "name": "Huyen Ba Thuoc"
+    },
+    {
+        "parentId": "38",
+        "id": "387",
+        "name": "Huyen Quan Son"
+    },
+    {
+        "parentId": "38",
+        "id": "388",
+        "name": "Huyen Lang Chanh"
+    },
+    {
+        "parentId": "38",
+        "id": "389",
+        "name": "Huyen Ngoc Lac"
+    },
+    {
+        "parentId": "38",
+        "id": "390",
+        "name": "Huyen Cam Thuy"
+    },
+    {
+        "parentId": "38",
+        "id": "391",
+        "name": "Huyen Thach Thanh"
+    },
+    {
+        "parentId": "38",
+        "id": "392",
+        "name": "Huyen Ha Trung"
+    },
+    {
+        "parentId": "38",
+        "id": "393",
+        "name": "Huyen Vinh Loc"
+    },
+    {
+        "parentId": "38",
+        "id": "394",
+        "name": "Huyen Yen Dinh"
+    },
+    {
+        "parentId": "38",
+        "id": "395",
+        "name": "Huyen Tho Xuan"
+    },
+    {
+        "parentId": "38",
+        "id": "396",
+        "name": "Huyen Thuong Xuan"
+    },
+    {
+        "parentId": "38",
+        "id": "397",
+        "name": "Huyen Trieu Son"
+    },
+    {
+        "parentId": "38",
+        "id": "398",
+        "name": "Huyen Thieu Hoa"
+    },
+    {
+        "parentId": "38",
+        "id": "399",
+        "name": "Huyen Hoang Hoa"
+    },
+    {
+        "parentId": "38",
+        "id": "400",
+        "name": "Huyen Hau Loc"
+    },
+    {
+        "parentId": "38",
+        "id": "401",
+        "name": "Huyen Nga Son"
+    },
+    {
+        "parentId": "38",
+        "id": "402",
+        "name": "Huyen Nhu Xuan"
+    },
+    {
+        "parentId": "38",
+        "id": "403",
+        "name": "Huyen Nhu Thanh"
+    },
+    {
+        "parentId": "38",
+        "id": "404",
+        "name": "Huyen Nong Cong"
+    },
+    {
+        "parentId": "38",
+        "id": "405",
+        "name": "Huyen Dong Son"
+    },
+    {
+        "parentId": "38",
+        "id": "406",
+        "name": "Huyen Quang Xuong"
+    },
+    {
+        "parentId": "38",
+        "id": "407",
+        "name": "Thi xa Nghi Son"
+    },
+    {
+        "parentId": "40",
+        "id": "412",
+        "name": "Thanh pho Vinh"
+    },
+    {
+        "parentId": "40",
+        "id": "413",
+        "name": "Thi xa Cua Lo"
+    },
+    {
+        "parentId": "40",
+        "id": "414",
+        "name": "Thi xa Thai Hoa"
+    },
+    {
+        "parentId": "40",
+        "id": "415",
+        "name": "Huyen Que Phong"
+    },
+    {
+        "parentId": "40",
+        "id": "416",
+        "name": "Huyen Quy Chau"
+    },
+    {
+        "parentId": "40",
+        "id": "417",
+        "name": "Huyen Ky Son"
+    },
+    {
+        "parentId": "40",
+        "id": "418",
+        "name": "Huyen Tuong Duong"
+    },
+    {
+        "parentId": "40",
+        "id": "419",
+        "name": "Huyen Nghia Dan"
+    },
+    {
+        "parentId": "40",
+        "id": "420",
+        "name": "Huyen Quy Hop"
+    },
+    {
+        "parentId": "40",
+        "id": "421",
+        "name": "Huyen Quynh Luu"
+    },
+    {
+        "parentId": "40",
+        "id": "422",
+        "name": "Huyen Con Cuong"
+    },
+    {
+        "parentId": "40",
+        "id": "423",
+        "name": "Huyen Tan Ky"
+    },
+    {
+        "parentId": "40",
+        "id": "424",
+        "name": "Huyen Anh Son"
+    },
+    {
+        "parentId": "40",
+        "id": "425",
+        "name": "Huyen Dien Chau"
+    },
+    {
+        "parentId": "40",
+        "id": "426",
+        "name": "Huyen Yen Thanh"
+    },
+    {
+        "parentId": "40",
+        "id": "427",
+        "name": "Huyen Do Luong"
+    },
+    {
+        "parentId": "40",
+        "id": "428",
+        "name": "Huyen Thanh Chuong"
+    },
+    {
+        "parentId": "40",
+        "id": "429",
+        "name": "Huyen Nghi Loc"
+    },
+    {
+        "parentId": "40",
+        "id": "430",
+        "name": "Huyen Nam Dan"
+    },
+    {
+        "parentId": "40",
+        "id": "431",
+        "name": "Huyen Hung Nguyen"
+    },
+    {
+        "parentId": "40",
+        "id": "432",
+        "name": "Thi xa Hoang Mai"
+    },
+    {
+        "parentId": "42",
+        "id": "436",
+        "name": "Thanh pho Ha Tinh"
+    },
+    {
+        "parentId": "42",
+        "id": "437",
+        "name": "Thi xa Hong Linh"
+    },
+    {
+        "parentId": "42",
+        "id": "439",
+        "name": "Huyen Huong Son"
+    },
+    {
+        "parentId": "42",
+        "id": "440",
+        "name": "Huyen Duc Tho"
+    },
+    {
+        "parentId": "42",
+        "id": "441",
+        "name": "Huyen Vu Quang"
+    },
+    {
+        "parentId": "42",
+        "id": "442",
+        "name": "Huyen Nghi Xuan"
+    },
+    {
+        "parentId": "42",
+        "id": "443",
+        "name": "Huyen Can Loc"
+    },
+    {
+        "parentId": "42",
+        "id": "444",
+        "name": "Huyen Huong Khe"
+    },
+    {
+        "parentId": "42",
+        "id": "445",
+        "name": "Huyen Thach Ha"
+    },
+    {
+        "parentId": "42",
+        "id": "446",
+        "name": "Huyen Cam Xuyen"
+    },
+    {
+        "parentId": "42",
+        "id": "447",
+        "name": "Huyen Ky Anh"
+    },
+    {
+        "parentId": "42",
+        "id": "448",
+        "name": "Huyen Loc Ha"
+    },
+    {
+        "parentId": "42",
+        "id": "449",
+        "name": "Thi xa Ky Anh"
+    },
+    {
+        "parentId": "44",
+        "id": "450",
+        "name": "Thanh Pho Dong Hoi"
+    },
+    {
+        "parentId": "44",
+        "id": "452",
+        "name": "Huyen Minh Hoa"
+    },
+    {
+        "parentId": "44",
+        "id": "453",
+        "name": "Huyen Tuyen Hoa"
+    },
+    {
+        "parentId": "44",
+        "id": "454",
+        "name": "Huyen Quang Trach"
+    },
+    {
+        "parentId": "44",
+        "id": "455",
+        "name": "Huyen Bo Trach"
+    },
+    {
+        "parentId": "44",
+        "id": "456",
+        "name": "Huyen Quang Ninh"
+    },
+    {
+        "parentId": "44",
+        "id": "457",
+        "name": "Huyen Le Thuy"
+    },
+    {
+        "parentId": "44",
+        "id": "458",
+        "name": "Thi xa Ba Don"
+    },
+    {
+        "parentId": "45",
+        "id": "461",
+        "name": "Thanh pho Dong Ha"
+    },
+    {
+        "parentId": "45",
+        "id": "462",
+        "name": "Thi xa Quang Tri"
+    },
+    {
+        "parentId": "45",
+        "id": "464",
+        "name": "Huyen Vinh Linh"
+    },
+    {
+        "parentId": "45",
+        "id": "465",
+        "name": "Huyen Huong Hoa"
+    },
+    {
+        "parentId": "45",
+        "id": "466",
+        "name": "Huyen Gio Linh"
+    },
+    {
+        "parentId": "45",
+        "id": "467",
+        "name": "Huyen Da Krong"
+    },
+    {
+        "parentId": "45",
+        "id": "468",
+        "name": "Huyen Cam Lo"
+    },
+    {
+        "parentId": "45",
+        "id": "469",
+        "name": "Huyen Trieu Phong"
+    },
+    {
+        "parentId": "45",
+        "id": "470",
+        "name": "Huyen Hai Lang"
+    },
+    {
+        "parentId": "45",
+        "id": "471",
+        "name": "Huyen Con Co"
+    },
+    {
+        "parentId": "46",
+        "id": "474",
+        "name": "Thanh pho Hue"
+    },
+    {
+        "parentId": "46",
+        "id": "476",
+        "name": "Huyen Phong Dien"
+    },
+    {
+        "parentId": "46",
+        "id": "477",
+        "name": "Huyen Quang Dien"
+    },
+    {
+        "parentId": "46",
+        "id": "478",
+        "name": "Huyen Phu Vang"
+    },
+    {
+        "parentId": "46",
+        "id": "479",
+        "name": "Thi xa Huong Thuy"
+    },
+    {
+        "parentId": "46",
+        "id": "480",
+        "name": "Thi xa Huong Tra"
+    },
+    {
+        "parentId": "46",
+        "id": "481",
+        "name": "Huyen A Luoi"
+    },
+    {
+        "parentId": "46",
+        "id": "482",
+        "name": "Huyen Phu Loc"
+    },
+    {
+        "parentId": "46",
+        "id": "483",
+        "name": "Huyen Nam Dong"
+    },
+    {
+        "parentId": "48",
+        "id": "490",
+        "name": "Quan Lien Chieu"
+    },
+    {
+        "parentId": "48",
+        "id": "491",
+        "name": "Quan Thanh Khe"
+    },
+    {
+        "parentId": "48",
+        "id": "492",
+        "name": "Quan Hai Chau"
+    },
+    {
+        "parentId": "48",
+        "id": "493",
+        "name": "Quan Son Tra"
+    },
+    {
+        "parentId": "48",
+        "id": "494",
+        "name": "Quan Ngu Hanh Son"
+    },
+    {
+        "parentId": "48",
+        "id": "495",
+        "name": "Quan Cam Le"
+    },
+    {
+        "parentId": "48",
+        "id": "497",
+        "name": "Huyen Hoa Vang"
+    },
+    {
+        "parentId": "48",
+        "id": "498",
+        "name": "Huyen Hoang Sa"
+    },
+    {
+        "parentId": "49",
+        "id": "502",
+        "name": "Thanh pho Tam Ky"
+    },
+    {
+        "parentId": "49",
+        "id": "503",
+        "name": "Thanh pho Hoi An"
+    },
+    {
+        "parentId": "49",
+        "id": "504",
+        "name": "Huyen Tay Giang"
+    },
+    {
+        "parentId": "49",
+        "id": "505",
+        "name": "Huyen Dong Giang"
+    },
+    {
+        "parentId": "49",
+        "id": "506",
+        "name": "Huyen Dai Loc"
+    },
+    {
+        "parentId": "49",
+        "id": "507",
+        "name": "Thi xa Dien Ban"
+    },
+    {
+        "parentId": "49",
+        "id": "508",
+        "name": "Huyen Duy Xuyen"
+    },
+    {
+        "parentId": "49",
+        "id": "509",
+        "name": "Huyen Que Son"
+    },
+    {
+        "parentId": "49",
+        "id": "510",
+        "name": "Huyen Nam Giang"
+    },
+    {
+        "parentId": "49",
+        "id": "511",
+        "name": "Huyen Phuoc Son"
+    },
+    {
+        "parentId": "49",
+        "id": "512",
+        "name": "Huyen Hiep Duc"
+    },
+    {
+        "parentId": "49",
+        "id": "513",
+        "name": "Huyen Thang Binh"
+    },
+    {
+        "parentId": "49",
+        "id": "514",
+        "name": "Huyen Tien Phuoc"
+    },
+    {
+        "parentId": "49",
+        "id": "515",
+        "name": "Huyen Bac Tra My"
+    },
+    {
+        "parentId": "49",
+        "id": "516",
+        "name": "Huyen Nam Tra My"
+    },
+    {
+        "parentId": "49",
+        "id": "517",
+        "name": "Huyen Nui Thanh"
+    },
+    {
+        "parentId": "49",
+        "id": "518",
+        "name": "Huyen Phu Ninh"
+    },
+    {
+        "parentId": "49",
+        "id": "519",
+        "name": "Huyen Nong Son"
+    },
+    {
+        "parentId": "51",
+        "id": "522",
+        "name": "Thanh pho Quang Ngai"
+    },
+    {
+        "parentId": "51",
+        "id": "524",
+        "name": "Huyen Binh Son"
+    },
+    {
+        "parentId": "51",
+        "id": "525",
+        "name": "Huyen Tra Bong"
+    },
+    {
+        "parentId": "51",
+        "id": "527",
+        "name": "Huyen Son Tinh"
+    },
+    {
+        "parentId": "51",
+        "id": "528",
+        "name": "Huyen Tu Nghia"
+    },
+    {
+        "parentId": "51",
+        "id": "529",
+        "name": "Huyen Son Ha"
+    },
+    {
+        "parentId": "51",
+        "id": "530",
+        "name": "Huyen Son Tay"
+    },
+    {
+        "parentId": "51",
+        "id": "531",
+        "name": "Huyen Minh Long"
+    },
+    {
+        "parentId": "51",
+        "id": "532",
+        "name": "Huyen Nghia Hanh"
+    },
+    {
+        "parentId": "51",
+        "id": "533",
+        "name": "Huyen Mo Duc"
+    },
+    {
+        "parentId": "51",
+        "id": "534",
+        "name": "Thi xa Duc Pho"
+    },
+    {
+        "parentId": "51",
+        "id": "535",
+        "name": "Huyen Ba To"
+    },
+    {
+        "parentId": "51",
+        "id": "536",
+        "name": "Huyen Ly Son"
+    },
+    {
+        "parentId": "52",
+        "id": "540",
+        "name": "Thanh pho Quy Nhon"
+    },
+    {
+        "parentId": "52",
+        "id": "542",
+        "name": "Huyen An Lao"
+    },
+    {
+        "parentId": "52",
+        "id": "543",
+        "name": "Thi xa Hoai Nhon"
+    },
+    {
+        "parentId": "52",
+        "id": "544",
+        "name": "Huyen Hoai An"
+    },
+    {
+        "parentId": "52",
+        "id": "545",
+        "name": "Huyen Phu My"
+    },
+    {
+        "parentId": "52",
+        "id": "546",
+        "name": "Huyen Vinh Thanh"
+    },
+    {
+        "parentId": "52",
+        "id": "547",
+        "name": "Huyen Tay Son"
+    },
+    {
+        "parentId": "52",
+        "id": "548",
+        "name": "Huyen Phu Cat"
+    },
+    {
+        "parentId": "52",
+        "id": "549",
+        "name": "Thi xa An Nhon"
+    },
+    {
+        "parentId": "52",
+        "id": "550",
+        "name": "Huyen Tuy Phuoc"
+    },
+    {
+        "parentId": "52",
+        "id": "551",
+        "name": "Huyen Van Canh"
+    },
+    {
+        "parentId": "54",
+        "id": "555",
+        "name": "Thanh pho Tuy Hoa"
+    },
+    {
+        "parentId": "54",
+        "id": "557",
+        "name": "Thi xa Song Cau"
+    },
+    {
+        "parentId": "54",
+        "id": "558",
+        "name": "Huyen Dong Xuan"
+    },
+    {
+        "parentId": "54",
+        "id": "559",
+        "name": "Huyen Tuy An"
+    },
+    {
+        "parentId": "54",
+        "id": "560",
+        "name": "Huyen Son Hoa"
+    },
+    {
+        "parentId": "54",
+        "id": "561",
+        "name": "Huyen Song Hinh"
+    },
+    {
+        "parentId": "54",
+        "id": "562",
+        "name": "Huyen Tay Hoa"
+    },
+    {
+        "parentId": "54",
+        "id": "563",
+        "name": "Huyen Phu Hoa"
+    },
+    {
+        "parentId": "54",
+        "id": "564",
+        "name": "Thi xa Dong Hoa"
+    },
+    {
+        "parentId": "56",
+        "id": "568",
+        "name": "Thanh pho Nha Trang"
+    },
+    {
+        "parentId": "56",
+        "id": "569",
+        "name": "Thanh pho Cam Ranh"
+    },
+    {
+        "parentId": "56",
+        "id": "570",
+        "name": "Huyen Cam Lam"
+    },
+    {
+        "parentId": "56",
+        "id": "571",
+        "name": "Huyen Van Ninh"
+    },
+    {
+        "parentId": "56",
+        "id": "572",
+        "name": "Thi xa Ninh Hoa"
+    },
+    {
+        "parentId": "56",
+        "id": "573",
+        "name": "Huyen Khanh Vinh"
+    },
+    {
+        "parentId": "56",
+        "id": "574",
+        "name": "Huyen Dien Khanh"
+    },
+    {
+        "parentId": "56",
+        "id": "575",
+        "name": "Huyen Khanh Son"
+    },
+    {
+        "parentId": "56",
+        "id": "576",
+        "name": "Huyen Truong Sa"
+    },
+    {
+        "parentId": "58",
+        "id": "582",
+        "name": "Thanh pho Phan Rang-Thap Cham"
+    },
+    {
+        "parentId": "58",
+        "id": "584",
+        "name": "Huyen Bac Ai"
+    },
+    {
+        "parentId": "58",
+        "id": "585",
+        "name": "Huyen Ninh Son"
+    },
+    {
+        "parentId": "58",
+        "id": "586",
+        "name": "Huyen Ninh Hai"
+    },
+    {
+        "parentId": "58",
+        "id": "587",
+        "name": "Huyen Ninh Phuoc"
+    },
+    {
+        "parentId": "58",
+        "id": "588",
+        "name": "Huyen Thuan Bac"
+    },
+    {
+        "parentId": "58",
+        "id": "589",
+        "name": "Huyen Thuan Nam"
+    },
+    {
+        "parentId": "60",
+        "id": "593",
+        "name": "Thanh pho Phan Thiet"
+    },
+    {
+        "parentId": "60",
+        "id": "594",
+        "name": "Thi xa La Gi"
+    },
+    {
+        "parentId": "60",
+        "id": "595",
+        "name": "Huyen Tuy Phong"
+    },
+    {
+        "parentId": "60",
+        "id": "596",
+        "name": "Huyen Bac Binh"
+    },
+    {
+        "parentId": "60",
+        "id": "597",
+        "name": "Huyen Ham Thuan Bac"
+    },
+    {
+        "parentId": "60",
+        "id": "598",
+        "name": "Huyen Ham Thuan Nam"
+    },
+    {
+        "parentId": "60",
+        "id": "599",
+        "name": "Huyen Tanh Linh"
+    },
+    {
+        "parentId": "60",
+        "id": "600",
+        "name": "Huyen Duc Linh"
+    },
+    {
+        "parentId": "60",
+        "id": "601",
+        "name": "Huyen Ham Tan"
+    },
+    {
+        "parentId": "60",
+        "id": "602",
+        "name": "Huyen Phu Qui"
+    },
+    {
+        "parentId": "62",
+        "id": "608",
+        "name": "Thanh pho Kon Tum"
+    },
+    {
+        "parentId": "62",
+        "id": "610",
+        "name": "Huyen Dak Glei"
+    },
+    {
+        "parentId": "62",
+        "id": "611",
+        "name": "Huyen Ngoc Hoi"
+    },
+    {
+        "parentId": "62",
+        "id": "612",
+        "name": "Huyen Dak To"
+    },
+    {
+        "parentId": "62",
+        "id": "613",
+        "name": "Huyen Kon Plong"
+    },
+    {
+        "parentId": "62",
+        "id": "614",
+        "name": "Huyen Kon Ray"
+    },
+    {
+        "parentId": "62",
+        "id": "615",
+        "name": "Huyen Dak Ha"
+    },
+    {
+        "parentId": "62",
+        "id": "616",
+        "name": "Huyen Sa Thay"
+    },
+    {
+        "parentId": "62",
+        "id": "617",
+        "name": "Huyen Tu Mo Rong"
+    },
+    {
+        "parentId": "62",
+        "id": "618",
+        "name": "Huyen Ia H' Drai"
+    },
+    {
+        "parentId": "64",
+        "id": "622",
+        "name": "Thanh pho Pleiku"
+    },
+    {
+        "parentId": "64",
+        "id": "623",
+        "name": "Thi xa An Khe"
+    },
+    {
+        "parentId": "64",
+        "id": "624",
+        "name": "Thi xa Ayun Pa"
+    },
+    {
+        "parentId": "64",
+        "id": "625",
+        "name": "Huyen KBang"
+    },
+    {
+        "parentId": "64",
+        "id": "626",
+        "name": "Huyen Dak Doa"
+    },
+    {
+        "parentId": "64",
+        "id": "627",
+        "name": "Huyen Chu Pah"
+    },
+    {
+        "parentId": "64",
+        "id": "628",
+        "name": "Huyen Ia Grai"
+    },
+    {
+        "parentId": "64",
+        "id": "629",
+        "name": "Huyen Mang Yang"
+    },
+    {
+        "parentId": "64",
+        "id": "630",
+        "name": "Huyen Kong Chro"
+    },
+    {
+        "parentId": "64",
+        "id": "631",
+        "name": "Huyen Duc Co"
+    },
+    {
+        "parentId": "64",
+        "id": "632",
+        "name": "Huyen Chu Prong"
+    },
+    {
+        "parentId": "64",
+        "id": "633",
+        "name": "Huyen Chu Se"
+    },
+    {
+        "parentId": "64",
+        "id": "634",
+        "name": "Huyen Dak Po"
+    },
+    {
+        "parentId": "64",
+        "id": "635",
+        "name": "Huyen Ia Pa"
+    },
+    {
+        "parentId": "64",
+        "id": "637",
+        "name": "Huyen Krong Pa"
+    },
+    {
+        "parentId": "64",
+        "id": "638",
+        "name": "Huyen Phu Thien"
+    },
+    {
+        "parentId": "64",
+        "id": "639",
+        "name": "Huyen Chu Puh"
+    },
+    {
+        "parentId": "66",
+        "id": "643",
+        "name": "Thanh pho Buon Ma Thuot"
+    },
+    {
+        "parentId": "66",
+        "id": "644",
+        "name": "Thi Xa Buon Ho"
+    },
+    {
+        "parentId": "66",
+        "id": "645",
+        "name": "Huyen Ea H'leo"
+    },
+    {
+        "parentId": "66",
+        "id": "646",
+        "name": "Huyen Ea Sup"
+    },
+    {
+        "parentId": "66",
+        "id": "647",
+        "name": "Huyen Buon Don"
+    },
+    {
+        "parentId": "66",
+        "id": "648",
+        "name": "Huyen Cu M'gar"
+    },
+    {
+        "parentId": "66",
+        "id": "649",
+        "name": "Huyen Krong Buk"
+    },
+    {
+        "parentId": "66",
+        "id": "650",
+        "name": "Huyen Krong Nang"
+    },
+    {
+        "parentId": "66",
+        "id": "651",
+        "name": "Huyen Ea Kar"
+    },
+    {
+        "parentId": "66",
+        "id": "652",
+        "name": "Huyen M'Drak"
+    },
+    {
+        "parentId": "66",
+        "id": "653",
+        "name": "Huyen Krong Bong"
+    },
+    {
+        "parentId": "66",
+        "id": "654",
+        "name": "Huyen Krong Pac"
+    },
+    {
+        "parentId": "66",
+        "id": "655",
+        "name": "Huyen Krong A Na"
+    },
+    {
+        "parentId": "66",
+        "id": "656",
+        "name": "Huyen Lak"
+    },
+    {
+        "parentId": "66",
+        "id": "657",
+        "name": "Huyen Cu Kuin"
+    },
+    {
+        "parentId": "67",
+        "id": "660",
+        "name": "Thanh pho Gia Nghia"
+    },
+    {
+        "parentId": "67",
+        "id": "661",
+        "name": "Huyen Dak Glong"
+    },
+    {
+        "parentId": "67",
+        "id": "662",
+        "name": "Huyen Cu Jut"
+    },
+    {
+        "parentId": "67",
+        "id": "663",
+        "name": "Huyen Dak Mil"
+    },
+    {
+        "parentId": "67",
+        "id": "664",
+        "name": "Huyen Krong No"
+    },
+    {
+        "parentId": "67",
+        "id": "665",
+        "name": "Huyen Dak Song"
+    },
+    {
+        "parentId": "67",
+        "id": "666",
+        "name": "Huyen Dak R'Lap"
+    },
+    {
+        "parentId": "67",
+        "id": "667",
+        "name": "Huyen Tuy Duc"
+    },
+    {
+        "parentId": "68",
+        "id": "672",
+        "name": "Thanh pho Da Lat"
+    },
+    {
+        "parentId": "68",
+        "id": "673",
+        "name": "Thanh pho Bao Loc"
+    },
+    {
+        "parentId": "68",
+        "id": "674",
+        "name": "Huyen Dam Rong"
+    },
+    {
+        "parentId": "68",
+        "id": "675",
+        "name": "Huyen Lac Duong"
+    },
+    {
+        "parentId": "68",
+        "id": "676",
+        "name": "Huyen Lam Ha"
+    },
+    {
+        "parentId": "68",
+        "id": "677",
+        "name": "Huyen Don Duong"
+    },
+    {
+        "parentId": "68",
+        "id": "678",
+        "name": "Huyen Duc Trong"
+    },
+    {
+        "parentId": "68",
+        "id": "679",
+        "name": "Huyen Di Linh"
+    },
+    {
+        "parentId": "68",
+        "id": "680",
+        "name": "Huyen Bao Lam"
+    },
+    {
+        "parentId": "68",
+        "id": "681",
+        "name": "Huyen Da Huoai"
+    },
+    {
+        "parentId": "68",
+        "id": "682",
+        "name": "Huyen Da Teh"
+    },
+    {
+        "parentId": "68",
+        "id": "683",
+        "name": "Huyen Cat Tien"
+    },
+    {
+        "parentId": "70",
+        "id": "688",
+        "name": "Thi xa Phuoc Long"
+    },
+    {
+        "parentId": "70",
+        "id": "689",
+        "name": "Thanh pho Dong Xoai"
+    },
+    {
+        "parentId": "70",
+        "id": "690",
+        "name": "Thi xa Binh Long"
+    },
+    {
+        "parentId": "70",
+        "id": "691",
+        "name": "Huyen Bu Gia Map"
+    },
+    {
+        "parentId": "70",
+        "id": "692",
+        "name": "Huyen Loc Ninh"
+    },
+    {
+        "parentId": "70",
+        "id": "693",
+        "name": "Huyen Bu Dop"
+    },
+    {
+        "parentId": "70",
+        "id": "694",
+        "name": "Huyen Hon Quan"
+    },
+    {
+        "parentId": "70",
+        "id": "695",
+        "name": "Huyen Dong Phu"
+    },
+    {
+        "parentId": "70",
+        "id": "696",
+        "name": "Huyen Bu Dang"
+    },
+    {
+        "parentId": "70",
+        "id": "697",
+        "name": "Thi xa Chon Thanh"
+    },
+    {
+        "parentId": "70",
+        "id": "698",
+        "name": "Huyen Phu Rieng"
+    },
+    {
+        "parentId": "72",
+        "id": "703",
+        "name": "Thanh pho Tay Ninh"
+    },
+    {
+        "parentId": "72",
+        "id": "705",
+        "name": "Huyen Tan Bien"
+    },
+    {
+        "parentId": "72",
+        "id": "706",
+        "name": "Huyen Tan Chau"
+    },
+    {
+        "parentId": "72",
+        "id": "707",
+        "name": "Huyen Duong Minh Chau"
+    },
+    {
+        "parentId": "72",
+        "id": "708",
+        "name": "Huyen Chau Thanh"
+    },
+    {
+        "parentId": "72",
+        "id": "709",
+        "name": "Thi xa Hoa Thanh"
+    },
+    {
+        "parentId": "72",
+        "id": "710",
+        "name": "Huyen Go Dau"
+    },
+    {
+        "parentId": "72",
+        "id": "711",
+        "name": "Huyen Ben Cau"
+    },
+    {
+        "parentId": "72",
+        "id": "712",
+        "name": "Thi xa Trang Bang"
+    },
+    {
+        "parentId": "74",
+        "id": "718",
+        "name": "Thanh pho Thu Dau Mot"
+    },
+    {
+        "parentId": "74",
+        "id": "719",
+        "name": "Huyen Bau Bang"
+    },
+    {
+        "parentId": "74",
+        "id": "720",
+        "name": "Huyen Dau Tieng"
+    },
+    {
+        "parentId": "74",
+        "id": "721",
+        "name": "Thi xa Ben Cat"
+    },
+    {
+        "parentId": "74",
+        "id": "722",
+        "name": "Huyen Phu Giao"
+    },
+    {
+        "parentId": "74",
+        "id": "723",
+        "name": "Thanh pho Tan Uyen"
+    },
+    {
+        "parentId": "74",
+        "id": "724",
+        "name": "Thanh pho Di An"
+    },
+    {
+        "parentId": "74",
+        "id": "725",
+        "name": "Thanh pho Thuan An"
+    },
+    {
+        "parentId": "74",
+        "id": "726",
+        "name": "Huyen Bac Tan Uyen"
+    },
+    {
+        "parentId": "75",
+        "id": "731",
+        "name": "Thanh pho Bien Hoa"
+    },
+    {
+        "parentId": "75",
+        "id": "732",
+        "name": "Thanh pho Long Khanh"
+    },
+    {
+        "parentId": "75",
+        "id": "734",
+        "name": "Huyen Tan Phu"
+    },
+    {
+        "parentId": "75",
+        "id": "735",
+        "name": "Huyen Vinh Cuu"
+    },
+    {
+        "parentId": "75",
+        "id": "736",
+        "name": "Huyen Dinh Quan"
+    },
+    {
+        "parentId": "75",
+        "id": "737",
+        "name": "Huyen Trang Bom"
+    },
+    {
+        "parentId": "75",
+        "id": "738",
+        "name": "Huyen Thong Nhat"
+    },
+    {
+        "parentId": "75",
+        "id": "739",
+        "name": "Huyen Cam My"
+    },
+    {
+        "parentId": "75",
+        "id": "740",
+        "name": "Huyen Long Thanh"
+    },
+    {
+        "parentId": "75",
+        "id": "741",
+        "name": "Huyen Xuan Loc"
+    },
+    {
+        "parentId": "75",
+        "id": "742",
+        "name": "Huyen Nhon Trach"
+    },
+    {
+        "parentId": "77",
+        "id": "747",
+        "name": "Thanh pho Vung Tau"
+    },
+    {
+        "parentId": "77",
+        "id": "748",
+        "name": "Thanh pho Ba Ria"
+    },
+    {
+        "parentId": "77",
+        "id": "750",
+        "name": "Huyen Chau Duc"
+    },
+    {
+        "parentId": "77",
+        "id": "751",
+        "name": "Huyen Xuyen Moc"
+    },
+    {
+        "parentId": "77",
+        "id": "752",
+        "name": "Huyen Long Dien"
+    },
+    {
+        "parentId": "77",
+        "id": "753",
+        "name": "Huyen Dat Do"
+    },
+    {
+        "parentId": "77",
+        "id": "754",
+        "name": "Thi xa Phu My"
+    },
+    {
+        "parentId": "77",
+        "id": "755",
+        "name": "Huyen Con Dao"
+    },
+    {
+        "parentId": "79",
+        "id": "760",
+        "name": "Quan 1"
+    },
+    {
+        "parentId": "79",
+        "id": "761",
+        "name": "Quan 12"
+    },
+    {
+        "parentId": "79",
+        "id": "764",
+        "name": "Quan Go Vap"
+    },
+    {
+        "parentId": "79",
+        "id": "765",
+        "name": "Quan Binh Thanh"
+    },
+    {
+        "parentId": "79",
+        "id": "766",
+        "name": "Quan Tan Binh"
+    },
+    {
+        "parentId": "79",
+        "id": "767",
+        "name": "Quan Tan Phu"
+    },
+    {
+        "parentId": "79",
+        "id": "768",
+        "name": "Quan Phu Nhuan"
+    },
+    {
+        "parentId": "79",
+        "id": "769",
+        "name": "Thanh pho Thu Duc"
+    },
+    {
+        "parentId": "79",
+        "id": "770",
+        "name": "Quan 3"
+    },
+    {
+        "parentId": "79",
+        "id": "771",
+        "name": "Quan 10"
+    },
+    {
+        "parentId": "79",
+        "id": "772",
+        "name": "Quan 11"
+    },
+    {
+        "parentId": "79",
+        "id": "773",
+        "name": "Quan 4"
+    },
+    {
+        "parentId": "79",
+        "id": "774",
+        "name": "Quan 5"
+    },
+    {
+        "parentId": "79",
+        "id": "775",
+        "name": "Quan 6"
+    },
+    {
+        "parentId": "79",
+        "id": "776",
+        "name": "Quan 8"
+    },
+    {
+        "parentId": "79",
+        "id": "777",
+        "name": "Quan Binh Tan"
+    },
+    {
+        "parentId": "79",
+        "id": "778",
+        "name": "Quan 7"
+    },
+    {
+        "parentId": "79",
+        "id": "783",
+        "name": "Huyen Cu Chi"
+    },
+    {
+        "parentId": "79",
+        "id": "784",
+        "name": "Huyen Hoc Mon"
+    },
+    {
+        "parentId": "79",
+        "id": "785",
+        "name": "Huyen Binh Chanh"
+    },
+    {
+        "parentId": "79",
+        "id": "786",
+        "name": "Huyen Nha Be"
+    },
+    {
+        "parentId": "79",
+        "id": "787",
+        "name": "Huyen Can Gio"
+    },
+    {
+        "parentId": "80",
+        "id": "794",
+        "name": "Thanh pho Tan An"
+    },
+    {
+        "parentId": "80",
+        "id": "795",
+        "name": "Thi xa Kien Tuong"
+    },
+    {
+        "parentId": "80",
+        "id": "796",
+        "name": "Huyen Tan Hung"
+    },
+    {
+        "parentId": "80",
+        "id": "797",
+        "name": "Huyen Vinh Hung"
+    },
+    {
+        "parentId": "80",
+        "id": "798",
+        "name": "Huyen Moc Hoa"
+    },
+    {
+        "parentId": "80",
+        "id": "799",
+        "name": "Huyen Tan Thanh"
+    },
+    {
+        "parentId": "80",
+        "id": "800",
+        "name": "Huyen Thanh Hoa"
+    },
+    {
+        "parentId": "80",
+        "id": "801",
+        "name": "Huyen Duc Hue"
+    },
+    {
+        "parentId": "80",
+        "id": "802",
+        "name": "Huyen Duc Hoa"
+    },
+    {
+        "parentId": "80",
+        "id": "803",
+        "name": "Huyen Ben Luc"
+    },
+    {
+        "parentId": "80",
+        "id": "804",
+        "name": "Huyen Thu Thua"
+    },
+    {
+        "parentId": "80",
+        "id": "805",
+        "name": "Huyen Tan Tru"
+    },
+    {
+        "parentId": "80",
+        "id": "806",
+        "name": "Huyen Can Duoc"
+    },
+    {
+        "parentId": "80",
+        "id": "807",
+        "name": "Huyen Can Giuoc"
+    },
+    {
+        "parentId": "80",
+        "id": "808",
+        "name": "Huyen Chau Thanh"
+    },
+    {
+        "parentId": "82",
+        "id": "815",
+        "name": "Thanh pho My Tho"
+    },
+    {
+        "parentId": "82",
+        "id": "816",
+        "name": "Thi xa Go Cong"
+    },
+    {
+        "parentId": "82",
+        "id": "817",
+        "name": "Thi xa Cai Lay"
+    },
+    {
+        "parentId": "82",
+        "id": "818",
+        "name": "Huyen Tan Phuoc"
+    },
+    {
+        "parentId": "82",
+        "id": "819",
+        "name": "Huyen Cai Be"
+    },
+    {
+        "parentId": "82",
+        "id": "820",
+        "name": "Huyen Cai Lay"
+    },
+    {
+        "parentId": "82",
+        "id": "821",
+        "name": "Huyen Chau Thanh"
+    },
+    {
+        "parentId": "82",
+        "id": "822",
+        "name": "Huyen Cho Gao"
+    },
+    {
+        "parentId": "82",
+        "id": "823",
+        "name": "Huyen Go Cong Tay"
+    },
+    {
+        "parentId": "82",
+        "id": "824",
+        "name": "Huyen Go Cong Dong"
+    },
+    {
+        "parentId": "82",
+        "id": "825",
+        "name": "Huyen Tan Phu Dong"
+    },
+    {
+        "parentId": "83",
+        "id": "829",
+        "name": "Thanh pho Ben Tre"
+    },
+    {
+        "parentId": "83",
+        "id": "831",
+        "name": "Huyen Chau Thanh"
+    },
+    {
+        "parentId": "83",
+        "id": "832",
+        "name": "Huyen Cho Lach"
+    },
+    {
+        "parentId": "83",
+        "id": "833",
+        "name": "Huyen Mo Cay Nam"
+    },
+    {
+        "parentId": "83",
+        "id": "834",
+        "name": "Huyen Giong Trom"
+    },
+    {
+        "parentId": "83",
+        "id": "835",
+        "name": "Huyen Binh Dai"
+    },
+    {
+        "parentId": "83",
+        "id": "836",
+        "name": "Huyen Ba Tri"
+    },
+    {
+        "parentId": "83",
+        "id": "837",
+        "name": "Huyen Thanh Phu"
+    },
+    {
+        "parentId": "83",
+        "id": "838",
+        "name": "Huyen Mo Cay Bac"
+    },
+    {
+        "parentId": "84",
+        "id": "842",
+        "name": "Thanh pho Tra Vinh"
+    },
+    {
+        "parentId": "84",
+        "id": "844",
+        "name": "Huyen Cang Long"
+    },
+    {
+        "parentId": "84",
+        "id": "845",
+        "name": "Huyen Cau Ke"
+    },
+    {
+        "parentId": "84",
+        "id": "846",
+        "name": "Huyen Tieu Can"
+    },
+    {
+        "parentId": "84",
+        "id": "847",
+        "name": "Huyen Chau Thanh"
+    },
+    {
+        "parentId": "84",
+        "id": "848",
+        "name": "Huyen Cau Ngang"
+    },
+    {
+        "parentId": "84",
+        "id": "849",
+        "name": "Huyen Tra Cu"
+    },
+    {
+        "parentId": "84",
+        "id": "850",
+        "name": "Huyen Duyen Hai"
+    },
+    {
+        "parentId": "84",
+        "id": "851",
+        "name": "Thi xa Duyen Hai"
+    },
+    {
+        "parentId": "86",
+        "id": "855",
+        "name": "Thanh pho Vinh Long"
+    },
+    {
+        "parentId": "86",
+        "id": "857",
+        "name": "Huyen Long Ho"
+    },
+    {
+        "parentId": "86",
+        "id": "858",
+        "name": "Huyen Mang Thit"
+    },
+    {
+        "parentId": "86",
+        "id": "859",
+        "name": "Huyen  Vung Liem"
+    },
+    {
+        "parentId": "86",
+        "id": "860",
+        "name": "Huyen Tam Binh"
+    },
+    {
+        "parentId": "86",
+        "id": "861",
+        "name": "Thi xa Binh Minh"
+    },
+    {
+        "parentId": "86",
+        "id": "862",
+        "name": "Huyen Tra On"
+    },
+    {
+        "parentId": "86",
+        "id": "863",
+        "name": "Huyen Binh Tan"
+    },
+    {
+        "parentId": "87",
+        "id": "866",
+        "name": "Thanh pho Cao Lanh"
+    },
+    {
+        "parentId": "87",
+        "id": "867",
+        "name": "Thanh pho Sa Dec"
+    },
+    {
+        "parentId": "87",
+        "id": "868",
+        "name": "Thanh pho Hong Ngu"
+    },
+    {
+        "parentId": "87",
+        "id": "869",
+        "name": "Huyen Tan Hong"
+    },
+    {
+        "parentId": "87",
+        "id": "870",
+        "name": "Huyen Hong Ngu"
+    },
+    {
+        "parentId": "87",
+        "id": "871",
+        "name": "Huyen Tam Nong"
+    },
+    {
+        "parentId": "87",
+        "id": "872",
+        "name": "Huyen Thap Muoi"
+    },
+    {
+        "parentId": "87",
+        "id": "873",
+        "name": "Huyen Cao Lanh"
+    },
+    {
+        "parentId": "87",
+        "id": "874",
+        "name": "Huyen Thanh Binh"
+    },
+    {
+        "parentId": "87",
+        "id": "875",
+        "name": "Huyen Lap Vo"
+    },
+    {
+        "parentId": "87",
+        "id": "876",
+        "name": "Huyen Lai Vung"
+    },
+    {
+        "parentId": "87",
+        "id": "877",
+        "name": "Huyen Chau Thanh"
+    },
+    {
+        "parentId": "89",
+        "id": "883",
+        "name": "Thanh pho Long Xuyen"
+    },
+    {
+        "parentId": "89",
+        "id": "884",
+        "name": "Thanh pho Chau Doc"
+    },
+    {
+        "parentId": "89",
+        "id": "886",
+        "name": "Huyen An Phu"
+    },
+    {
+        "parentId": "89",
+        "id": "887",
+        "name": "Thi xa Tan Chau"
+    },
+    {
+        "parentId": "89",
+        "id": "888",
+        "name": "Huyen Phu Tan"
+    },
+    {
+        "parentId": "89",
+        "id": "889",
+        "name": "Huyen Chau Phu"
+    },
+    {
+        "parentId": "89",
+        "id": "890",
+        "name": "Thi xa Tinh Bien"
+    },
+    {
+        "parentId": "89",
+        "id": "891",
+        "name": "Huyen Tri Ton"
+    },
+    {
+        "parentId": "89",
+        "id": "892",
+        "name": "Huyen Chau Thanh"
+    },
+    {
+        "parentId": "89",
+        "id": "893",
+        "name": "Huyen Cho Moi"
+    },
+    {
+        "parentId": "89",
+        "id": "894",
+        "name": "Huyen Thoai Son"
+    },
+    {
+        "parentId": "91",
+        "id": "899",
+        "name": "Thanh pho Rach Gia"
+    },
+    {
+        "parentId": "91",
+        "id": "900",
+        "name": "Thanh pho Ha Tien"
+    },
+    {
+        "parentId": "91",
+        "id": "902",
+        "name": "Huyen Kien Luong"
+    },
+    {
+        "parentId": "91",
+        "id": "903",
+        "name": "Huyen Hon Dat"
+    },
+    {
+        "parentId": "91",
+        "id": "904",
+        "name": "Huyen Tan Hiep"
+    },
+    {
+        "parentId": "91",
+        "id": "905",
+        "name": "Huyen Chau Thanh"
+    },
+    {
+        "parentId": "91",
+        "id": "906",
+        "name": "Huyen Giong Rieng"
+    },
+    {
+        "parentId": "91",
+        "id": "907",
+        "name": "Huyen Go Quao"
+    },
+    {
+        "parentId": "91",
+        "id": "908",
+        "name": "Huyen An Bien"
+    },
+    {
+        "parentId": "91",
+        "id": "909",
+        "name": "Huyen An Minh"
+    },
+    {
+        "parentId": "91",
+        "id": "910",
+        "name": "Huyen Vinh Thuan"
+    },
+    {
+        "parentId": "91",
+        "id": "911",
+        "name": "Thanh pho Phu Quoc"
+    },
+    {
+        "parentId": "91",
+        "id": "912",
+        "name": "Huyen Kien Hai"
+    },
+    {
+        "parentId": "91",
+        "id": "913",
+        "name": "Huyen U Minh Thuong"
+    },
+    {
+        "parentId": "91",
+        "id": "914",
+        "name": "Huyen Giang Thanh"
+    },
+    {
+        "parentId": "92",
+        "id": "916",
+        "name": "Quan Ninh Kieu"
+    },
+    {
+        "parentId": "92",
+        "id": "917",
+        "name": "Quan O Mon"
+    },
+    {
+        "parentId": "92",
+        "id": "918",
+        "name": "Quan Binh Thuy"
+    },
+    {
+        "parentId": "92",
+        "id": "919",
+        "name": "Quan Cai Rang"
+    },
+    {
+        "parentId": "92",
+        "id": "923",
+        "name": "Quan Thot Not"
+    },
+    {
+        "parentId": "92",
+        "id": "924",
+        "name": "Huyen Vinh Thanh"
+    },
+    {
+        "parentId": "92",
+        "id": "925",
+        "name": "Huyen Co Do"
+    },
+    {
+        "parentId": "92",
+        "id": "926",
+        "name": "Huyen Phong Dien"
+    },
+    {
+        "parentId": "92",
+        "id": "927",
+        "name": "Huyen Thoi Lai"
+    },
+    {
+        "parentId": "93",
+        "id": "930",
+        "name": "Thanh pho Vi Thanh"
+    },
+    {
+        "parentId": "93",
+        "id": "931",
+        "name": "Thanh pho Nga Bay"
+    },
+    {
+        "parentId": "93",
+        "id": "932",
+        "name": "Huyen Chau Thanh A"
+    },
+    {
+        "parentId": "93",
+        "id": "933",
+        "name": "Huyen Chau Thanh"
+    },
+    {
+        "parentId": "93",
+        "id": "934",
+        "name": "Huyen Phung Hiep"
+    },
+    {
+        "parentId": "93",
+        "id": "935",
+        "name": "Huyen Vi Thuy"
+    },
+    {
+        "parentId": "93",
+        "id": "936",
+        "name": "Huyen Long My"
+    },
+    {
+        "parentId": "93",
+        "id": "937",
+        "name": "Thi xa Long My"
+    },
+    {
+        "parentId": "94",
+        "id": "941",
+        "name": "Thanh pho Soc Trang"
+    },
+    {
+        "parentId": "94",
+        "id": "942",
+        "name": "Huyen Chau Thanh"
+    },
+    {
+        "parentId": "94",
+        "id": "943",
+        "name": "Huyen Ke Sach"
+    },
+    {
+        "parentId": "94",
+        "id": "944",
+        "name": "Huyen My Tu"
+    },
+    {
+        "parentId": "94",
+        "id": "945",
+        "name": "Huyen Cu Lao Dung"
+    },
+    {
+        "parentId": "94",
+        "id": "946",
+        "name": "Huyen Long Phu"
+    },
+    {
+        "parentId": "94",
+        "id": "947",
+        "name": "Huyen My Xuyen"
+    },
+    {
+        "parentId": "94",
+        "id": "948",
+        "name": "Thi xa Nga Nam"
+    },
+    {
+        "parentId": "94",
+        "id": "949",
+        "name": "Huyen Thanh Tri"
+    },
+    {
+        "parentId": "94",
+        "id": "950",
+        "name": "Thi xa Vinh Chau"
+    },
+    {
+        "parentId": "94",
+        "id": "951",
+        "name": "Huyen Tran De"
+    },
+    {
+        "parentId": "95",
+        "id": "954",
+        "name": "Thanh pho Bac Lieu"
+    },
+    {
+        "parentId": "95",
+        "id": "956",
+        "name": "Huyen Hong Dan"
+    },
+    {
+        "parentId": "95",
+        "id": "957",
+        "name": "Huyen Phuoc Long"
+    },
+    {
+        "parentId": "95",
+        "id": "958",
+        "name": "Huyen Vinh Loi"
+    },
+    {
+        "parentId": "95",
+        "id": "959",
+        "name": "Thi xa Gia Rai"
+    },
+    {
+        "parentId": "95",
+        "id": "960",
+        "name": "Huyen Dong Hai"
+    },
+    {
+        "parentId": "95",
+        "id": "961",
+        "name": "Huyen Hoa Binh"
+    },
+    {
+        "parentId": "96",
+        "id": "964",
+        "name": "Thanh pho Ca Mau"
+    },
+    {
+        "parentId": "96",
+        "id": "966",
+        "name": "Huyen U Minh"
+    },
+    {
+        "parentId": "96",
+        "id": "967",
+        "name": "Huyen Thoi Binh"
+    },
+    {
+        "parentId": "96",
+        "id": "968",
+        "name": "Huyen Tran Van Thoi"
+    },
+    {
+        "parentId": "96",
+        "id": "969",
+        "name": "Huyen Cai Nuoc"
+    },
+    {
+        "parentId": "96",
+        "id": "970",
+        "name": "Huyen Dam Doi"
+    },
+    {
+        "parentId": "96",
+        "id": "971",
+        "name": "Huyen Nam Can"
+    },
+    {
+        "parentId": "96",
+        "id": "972",
+        "name": "Huyen Phu Tan"
+    },
+    {
+        "parentId": "96",
+        "id": "973",
+        "name": "Huyen Ngoc Hien"
+    }
+]

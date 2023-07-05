@@ -4,6 +4,7 @@ import CartIcon from "./CartIcon";
 import CloseModalIcon from "./CloseModalIcon";
 import CollapsedIcon from "./CollapsedIcon";
 import DeleteIcon from "./DeleteIcon";
+import DropdownIcon from "./DropdownIcon";
 import HomeIcon from "./HomeIcon";
 import LoadingIcon from "./LoadingIcon";
 import LogoutIcon from "./LogoutIcon";
@@ -28,4 +29,5 @@ export {
     ArrowIcon,
     CollapsedIcon,
     CloseModalIcon,
+    DropdownIcon,
 }

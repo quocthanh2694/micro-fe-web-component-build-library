@@ -8,22 +8,31 @@ import classNames from "classnames";
 import { getPageURI } from "src/utils/utils";
 import { ModalContextType } from "src/Modals/type";
 import { ModalContext } from "src/Modals/Modal";
+import { useAppContext } from "src/context/reducer";
 
 const AccountSection = memo(() => {
+  const { user, handleLogout } = useAppContext();
   const { setToggleShowModal } = useContext<ModalContextType>(ModalContext);
 
   const handleOpenAuthModal = useCallback(() => {
-    setToggleShowModal("isShowAuthModal", true);
-  }, []);
+    if (user?.id) {
+      handleLogout();
+    } else {
+      setToggleShowModal("isShowAuthModal", true);
+    }
+  }, [handleLogout, user?.id, setToggleShowModal]);
 
   return (
     <>
       <h4 className="desktop-menu__item" onClick={handleOpenAuthModal}>
-        <UserIcon />
-        <Link to={URI.cart}>
-          Thanh Tran
-          <LogoutIcon />
-        </Link>
+        {user?.id ? (
+          <>
+            {user.name}
+            <LogoutIcon />
+          </>
+        ) : (
+          <UserIcon />
+        )}
       </h4>
     </>
   );

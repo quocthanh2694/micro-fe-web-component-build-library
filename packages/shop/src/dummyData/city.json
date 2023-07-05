@@ -1,0 +1,254 @@
+[
+    {
+        "id": "01",
+        "name": "Thanh pho Ha Noi"
+    },
+    {
+        "id": "79",
+        "name": "Thanh pho Ho Chi Minh"
+    },
+    {
+        "id": "31",
+        "name": "Thanh pho Hai Phong"
+    },
+    {
+        "id": "48",
+        "name": "Thanh pho Da Nang"
+    },
+    {
+        "id": "92",
+        "name": "Thanh pho Can Tho"
+    },
+    {
+        "id": "02",
+        "name": "Tinh Ha Giang"
+    },
+    {
+        "id": "04",
+        "name": "Tinh Cao Bang"
+    },
+    {
+        "id": "06",
+        "name": "Tinh Bac Kan"
+    },
+    {
+        "id": "08",
+        "name": "Tinh Tuyen Quang"
+    },
+    {
+        "id": "10",
+        "name": "Tinh Lao Cai"
+    },
+    {
+        "id": "11",
+        "name": "Tinh Dien Bien"
+    },
+    {
+        "id": "12",
+        "name": "Tinh Lai Chau"
+    },
+    {
+        "id": "14",
+        "name": "Tinh Son La"
+    },
+    {
+        "id": "15",
+        "name": "Tinh Yen Bai"
+    },
+    {
+        "id": "17",
+        "name": "Tinh Hoa Binh"
+    },
+    {
+        "id": "19",
+        "name": "Tinh Thai Nguyen"
+    },
+    {
+        "id": "20",
+        "name": "Tinh Lang Son"
+    },
+    {
+        "id": "22",
+        "name": "Tinh Quang Ninh"
+    },
+    {
+        "id": "24",
+        "name": "Tinh Bac Giang"
+    },
+    {
+        "id": "25",
+        "name": "Tinh Phu Tho"
+    },
+    {
+        "id": "26",
+        "name": "Tinh Vinh Phuc"
+    },
+    {
+        "id": "27",
+        "name": "Tinh Bac Ninh"
+    },
+    {
+        "id": "30",
+        "name": "Tinh Hai Duong"
+    },
+    {
+        "id": "33",
+        "name": "Tinh Hung Yen"
+    },
+    {
+        "id": "34",
+        "name": "Tinh Thai Binh"
+    },
+    {
+        "id": "35",
+        "name": "Tinh Ha Nam"
+    },
+    {
+        "id": "36",
+        "name": "Tinh Nam Dinh"
+    },
+    {
+        "id": "37",
+        "name": "Tinh Ninh Binh"
+    },
+    {
+        "id": "38",
+        "name": "Tinh Thanh Hoa"
+    },
+    {
+        "id": "40",
+        "name": "Tinh Nghe An"
+    },
+    {
+        "id": "42",
+        "name": "Tinh Ha Tinh"
+    },
+    {
+        "id": "44",
+        "name": "Tinh Quang Binh"
+    },
+    {
+        "id": "45",
+        "name": "Tinh Quang Tri"
+    },
+    {
+        "id": "46",
+        "name": "Tinh Thua Thien Hue"
+    },
+    {
+        "id": "49",
+        "name": "Tinh Quang Nam"
+    },
+    {
+        "id": "51",
+        "name": "Tinh Quang Ngai"
+    },
+    {
+        "id": "52",
+        "name": "Tinh Binh Dinh"
+    },
+    {
+        "id": "54",
+        "name": "Tinh Phu Yen"
+    },
+    {
+        "id": "56",
+        "name": "Tinh Khanh Hoa"
+    },
+    {
+        "id": "58",
+        "name": "Tinh Ninh Thuan"
+    },
+    {
+        "id": "60",
+        "name": "Tinh Binh Thuan"
+    },
+    {
+        "id": "62",
+        "name": "Tinh Kon Tum"
+    },
+    {
+        "id": "64",
+        "name": "Tinh Gia Lai"
+    },
+    {
+        "id": "66",
+        "name": "Tinh Dak Lak"
+    },
+    {
+        "id": "67",
+        "name": "Tinh Dak Nong"
+    },
+    {
+        "id": "68",
+        "name": "Tinh Lam Dong"
+    },
+    {
+        "id": "70",
+        "name": "Tinh Binh Phuoc"
+    },
+    {
+        "id": "72",
+        "name": "Tinh Tay Ninh"
+    },
+    {
+        "id": "74",
+        "name": "Tinh Binh Duong"
+    },
+    {
+        "id": "75",
+        "name": "Tinh Dong Nai"
+    },
+    {
+        "id": "77",
+        "name": "Tinh Ba Ria - Vung Tau"
+    },
+    {
+        "id": "80",
+        "name": "Tinh Long An"
+    },
+    {
+        "id": "82",
+        "name": "Tinh Tien Giang"
+    },
+    {
+        "id": "83",
+        "name": "Tinh Ben Tre"
+    },
+    {
+        "id": "84",
+        "name": "Tinh Tra Vinh"
+    },
+    {
+        "id": "86",
+        "name": "Tinh Vinh Long"
+    },
+    {
+        "id": "87",
+        "name": "Tinh Dong Thap"
+    },
+    {
+        "id": "89",
+        "name": "Tinh An Giang"
+    },
+    {
+        "id": "91",
+        "name": "Tinh Kien Giang"
+    },
+    {
+        "id": "93",
+        "name": "Tinh Hau Giang"
+    },
+    {
+        "id": "94",
+        "name": "Tinh Soc Trang"
+    },
+    {
+        "id": "95",
+        "name": "Tinh Bac Lieu"
+    },
+    {
+        "id": "96",
+        "name": "Tinh Ca Mau"
+    }
+]

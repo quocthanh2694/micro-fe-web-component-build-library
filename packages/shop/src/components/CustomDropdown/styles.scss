@@ -1,0 +1,112 @@
+@import '../../styles/variables';
+
+
+.dropdown {
+    font-size: 14px;
+    line-height: 140%;
+    color: $bodyText;
+
+    label {
+        color: $primary;
+        font-size: 12px;
+        font-family: Roboto;
+        line-height: 140%;
+        display: block;
+        margin-bottom: 2px;
+    }
+
+    &__wrap {
+        position: relative;
+    }
+
+    &__wrap-input {
+        position: relative;
+        background-color: #fff;
+        border-radius: 2px;
+        border: 1px solid $border;
+        padding: 6px 8px;
+        height: 32px;
+
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &.error {
+            border-color: $danger;
+        }
+
+        .selected {
+
+            &__clear-button,
+            &__arrow-down {
+                display: flex;
+                align-items: center;
+            }
+
+            &__clear-button {
+                padding: 10px;
+                padding-left: 10px;
+                padding-right: 0;
+            }
+        }
+    }
+
+    &__wrap-selected .selected__placeholder {
+        font-style: italic;
+        color: #a6a6a6;
+    }
+
+    &__wrap-selected .selected__label {
+        flex: 1;
+    }
+
+    &__wrap-selected .selected-clear-button {
+        margin-left: 8px;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__wrap-options {
+        position: absolute;
+        top: calc(100% + 2px);
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 2px;
+        z-index: 1;
+        border: 1px solid $border;
+    }
+
+    &__wrap-options .dropdown__search-input {
+        border: none;
+        padding: 2px 8px;
+        width: 100%;
+        box-sizing: border-box;
+        outline: none;
+        height: 24px;
+    }
+
+    &__wrap-options .dropdown__options-list {
+        list-style: none;
+        margin-top: 0;
+        padding: 0;
+        max-height: 168px;
+        overflow-y: auto;
+    }
+
+    &__wrap-options .dropdown__options-list .options-list__option {
+        padding: 2px 8px;
+        cursor: pointer;
+        height: 24px;
+    }
+
+    &__wrap-options .dropdown__options-list .options-list__option:hover {
+        background-color: $border;
+    }
+}

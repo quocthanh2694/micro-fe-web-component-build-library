@@ -1,12 +1,12 @@
 import { createContext } from "react";
-import { IAppContext } from "src/interface/app";
+import { IAppContext, IStore } from "src/interface/app";
 
-export const defaultAppContextValue: IAppContext = {
+export const defaultAppContextValue: IStore = {
     user: undefined,
     cartItems: [],
 }
 
 export const appContext = createContext<IAppContext>({
-    user: undefined,
-    cartItems: [],
+    state: defaultAppContextValue,
+    dispatch: () => { },
 });

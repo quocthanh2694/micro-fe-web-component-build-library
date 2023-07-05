@@ -1,10 +1,18 @@
-import { CustomInput } from "src/components";
+import { CustomDropdown, CustomInput } from "src/components";
 import "./style.scss";
 import { memo } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 import { CartForm } from "src/interface/cart";
+import { IUser } from "src/interface/user";
+import useAdministrativeDivision from "src/hooks/useAdministrativeDivision";
 
-const CartInfo = memo(() => {
+interface Props {
+  userInfo?: IUser;
+}
+
+const CartInfo = memo(({ userInfo }: Props) => {
+  const { cities } = useAdministrativeDivision();
+
   const {
     formState: { errors },
     control,
@@ -23,6 +31,7 @@ const CartInfo = memo(() => {
                 return (
                   <CustomInput
                     {...field}
+                    disabled={!!userInfo?.name}
                     className="cart-info__form-name"
                     width="100%"
                     label="Fullname"
@@ -40,6 +49,7 @@ const CartInfo = memo(() => {
                 return (
                   <CustomInput
                     {...field}
+                    disabled={!!userInfo?.phone}
                     className="cart-info__form-phone"
                     width="100%"
                     label="Phone number"
@@ -62,12 +72,20 @@ const CartInfo = memo(() => {
               control={control}
               render={({ field }) => {
                 return (
-                  <CustomInput
+                  // <CustomInput
+                  //   {...field}
+                  //   className="cart-info__form-city"
+                  //   width="100%"
+                  //   label="City"
+                  //   required
+                  //   errors={errors}
+                  // />
+                  <CustomDropdown
                     {...field}
                     className="cart-info__form-city"
-                    width="100%"
                     label="City"
                     required
+                    options={cities}
                     errors={errors}
                   />
                 );

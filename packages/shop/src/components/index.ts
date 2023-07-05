@@ -9,6 +9,7 @@ import Category from "./widgets/Category";
 import HotSale from "./widgets/HotSale";
 import Product from "./widgets/Product";
 import Slider from "./widgets/Slider";
+import CustomDropdown from "./CustomDropdown";
 
 export {
     CustomInput,
@@ -22,4 +23,5 @@ export {
     Slider,
     Category,
     Pagination,
+    CustomDropdown,
 } 

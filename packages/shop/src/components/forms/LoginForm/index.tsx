@@ -1,4 +1,4 @@
-import { memo, useCallback } from "react";
+import { memo, useCallback, useContext } from "react";
 import "./styles.scss";
 import { Controller, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -6,26 +6,35 @@ import { validationScheme } from "src/validationScheme";
 import { LoginFormType } from "./type";
 import CustomInput from "src/components/CustomInput";
 import CustomButton from "src/components/CustomButton";
+import { useAppContext } from "src/context/reducer";
+import { ModalContextType } from "src/Modals/type";
+import { ModalContext } from "src/Modals/Modal";
 
 interface Props {}
 const LoginForm = memo(({}: Props) => {
+  const { handleLogin } = useAppContext();
+  const { setToggleShowModal } = useContext<ModalContextType>(ModalContext);
+
   const {
     control,
     formState: { errors, isValid },
     handleSubmit,
+    watch,
     reset,
   } = useForm<LoginFormType>({
     defaultValues: {},
     resolver: yupResolver(validationScheme()),
     mode: "all",
   });
+  const username = watch("username");
 
   const onSubmit = useCallback(
     (data: LoginFormType) => {
-      console.log("@@@submit login", data);
+      handleLogin(data.username?.trim());
       reset();
+      setToggleShowModal("isShowAuthModal", false);
     },
-    [reset]
+    [reset, handleLogin]
   );
 
   return (
@@ -58,6 +67,7 @@ const LoginForm = memo(({}: Props) => {
                 {...field}
                 width="100%"
                 label="Password"
+                type="password"
                 required
                 errors={errors}
               />
@@ -65,7 +75,12 @@ const LoginForm = memo(({}: Props) => {
           }}
         />
 
-        <CustomButton size="sm" type="submit" disabled={!isValid} fullWidth>
+        <CustomButton
+          size="sm"
+          type="submit"
+          disabled={!isValid || !username?.trim()}
+          fullWidth
+        >
           Login
         </CustomButton>
       </div>

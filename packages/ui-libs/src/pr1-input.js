@@ -28,6 +28,15 @@ const css = `
         input[type=number] {
             -moz-appearance:textfield; /* Firefox */
         }
+
+        input:disabled,
+        input:disabled:hover,
+        input:disabled:active,
+        input:disabled:focus 
+        {
+            background-color: #D9D9D9;
+            cursor: not-allowed;
+        }
     </style>
 
 `
@@ -46,7 +55,7 @@ const size = {
 class MyEl extends HTMLElement {
 
     static get observedAttributes() {
-        return ['placeholder', 'value', 'size', 'name', 'onchange', 'error', 'required', 'pattern', 'type', 'width', 'align'];
+        return ['placeholder', 'value', 'size', 'name', 'onchange', 'error', 'required', 'pattern', 'type', 'width', 'align', 'disabled'];
     }
 
     constructor() {
@@ -122,6 +131,7 @@ class MyEl extends HTMLElement {
     attributeChangedCallback(attrName, oldVal, newVal) {
         if (oldVal === newVal) return;
 
+        console.log('@@@attr', attrName, oldVal, newVal)
 
         switch (true) {
             case attrName === 'onchange':
@@ -163,7 +173,7 @@ class MyEl extends HTMLElement {
     get value() { return this.inputNode.value }
     set value(newValue) { this.inputNode.value = newValue }
 
-    get error() { return this.inputNode.value }
+    get error() { return this.inputNode.error }
     set error(newValue) { this.inputNode.error = newValue }
 
     get type() { return this.inputNode.type }

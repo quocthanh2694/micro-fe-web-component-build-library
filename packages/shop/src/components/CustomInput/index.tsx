@@ -21,6 +21,7 @@ interface CustomInputProps {
   align?: "center" | "left" | "right";
   className?: string;
   required?: boolean;
+  disabled?: boolean;
 }
 
 const CustomInput = memo(
@@ -34,6 +35,7 @@ const CustomInput = memo(
     label,
     className,
     required,
+    disabled = false,
     ...props
   }: CustomInputProps) => {
     const errMsg = errors?.[name]?.message || error;
@@ -56,13 +58,14 @@ const CustomInput = memo(
         {!!label && (
           <label>
             {label}
-            {required ? <span className="text-danger"> *</span> : ``}
+            {required ? <span className="text-danger text-xxs"> *</span> : ``}
           </label>
         )}
         <CustomInputWC
           ref={ref}
           value={value}
           {...props}
+          {...(disabled ? { disabled } : undefined)}
           error={errMsg}
         ></CustomInputWC>
       </div>

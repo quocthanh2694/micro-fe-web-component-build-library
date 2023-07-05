@@ -1,4 +1,4 @@
-import { IAppContext } from "src/interface/app";
+import { IStore } from "src/interface/app";
 
 enum LOCAL_STORAGE_KEY {
     appContext = 'appContext',
@@ -20,10 +20,10 @@ const get = (key: string, defaultVal?: any) => {
     }
 }
 
-export const getStorageAppContext = (defaultVal?: any): IAppContext => {
+export const getStorageAppContext = (defaultVal?: any): IStore => {
     return get(LOCAL_STORAGE_KEY.appContext, defaultVal);
 }
 
-export const setStorageAppContext = (value: IAppContext) => {
+export const setStorageAppContext = (value: IStore) => {
     set(LOCAL_STORAGE_KEY.appContext, value);
 }

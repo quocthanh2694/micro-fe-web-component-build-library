@@ -11,15 +11,21 @@ import { useAppContext } from "src/context/reducer";
 import { numberWithComma } from "src/utils/number.utils";
 import { DELIVERY_FEE } from "src/constants/constant";
 import { calculateCartTotal, getCartTotalQty } from "src/utils/cart.utils";
+import { useEffect } from "react";
 
 const CartPage = () => {
-  const { cartItems } = useAppContext();
+  const { cartItems, user } = useAppContext();
 
   const methods = useForm<CartForm>({
     defaultValues: {},
     resolver: yupResolver(validationScheme()),
     mode: "all",
   });
+
+  useEffect(() => {
+    methods.setValue("fullname", user?.name || "");
+    methods.setValue("phone", user?.phone || "");
+  }, [user?.name, user?.phone, methods.setValue]);
 
   const onSubmit = (data: CartForm) => {
     // always keep log here
@@ -59,7 +65,7 @@ const CartPage = () => {
             <h3 className="text-secondary text-center">Cart</h3>
           </div>
 
-          <CartInfo />
+          <CartInfo userInfo={user} />
 
           <div className="cart-page__product">
             <CartProduct />

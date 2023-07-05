@@ -1,7 +1,9 @@
-import { createContext, useContext, useReducer } from "react";
+import { useContext } from "react";
+import { IAppContext } from "src/interface/app";
 import { ICartItem } from "src/interface/cart";
-import { appContext } from "./context";
 import { APP_ACTION } from "./actions";
+import { appContext } from "./context";
+import { IUser } from "src/interface/user";
 
 export const appReducer = (state: any, action: any) => {
   switch (action.type) {
@@ -60,14 +62,29 @@ export const appReducer = (state: any, action: any) => {
       return { ...state, cartItems };
     }
 
+    case APP_ACTION.CLEAR_CART:
+      return state;
+
+    case APP_ACTION.LOGIN:
+      {
+        const { name = 'Thanh Tran' } = action.payload;
+        const loggedUser: IUser = { id: '1', name: name, phone: '0987654321' }
+        return { ...state, user: loggedUser };
+      }
+
+    case APP_ACTION.LOG_OUT: {
+      return { ...state, user: undefined };
+    }
+
     default:
       return state;
   }
 };
 
 export const useAppContext = () => {
-  const { state, dispatch } = useContext<any>(appContext);
+  const { state, dispatch } = useContext<IAppContext>(appContext);
 
+  // cart management
   const handleAddToCart = (cartItem: ICartItem) => {
     dispatch({ type: APP_ACTION.ADD_TO_CART, payload: cartItem });
   };
@@ -84,11 +101,26 @@ export const useAppContext = () => {
     dispatch({ type: APP_ACTION.UPDATE_QUANTITY, payload: { id, quantity } });
   };
 
+  // user management
+  const handleLogin = (name: string) => {
+    dispatch({ type: APP_ACTION.LOGIN, payload: { name } })
+  }
+
+  const handleLogout = () => {
+    dispatch({ type: APP_ACTION.LOG_OUT,})
+  }
+
   return {
+    // cart
     handleAddToCart,
     handleSubtractFromCart,
     handleRemoveFromCart,
     handleUpdateCartItem,
     cartItems: (state.cartItems as ICartItem[]) || [],
+
+    // user
+    user: state.user,
+    handleLogin,
+    handleLogout,
   };
 };
