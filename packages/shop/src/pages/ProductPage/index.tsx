@@ -1,10 +1,11 @@
 import { useParams } from "react-router-dom";
 import Breadcrumb from "src/components/Breadcrumb";
-import ProductDetail from "src/components/ProductDetail";
-import SuggestedProduct from "src/components/SuggestedProduct";
+import ProductDetail from "src/components/widgets/ProductDetail";
+import SuggestedProduct from "src/components/widgets/SuggestedProduct";
 import "./style.scss";
 import useProductDetail from "src/hooks/useProductDetail";
 import { useEffect } from "react";
+import { ScrollToTop } from "src/components";
 
 export const ProductPage = () => {
   const params = useParams();
@@ -31,6 +32,8 @@ export const ProductPage = () => {
       {!!product?.id && <ProductDetail product={product} />}
 
       <SuggestedProduct />
+
+      <ScrollToTop />
     </div>
   );
 };

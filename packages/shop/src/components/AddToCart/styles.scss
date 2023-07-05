@@ -2,14 +2,12 @@
 
 .add-to-cart {
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 24px;
 
 
     &__quantity {
         display: flex;
-        align-items: center;
         justify-content: center;
         gap: 8px;
 
@@ -23,6 +21,8 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
+
+            user-select: none;
         }
 
         &-minus {

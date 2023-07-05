@@ -6,17 +6,38 @@ import CartPayment from "./components/CartPayment";
 import CartProduct from "./components/CartProudcts";
 import "./style.scss";
 import { validationScheme } from "./validationScheme";
-const Watch = require("src/assets/images/watch.png").default;
-const Banner = require("src/assets/images/banner1.png").default;
+import { CartForm } from "src/interface/cart";
+import { useAppContext } from "src/context/reducer";
+import { numberWithComma } from "src/utils/number.utils";
+import { DELIVERY_FEE } from "src/constants/constant";
+import { calculateCartTotal, getCartTotalQty } from "src/utils/cart.utils";
 
 const CartPage = () => {
-  const methods = useForm({
+  const { cartItems } = useAppContext();
+
+  const methods = useForm<CartForm>({
     defaultValues: {},
     resolver: yupResolver(validationScheme()),
     mode: "all",
   });
-  const onSubmit = (data: any) => {
-    console.log(data);
+
+  const onSubmit = (data: CartForm) => {
+    // always keep log here
+    console.log("@@Submit payment", data, cartItems);
+    alert(`
+      Thank you! Payment Successful!
+
+      Delivery info:
+      ${data.fullname} - ${data.phone}
+      ${data.houseNumber}, ${data.ward}, ${data.district}, ${data.city}
+      Note: ${data.note}
+
+      Cart info:
+      Quantity: ${numberWithComma(getCartTotalQty(cartItems))}
+      Delivery fee: $${DELIVERY_FEE}
+      Total: $${numberWithComma(calculateCartTotal(cartItems))}
+
+    `);
   };
 
   return (

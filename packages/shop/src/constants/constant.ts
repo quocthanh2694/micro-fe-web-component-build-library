@@ -16,7 +16,5 @@ export const SCREEN_BREAKPOINTS = {
 }
 
 export const CURRENCY = '$';
+export const DELIVERY_FEE = 10;
 
-// PAGINATION
-export const PAGE_LIMIT = 5;
-export const FETCH_LIMIT = 12;

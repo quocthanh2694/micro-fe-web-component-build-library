@@ -1,4 +1,5 @@
-import { DELAY_API, FETCH_LIMIT } from "src/constants/constant";
+import { DELAY_API, } from "src/constants/constant";
+import { FETCH_LIMIT } from "src/constants/pagination.constant";
 import { GetHotSaleProductsResponse, GetProductByIdResponse, GetProductsRequest, GetProductsResponse, GetSuggestedProductsResponse, IProduct } from "src/interface/product";
 import { dummyData } from "src/utils/utils";
 
@@ -22,7 +23,11 @@ const suggestedProducts = [watchesJson[0], phones[0]];
 
 // all 5000 products = 500 * 10 products
 const all5000Products = new Array(500).fill(1).reduce((prevArr, p, index) => {
-    return prevArr.concat(allProducts.map((item, i) => ({ ...item, id: `${index}_${i}_${item.id}` })));
+    return prevArr.concat(allProducts.map((item, i) => ({
+        ...item,
+        id: `${index}_${i}_${item.id}`,
+        name: `#${index + 1}${i + 1} ${item.name}`,
+    })));
 }, [])
 
 console.log('@@Dummy Data:', allProducts, all5000Products)
@@ -47,6 +52,7 @@ export const getProductsAPI = async ({ limit = FETCH_LIMIT, skipCount = 0, type 
             const result = {
                 limit,
                 skipCount,
+                type,
                 totalItems: totalItems,
                 totalPages: Math.ceil(totalItems / limit),
                 items: filteredItems,

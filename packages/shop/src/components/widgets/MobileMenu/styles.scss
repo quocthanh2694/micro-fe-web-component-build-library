@@ -1,0 +1,17 @@
+@import '../../../styles/variables';
+
+.mobile-menu {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        margin-right: 31px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

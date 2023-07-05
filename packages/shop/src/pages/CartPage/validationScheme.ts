@@ -8,5 +8,6 @@ export const validationScheme = () => {
         district: Yup.string().required('Required'),
         ward: Yup.string().required('Required'),
         houseNumber: Yup.string().required('Required'),
+        note: Yup.string().nullable(),
     });
 };

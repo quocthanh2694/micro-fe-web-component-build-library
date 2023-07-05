@@ -7,11 +7,12 @@ const CustomInputWC: any = "pj1-input";
 
 interface CustomInputProps {
   value?: string;
-  onChange?: (event: string | ChangeEvent<Element>) => void;
+  onChange?: (v: string, e?: ChangeEvent<Element>) => void;
   onBlur?: (event: any) => void;
   type?: string;
   placeholder?: string;
   errors?: any; // error object depend on yup validator
+  error?: string | false;
   name?: string;
   pattern?: string;
   label?: string | React.ReactNode;
@@ -27,6 +28,7 @@ const CustomInput = memo(
     value,
     onChange,
     errors,
+    error,
     name = "",
     pattern,
     label,
@@ -34,14 +36,14 @@ const CustomInput = memo(
     required,
     ...props
   }: CustomInputProps) => {
-    const errMsg = errors?.[name]?.message;
+    const errMsg = errors?.[name]?.message || error;
     const ref = useRef<HTMLInputElement>();
 
     useEffect(() => {
       const inputRef = ref.current;
       if (!inputRef) return;
       const handleChange = (e: any) => {
-        onChange && onChange(e?.detail?.target?.value || "");
+        onChange && onChange(e?.detail?.target?.value?.toString() || "", e);
       };
       inputRef.addEventListener("onchange", handleChange);
       return () => {

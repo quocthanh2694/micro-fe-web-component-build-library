@@ -4,6 +4,13 @@
     background-color: $primary;
     height: 60px;
 
+    // stick header to top
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
     &__wrap {
         display: flex;
         align-items: center;

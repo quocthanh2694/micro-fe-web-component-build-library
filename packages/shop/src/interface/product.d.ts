@@ -8,6 +8,7 @@ export interface GetProductsRequest {
 export interface GetProductsResponse {
     limit?: number;
     skipCount?: number;
+    type?: string;
     totalItems?: number;
     totalPages?: number;
     items: IProduct[];

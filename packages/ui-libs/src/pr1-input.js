@@ -84,7 +84,7 @@ class MyEl extends HTMLElement {
         this.inputNode.addEventListener('keypress', (e) => {
             if (e.keyCode === 13 || e.code === 'Enter') {
                 const button = this.#internals.form?.querySelector('button[type="submit"]');
-                if (!button.disabled) {
+                if (button && !button?.disabled) {
                     button.click();
                 }
             }

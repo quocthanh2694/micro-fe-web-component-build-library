@@ -4,6 +4,7 @@ import Router from "./Router";
 
 import "./styles/global.scss";
 import { ModalContextType, ModalKey } from "./Modals/type";
+import { AppProvider } from "./context/provider";
 
 const App = () => {
   const [modalData, setModalData] = useState<ModalContextType>(
@@ -24,10 +25,12 @@ const App = () => {
   }, [modalData, setIsShowModal]);
 
   return (
-    <ModalContext.Provider value={modalProviderValue}>
-      <Router />
-      <Modal />
-    </ModalContext.Provider>
+    <AppProvider>
+      <ModalContext.Provider value={modalProviderValue}>
+        <Router />
+        <Modal />
+      </ModalContext.Provider>
+    </AppProvider>
   );
 };
 

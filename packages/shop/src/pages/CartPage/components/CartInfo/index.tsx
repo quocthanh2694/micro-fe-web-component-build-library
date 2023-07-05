@@ -2,7 +2,7 @@ import { CustomInput } from "src/components";
 import "./style.scss";
 import { memo } from "react";
 import { Controller, useFormContext } from "react-hook-form";
-import { CartForm } from "../../type";
+import { CartForm } from "src/interface/cart";
 
 const CartInfo = memo(() => {
   const {

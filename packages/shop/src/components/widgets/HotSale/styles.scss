@@ -1,0 +1,33 @@
+@import '../../../styles/variables';
+
+.hot-sale {
+    background-color: $danger;
+    border-radius: 8px;
+    padding-bottom: 0.1px;
+    overflow: hidden;
+    min-height: 517px;
+
+    &__header {
+        text-align: center;
+        color: $white;
+        height: 86px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-image: url('assets/images/hotsale.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center
+    }
+
+    &__products {
+        display: flex;
+        gap: 8px;
+
+        margin: 20px;
+        padding-bottom: 8px;
+        overflow: auto;
+    }
+}

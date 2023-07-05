@@ -1,0 +1,23 @@
+@import '../../../styles/variables';
+
+.shopping-cart {
+    position: relative;
+    display: flex;
+
+    &__quantity {
+        position: absolute;
+        right: -8px;
+        top: -3px;
+
+        min-width: 20px;
+        min-height: 20px;
+
+        background-color: $secondary;
+        border-radius: 50%;
+        color: $white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

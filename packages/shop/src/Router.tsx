@@ -87,6 +87,9 @@ const Router = () => {
             <Route index element={<HomePage />} />
             <Route path={URI.product} element={<ProductPage />} />
             <Route path={URI.cart} element={<CartPage />} />
+            {/* <Route path={"/shop"} element={<HomePage />}>
+            </Route> */}
+            {/* <Route path="*" element={<NoMatch />} /> */}
           </Routes>
         </div>
         <Footer />

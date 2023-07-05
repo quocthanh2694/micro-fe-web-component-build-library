@@ -14,10 +14,21 @@ export default function useProducts() {
     });
     const [loading, setLoading] = useState(false);
 
-    const getProducts = async (props: GetProductsRequest) => {
+    const getProducts = async (props: GetProductsRequest, loadMoreCallback?: () => void) => {
         setLoading(true);
         const res = await getProductsAPI(props);
-        setResult(res);
+        console.log('@@get product res:', !!loadMoreCallback, res)
+
+        if (loadMoreCallback) {
+            loadMoreCallback();
+            setResult(prev => ({
+                ...prev,
+                ...res,
+                items: [...prev.items, ...res.items]
+            }));
+        } else {
+            setResult(res);
+        }
         setLoading(false);
     }
 
@@ -30,7 +41,7 @@ export default function useProducts() {
 
     return {
         ...result,
-        loading,
+        loading: loading,
         getProducts,
         getHotSaleProducts,
     }

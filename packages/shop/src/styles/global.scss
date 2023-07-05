@@ -179,6 +179,23 @@ span.text-xxs {
     }
 }
 
+@mixin text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.text-ellipsis-1 {
+    @include text-ellipsis;
+    -webkit-line-clamp: 1;
+}
+
+.text-ellipsis-2 {
+    @include text-ellipsis;
+    -webkit-line-clamp: 2;
+}
+
 // modal 
 .modal {
     position: fixed;

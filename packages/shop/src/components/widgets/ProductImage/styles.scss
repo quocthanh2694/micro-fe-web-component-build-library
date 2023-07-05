@@ -1,0 +1,36 @@
+@import '../../../styles/variables';
+
+.product-image {
+    &__preview {
+        margin-bottom: 10px;
+    }
+
+    &__images {
+        max-width: 100%;
+        overflow-x: auto;
+        margin: 0 auto;
+        width: fit-content;
+
+        &-content {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            gap: 10px;
+
+            overflow: auto;
+            max-width: 100%;
+
+            &-item {
+                border-radius: 2px;
+                border: 1px solid $border;
+                cursor: pointer;
+
+                &:hover,
+                &.active {
+                    border-color: $secondary;
+                }
+            }
+        }
+    }
+}

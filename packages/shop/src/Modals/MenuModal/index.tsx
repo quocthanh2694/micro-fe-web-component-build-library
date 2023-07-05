@@ -1,7 +1,7 @@
 import { memo, useContext } from "react";
 import { MenuIcon } from "src/icons";
 import "./styles.scss";
-import DesktopMenu from "src/components/DesktopMenu";
+import DesktopMenu from "src/components/widgets/DesktopMenu";
 import classNames from "classnames";
 import { ModalContextType } from "../type";
 import { ModalContext } from "../Modal";

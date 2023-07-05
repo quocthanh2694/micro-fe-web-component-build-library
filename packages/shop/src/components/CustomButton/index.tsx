@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { memo } from "react";
+import { MouseEvent, memo } from "react";
 import "./styles.scss";
 
 interface CustomButtonProps {
@@ -10,7 +10,7 @@ interface CustomButtonProps {
   disabled?: boolean;
   fullWidth?: boolean;
   width?: string;
-  onClick?: (e: any) => void;
+  onClick?: (e: MouseEvent<HTMLDivElement>) => void;
   className?: string;
 }
 

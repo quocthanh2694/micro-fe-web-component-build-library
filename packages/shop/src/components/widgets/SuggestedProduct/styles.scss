@@ -1,0 +1,33 @@
+@import '../../../styles/variables';
+
+.suggested-product {
+    border-radius: 8px;
+    margin-top: 10px;
+
+    &__header {
+        text-align: center;
+        height: 45px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &__products {
+        display: flex;
+        gap: 8px;
+
+        margin: 20px;
+        padding-bottom: 8px;
+
+        @include media(mobile) {
+            flex-direction: column;
+            gap: 10px;
+
+            &>div {
+                width: 100%;
+            }
+        }
+    }
+}
