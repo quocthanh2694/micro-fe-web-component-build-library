@@ -73,7 +73,10 @@ export const appReducer = (state: IStore, action: any) => {
       }
 
     case APP_ACTION.LOG_OUT: {
-      return { ...state, user: undefined };
+      return {
+        cartItems: [],
+        user: undefined,
+      };
     }
 
     default:

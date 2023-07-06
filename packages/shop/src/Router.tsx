@@ -12,7 +12,6 @@ import { validationScheme } from "./validationScheme";
 import CartPage from "./pages/CartPage";
 
 const Router = () => {
-  const navigate = useNavigate();
 
   const handleInputChange = (e: CustomEvent<string>) => {
     // console.log("@@eee", e);

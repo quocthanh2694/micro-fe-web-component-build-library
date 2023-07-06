@@ -1,9 +1,4 @@
-import { BASE_URL, URI } from "src/constants/constant"
 
-export const getPageURI = (target: URI) => {
-    return `${target}`
-    // return `${BASE_URL}${target}`
-}
 
 export const dummyData = (dataJson: any[], key: string, quantity: number) => {
     return new Array(quantity).fill(1).map((item, index) => {

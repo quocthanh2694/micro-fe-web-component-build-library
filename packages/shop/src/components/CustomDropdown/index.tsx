@@ -30,6 +30,8 @@ interface Props {
   name: string;
   error?: string;
   options: Option[];
+  tabIndex?: number;
+  value?: string;
   // events
   onChange?: (v: string, e?: ChangeEvent<Element>) => void;
   onBlur?: (event: any) => void;
@@ -43,6 +45,8 @@ const CustomDropdown = ({
   name,
   error,
   options,
+  tabIndex,
+  value,
   onChange,
   onBlur,
 }: Props) => {
@@ -53,6 +57,11 @@ const CustomDropdown = ({
   const [selectedOption, setSelectedOption] = useState<Option | null>(null);
   const [isOpen, setIsOpen] = useState(false);
   const wrapperRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const found = options?.find((x) => x.id === value);
+    setSelectedOption(found || null);
+  }, [value]);
 
   useClickOutside(wrapperRef, () => {
     setIsOpen(false);
@@ -104,7 +113,11 @@ const CustomDropdown = ({
         </label>
       )}
 
-      <div className={classNames(["dropdown__wrap"])}>
+      <div
+        className={classNames(["dropdown__wrap"])}
+        tabIndex={tabIndex}
+        onBlur={handleBlur}
+      >
         <div
           className={classNames([
             "dropdown__wrap-input",
@@ -112,7 +125,6 @@ const CustomDropdown = ({
             errMsg ? "error" : "",
           ])}
           onClick={() => setIsOpen(!isOpen)}
-          onBlur={handleBlur}
         >
           {selectedOption && (
             <span className="selected__label text-xs">
@@ -146,7 +158,6 @@ const CustomDropdown = ({
               placeholder="Filter..."
               value={searchTerm}
               onChange={handleInputChange}
-              autoFocus
             />
             <ul className="dropdown__options-list">
               {filteredOptions.map((option) => (

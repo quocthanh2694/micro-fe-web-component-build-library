@@ -65,6 +65,15 @@
             margin: 0 auto;
             display: inherit;
         }
+
+        blockquote {
+            margin: 10px 0;
+        }
+
+        span,
+        p {
+            text-align: justify;
+        }
     }
 
 }

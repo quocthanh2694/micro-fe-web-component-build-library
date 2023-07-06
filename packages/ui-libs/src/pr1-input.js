@@ -66,7 +66,7 @@ class MyEl extends HTMLElement {
         this.rootElem = rootEl;
 
         this.inputNode = this.shadowRoot.querySelector('input');
-        console.log(this, this.inputNode)
+        // console.log(this, this.inputNode)
 
         // rootEl.innerHTML = template;
         this.inputNode.addEventListener('input', (e) => {
@@ -131,7 +131,7 @@ class MyEl extends HTMLElement {
     attributeChangedCallback(attrName, oldVal, newVal) {
         if (oldVal === newVal) return;
 
-        console.log('@@@attr', attrName, oldVal, newVal)
+        // console.log('@@@attr', attrName, oldVal, newVal)
 
         switch (true) {
             case attrName === 'onchange':

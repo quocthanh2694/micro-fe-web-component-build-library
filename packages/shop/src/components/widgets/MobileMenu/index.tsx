@@ -1,12 +1,12 @@
 import { memo, useContext } from "react";
 import { Link } from "react-router-dom";
+import { ModalContext } from "src/Modals/Modal";
+import { ModalContextType } from "src/Modals/type";
 import { URI } from "src/constants/constant";
 import { MenuIcon } from "src/icons";
+import { getPageURI } from "src/utils/route.utils";
 import ShoppingCart from "../ShoppingCart";
 import "./styles.scss";
-import { getPageURI } from "src/utils/utils";
-import { ModalContextType } from "src/Modals/type";
-import { ModalContext } from "src/Modals/Modal";
 
 interface Props {}
 const MobileMenu = memo(({}: Props) => {

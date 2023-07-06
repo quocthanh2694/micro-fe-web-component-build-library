@@ -1,6 +1,6 @@
 import { CustomDropdown, CustomInput } from "src/components";
 import "./style.scss";
-import { memo } from "react";
+import { memo, useEffect, useMemo } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 import { CartForm } from "src/interface/cart";
 import { IUser } from "src/interface/user";
@@ -11,12 +11,39 @@ interface Props {
 }
 
 const CartInfo = memo(({ userInfo }: Props) => {
-  const { cities } = useAdministrativeDivision();
+  const { cities, districts, wards } = useAdministrativeDivision();
 
   const {
     formState: { errors },
+    watch,
+    setValue,
     control,
   } = useFormContext<CartForm>();
+  const cityId = watch("city");
+  const districtId = watch("district");
+
+  // reset district/ward after select a city
+  useEffect(() => {
+    setValue("district", "");
+    setValue("ward", "");
+  }, [cityId, setValue]);
+
+  // reset ward after select a district
+  useEffect(() => {
+    setValue("ward", "");
+  }, [districtId, setValue]);
+
+  const filteredDistricts = useMemo(() => {
+    if (!cityId) return [];
+
+    return districts.filter((x) => x.parentId === cityId);
+  }, [cityId, districts]);
+
+  const filteredWards = useMemo(() => {
+    if (!districtId) return [];
+
+    return wards.filter((x) => x.parentId === districtId);
+  }, [districtId, wards]);
 
   return (
     <div className="cart-info">
@@ -37,6 +64,7 @@ const CartInfo = memo(({ userInfo }: Props) => {
                     label="Fullname"
                     required
                     errors={errors}
+                    tabIndex={1}
                   />
                 );
               }}
@@ -55,6 +83,7 @@ const CartInfo = memo(({ userInfo }: Props) => {
                     label="Phone number"
                     required
                     errors={errors}
+                    tabIndex={2}
                   />
                 );
               }}
@@ -72,14 +101,6 @@ const CartInfo = memo(({ userInfo }: Props) => {
               control={control}
               render={({ field }) => {
                 return (
-                  // <CustomInput
-                  //   {...field}
-                  //   className="cart-info__form-city"
-                  //   width="100%"
-                  //   label="City"
-                  //   required
-                  //   errors={errors}
-                  // />
                   <CustomDropdown
                     {...field}
                     className="cart-info__form-city"
@@ -87,6 +108,7 @@ const CartInfo = memo(({ userInfo }: Props) => {
                     required
                     options={cities}
                     errors={errors}
+                    tabIndex={3}
                   />
                 );
               }}
@@ -96,13 +118,14 @@ const CartInfo = memo(({ userInfo }: Props) => {
               control={control}
               render={({ field }) => {
                 return (
-                  <CustomInput
+                  <CustomDropdown
                     {...field}
                     className="cart-info__form-district"
-                    width="100%"
                     label="District"
                     required
+                    options={filteredDistricts}
                     errors={errors}
+                    tabIndex={4}
                   />
                 );
               }}
@@ -115,13 +138,14 @@ const CartInfo = memo(({ userInfo }: Props) => {
               control={control}
               render={({ field }) => {
                 return (
-                  <CustomInput
+                  <CustomDropdown
                     {...field}
                     className="cart-info__form-ward"
-                    width="100%"
                     label="Ward"
                     required
+                    options={filteredWards}
                     errors={errors}
+                    tabIndex={5}
                   />
                 );
               }}
@@ -138,6 +162,7 @@ const CartInfo = memo(({ userInfo }: Props) => {
                     label="House number"
                     required
                     errors={errors}
+                    tabIndex={6}
                   />
                 );
               }}
@@ -156,6 +181,7 @@ const CartInfo = memo(({ userInfo }: Props) => {
                     width="100%"
                     label="Note"
                     errors={errors}
+                    tabIndex={7}
                   />
                 );
               }}

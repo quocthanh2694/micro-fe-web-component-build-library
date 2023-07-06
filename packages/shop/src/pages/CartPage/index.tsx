@@ -1,22 +1,21 @@
 import { yupResolver } from "@hookform/resolvers/yup";
+import { useEffect } from "react";
 import { FormProvider, useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 import Breadcrumb from "src/components/Breadcrumb";
+import { URI } from "src/constants/constant";
+import { useAppContext } from "src/context/reducer";
+import { CartForm } from "src/interface/cart";
+import { getPageURI } from "src/utils/route.utils";
 import CartInfo from "./components/CartInfo";
 import CartPayment from "./components/CartPayment";
 import CartProduct from "./components/CartProudcts";
 import "./style.scss";
 import { validationScheme } from "./validationScheme";
-import { CartForm } from "src/interface/cart";
-import { useAppContext } from "src/context/reducer";
-import { numberWithComma } from "src/utils/number.utils";
-import { DELIVERY_FEE, URI } from "src/constants/constant";
-import { calculateCartTotal, getCartTotalQty } from "src/utils/cart.utils";
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import { getPageURI } from "src/utils/utils";
+import useNavigateMFA from "src/hooks/useNavigateMFA";
 
 const CartPage = () => {
-  const navigate = useNavigate();
+  const { navigateTo } = useNavigateMFA();
   const { cartItems, user, handleClearCart } = useAppContext();
 
   const methods = useForm<CartForm>({
@@ -35,13 +34,11 @@ const CartPage = () => {
   const onSubmit = (data: CartForm) => {
     // always keep log here to see submit form data
     console.log("@@Submit payment", data, cartItems);
-    alert(`
-      Thank you! Payment Successful!
-    `);
+    alert(`Thank you! Payment Successful!`);
     // reset cart
     handleClearCart();
-    // navigate to products
-    navigate(getPageURI(URI.shop));
+    // navigate to home
+    navigateTo(URI.shop);
   };
 
   return (

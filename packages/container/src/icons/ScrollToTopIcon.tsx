@@ -9,7 +9,7 @@ const ScrollToTopIcon = memo(() => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect width="48" height="48" rx="24" fill="#4A5568" fill-opacity="0.16" />
+      <rect width="48" height="48" rx="24" fill="#4A5568" fillOpacity="0.16" />
       <path
         d="M14.9411 15.5879H33.0588C33.7735 15.5879 34.3529 15.0085 34.3529 14.2938C34.3529 13.579 33.7735 12.9997 33.0588 12.9997H14.9411C14.2264 12.9997 13.647 13.579 13.647 14.2938C13.647 15.0085 14.2264 15.5879 14.9411 15.5879Z"
         fill="#ED8936"

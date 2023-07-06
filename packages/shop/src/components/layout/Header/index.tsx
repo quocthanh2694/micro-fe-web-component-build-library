@@ -1,14 +1,12 @@
-import { memo, useCallback, useState } from "react";
+import { memo } from "react";
 import { Link } from "react-router-dom";
-import DesktopMenu from "src/components/widgets/DesktopMenu";
 import Image from "src/components/Image";
+import DesktopMenu from "src/components/widgets/DesktopMenu";
 import MobileMenu from "src/components/widgets/MobileMenu";
 import { SCREEN_BREAKPOINTS, URI } from "src/constants/constant";
 import useWindowDimensions from "src/hooks/useWindowSize";
 import "./style.scss";
-import MenuModal from "src/Modals/MenuModal";
-import { getPageURI } from "src/utils/utils";
-import AuthModal from "src/Modals/AuthModal";
+import { getPageURI } from "src/utils/route.utils";
 const Logo = require("src/assets/images/logo.png").default;
 
 interface Props {}

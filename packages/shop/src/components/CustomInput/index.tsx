@@ -22,6 +22,7 @@ interface CustomInputProps {
   className?: string;
   required?: boolean;
   disabled?: boolean;
+  tabIndex?: number;
 }
 
 const CustomInput = memo(

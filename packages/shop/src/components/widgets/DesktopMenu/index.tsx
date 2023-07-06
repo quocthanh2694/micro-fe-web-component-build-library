@@ -5,10 +5,10 @@ import { URI } from "src/constants/constant";
 import ShoppingCart from "../ShoppingCart";
 import { LogoutIcon, UserIcon } from "src/icons";
 import classNames from "classnames";
-import { getPageURI } from "src/utils/utils";
 import { ModalContextType } from "src/Modals/type";
 import { ModalContext } from "src/Modals/Modal";
 import { useAppContext } from "src/context/reducer";
+import { getPageURI } from "src/utils/route.utils";
 
 const AccountSection = memo(() => {
   const { user, handleLogout } = useAppContext();
@@ -16,7 +16,8 @@ const AccountSection = memo(() => {
 
   const handleOpenAuthModal = useCallback(() => {
     if (user?.id) {
-      handleLogout();
+      const confirmed = confirm("Are you sure you want to logout?");
+      confirmed && handleLogout();
     } else {
       setToggleShowModal("isShowAuthModal", true);
     }
@@ -27,9 +28,9 @@ const AccountSection = memo(() => {
       <h4 className="desktop-menu__item" onClick={handleOpenAuthModal}>
         {user?.id ? (
           <>
-            <h4 className="text-ellipsis-1 username" title={user.name}>
+            <span className="text-ellipsis-1 username" title={user.name}>
               {user.name}
-            </h4>
+            </span>
             <LogoutIcon />
           </>
         ) : (

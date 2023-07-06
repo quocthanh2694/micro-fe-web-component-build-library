@@ -1,34 +1,28 @@
 import { DELAY_API, } from "src/constants/constant";
 import { FETCH_LIMIT } from "src/constants/pagination.constant";
 import { GetHotSaleProductsResponse, GetProductByIdResponse, GetProductsRequest, GetProductsResponse, GetSuggestedProductsResponse, IProduct } from "src/interface/product";
-import { dummyData } from "src/utils/utils";
 
 const watchesJson: IProduct[] = require('../dummyData/watches.json');
 const phonesJson: IProduct[] = require('../dummyData/phones.json');
 
-// dummy 2000 watches
-const watches = dummyData(watchesJson, 'watch', 1000);
-
-// dummy 1000 phones
-const phones = dummyData(phonesJson, 'phone', 1000);
-
 // all products
 // TODO:
 const allProducts = watchesJson.concat(phonesJson).map((x, i) => ({
-    ...x, id: `${Date.now()}_${x.id}`,
+    ...x,
+    id: `H${i}_${x.id}`,
     name: `#${i + 1} ${x.name}`,
 }));
 
 
 // suggested products
 // TODO:
-const suggestedProducts = [watchesJson[0], phones[0]];
+const suggestedProducts = allProducts.slice(0, 4);
 
 // all 5000 products = 500 * 10 products
 const all5000Products = new Array(500).fill(1).reduce((prevArr, p, index) => {
     return prevArr.concat(allProducts.map((item, i) => ({
         ...item,
-        id: `${Date.now()}_${index}_${i}_${item.id}`,
+        id: `${index}_${i}_${item.id}`,
         name: `#${index + 1}${i + 1} ${item.name}`,
     })));
 }, [])

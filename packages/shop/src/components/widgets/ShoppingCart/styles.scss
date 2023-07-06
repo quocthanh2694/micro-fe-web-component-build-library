@@ -3,6 +3,7 @@
 .shopping-cart {
     position: relative;
     display: flex;
+    outline: none;
 
     &__quantity {
         position: absolute;

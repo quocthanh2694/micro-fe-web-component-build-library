@@ -1,11 +1,13 @@
 import { memo, useCallback } from "react";
-import "./style.scss";
-import { DeleteIcon } from "src/icons";
 import AddToCart from "src/components/AddToCart";
 import Image from "src/components/Image";
+import { useAppContext } from "src/context/reducer";
+import useNavigateMFA from "src/hooks/useNavigateMFA";
+import { DeleteIcon } from "src/icons";
 import { ICartItem } from "src/interface/cart";
 import { numberWithComma } from "src/utils/number.utils";
-import { useAppContext } from "src/context/reducer";
+import "./style.scss";
+import { URI } from "src/constants/constant";
 
 interface Props {
   cartItem: ICartItem;
@@ -17,6 +19,8 @@ const CartItem = memo(({ cartItem }: Props) => {
     handleUpdateCartItem,
     handleRemoveFromCart,
   } = useAppContext();
+  const { navigateTo } = useNavigateMFA();
+
   const { product, quantity } = cartItem || {};
 
   const handleChangeQty = (qty: number) => {
@@ -40,14 +44,22 @@ const CartItem = memo(({ cartItem }: Props) => {
     handleRemoveFromCart(product.id);
   }, [product?.id]);
 
+  const handleNavigateToDetail = () => {
+    navigateTo(URI.product, { id: product.id });
+  };
+
   return (
     <div className="cart-item">
-      <div className="cart-item__image">
+      <div className="cart-item__image" onClick={handleNavigateToDetail}>
         <Image src={product?.images?.[0]} width="94px" height="94px" />
       </div>
       <div className="cart-item__info">
         <div className="cart-item__info-title">
-          <span className="text-ellipsis-2" title={product?.name}>
+          <span
+            className="text-ellipsis-2"
+            title={product?.name}
+            onClick={handleNavigateToDetail}
+          >
             {product?.name}
           </span>
           <div
@@ -66,7 +78,6 @@ const CartItem = memo(({ cartItem }: Props) => {
             onPlus={handlePlus}
             inputOnly
           />
-          {quantity}
           <span className="text-primary text-xs">
             ${numberWithComma(product?.price)}
           </span>

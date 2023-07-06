@@ -1,13 +1,12 @@
 import { MouseEvent, memo, useCallback } from "react";
-import { generatePath, useNavigate } from "react-router-dom";
 import { CURRENCY, URI } from "src/constants/constant";
+import { useAppContext } from "src/context/reducer";
+import useNavigateMFA from "src/hooks/useNavigateMFA";
 import { IProduct } from "src/interface/product";
-import { getPageURI } from "src/utils/utils";
+import { numberWithComma } from "src/utils/number.utils";
 import CustomButton from "../../CustomButton";
 import Image from "../../Image";
 import "./styles.scss";
-import { useAppContext } from "src/context/reducer";
-import { numberWithComma } from "src/utils/number.utils";
 
 interface Props {
   product: IProduct;
@@ -15,13 +14,10 @@ interface Props {
 const Product = memo(({ product }: Props) => {
   const { handleAddToCart } = useAppContext();
 
-  const navigate = useNavigate();
+  const { navigateTo } = useNavigateMFA();
 
-  const handleNavigate = () => {
-    // const path = generatePath(getPageURI(URI.cart));
-    const path = generatePath(getPageURI(URI.product), { id: product.id });
-    console.log("@@path", path);
-    navigate(path);
+  const handleNavigateToDetail = () => {
+    navigateTo(URI.product, { id: product.id });
     window.scroll(0, 0);
   };
 
@@ -34,7 +30,7 @@ const Product = memo(({ product }: Props) => {
   );
 
   return (
-    <div className="product" onClick={handleNavigate}>
+    <div className="product" onClick={handleNavigateToDetail}>
       <span className="product__discount">{product.discountPercent}%</span>
       <div className="product__image">
         <Image
@@ -45,7 +41,10 @@ const Product = memo(({ product }: Props) => {
         />
       </div>
       <div className="product__info">
-        <span className="product__info-name text-ellipsis-2" title={product.name}>
+        <span
+          className="product__info-name text-ellipsis-2"
+          title={product.name}
+        >
           {product.name}
         </span>
         <div className="product__info-detail">
