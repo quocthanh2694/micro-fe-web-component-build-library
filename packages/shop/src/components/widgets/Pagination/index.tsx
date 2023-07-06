@@ -112,7 +112,7 @@ const Pagination = memo(
 
     const next = (
       <PageItem
-        disabled={currentPage === totalPages}
+        disabled={currentPage >= totalPages}
         onClick={() => handleSelectPage(currentPage + 1)}
       >
         &gt;
@@ -140,6 +140,7 @@ const Pagination = memo(
                     type="number"
                     size="xs"
                     width="50px"
+                    disabled={totalPages === 0}
                     errors={errors}
                   ></CustomInput>
                 );

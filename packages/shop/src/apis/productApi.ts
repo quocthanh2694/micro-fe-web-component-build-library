@@ -14,7 +14,10 @@ const phones = dummyData(phonesJson, 'phone', 1000);
 
 // all products
 // TODO:
-const allProducts = watchesJson.concat(phonesJson);
+const allProducts = watchesJson.concat(phonesJson).map((x, i) => ({
+    ...x, id: `${Date.now()}_${x.id}`,
+    name: `#${i + 1} ${x.name}`,
+}));
 
 
 // suggested products
@@ -25,7 +28,7 @@ const suggestedProducts = [watchesJson[0], phones[0]];
 const all5000Products = new Array(500).fill(1).reduce((prevArr, p, index) => {
     return prevArr.concat(allProducts.map((item, i) => ({
         ...item,
-        id: `${index}_${i}_${item.id}`,
+        id: `${Date.now()}_${index}_${i}_${item.id}`,
         name: `#${index + 1}${i + 1} ${item.name}`,
     })));
 }, [])
@@ -67,7 +70,7 @@ export const getProductByIdAPI = async (id: string): Promise<GetProductByIdRespo
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve({
-                product: all5000Products.find((p: IProduct) => p.id?.includes(id)),
+                product: allProducts.concat(all5000Products).find((p: IProduct) => p.id?.includes(id)),
             });
         }, DELAY_API);
     })

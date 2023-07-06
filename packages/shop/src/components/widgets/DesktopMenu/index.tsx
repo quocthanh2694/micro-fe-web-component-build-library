@@ -27,7 +27,9 @@ const AccountSection = memo(() => {
       <h4 className="desktop-menu__item" onClick={handleOpenAuthModal}>
         {user?.id ? (
           <>
-            {user.name}
+            <h4 className="text-ellipsis-1 username" title={user.name}>
+              {user.name}
+            </h4>
             <LogoutIcon />
           </>
         ) : (

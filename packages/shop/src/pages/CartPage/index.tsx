@@ -9,12 +9,15 @@ import { validationScheme } from "./validationScheme";
 import { CartForm } from "src/interface/cart";
 import { useAppContext } from "src/context/reducer";
 import { numberWithComma } from "src/utils/number.utils";
-import { DELIVERY_FEE } from "src/constants/constant";
+import { DELIVERY_FEE, URI } from "src/constants/constant";
 import { calculateCartTotal, getCartTotalQty } from "src/utils/cart.utils";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { getPageURI } from "src/utils/utils";
 
 const CartPage = () => {
-  const { cartItems, user } = useAppContext();
+  const navigate = useNavigate();
+  const { cartItems, user, handleClearCart } = useAppContext();
 
   const methods = useForm<CartForm>({
     defaultValues: {},
@@ -23,27 +26,22 @@ const CartPage = () => {
   });
 
   useEffect(() => {
-    methods.setValue("fullname", user?.name || "");
-    methods.setValue("phone", user?.phone || "");
+    methods.reset({
+      fullname: user?.name || "",
+      phone: user?.phone || "",
+    });
   }, [user?.name, user?.phone, methods.setValue]);
 
   const onSubmit = (data: CartForm) => {
-    // always keep log here
+    // always keep log here to see submit form data
     console.log("@@Submit payment", data, cartItems);
     alert(`
       Thank you! Payment Successful!
-
-      Delivery info:
-      ${data.fullname} - ${data.phone}
-      ${data.houseNumber}, ${data.ward}, ${data.district}, ${data.city}
-      Note: ${data.note}
-
-      Cart info:
-      Quantity: ${numberWithComma(getCartTotalQty(cartItems))}
-      Delivery fee: $${DELIVERY_FEE}
-      Total: $${numberWithComma(calculateCartTotal(cartItems))}
-
     `);
+    // reset cart
+    handleClearCart();
+    // navigate to products
+    navigate(getPageURI(URI.shop));
   };
 
   return (
@@ -70,9 +68,11 @@ const CartPage = () => {
           <div className="cart-page__product">
             <CartProduct />
           </div>
-          <div className="cart-page__payment">
-            <CartPayment />
-          </div>
+          {!!cartItems?.length && (
+            <div className="cart-page__payment">
+              <CartPayment />
+            </div>
+          )}
         </div>
       </form>
     </FormProvider>

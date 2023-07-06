@@ -13,11 +13,29 @@ export default function useProducts() {
         totalPages: 1,
     });
     const [loading, setLoading] = useState(false);
+    const [hasMore, setHasMore] = useState(true);
 
-    const getProducts = async (props: GetProductsRequest, loadMoreCallback?: () => void) => {
+    const getProducts = async (props: GetProductsRequest, loadMoreCallback?: () => void, isReturnFromPageZero = false) => {
+        if (isReturnFromPageZero) {
+            setHasMore(true);
+            setResult(prev => ({
+                ...prev,
+                items: [],
+                limit: 0,
+                skipCount: 0,
+                totalItems: 0,
+                totalPages: 0,
+            }))
+        }
+
+        if (!isReturnFromPageZero && !hasMore) {
+            !!loadMoreCallback && loadMoreCallback();
+            setLoading(false);
+            return;
+        }
+
         setLoading(true);
         const res = await getProductsAPI(props);
-        console.log('@@get product res:', !!loadMoreCallback, res)
 
         if (loadMoreCallback) {
             loadMoreCallback();
@@ -26,6 +44,9 @@ export default function useProducts() {
                 ...res,
                 items: [...prev.items, ...res.items]
             }));
+            if (!res.items?.length) {
+                setHasMore(false);
+            }
         } else {
             setResult(res);
         }
@@ -41,6 +62,7 @@ export default function useProducts() {
 
     return {
         ...result,
+        hasMore,
         loading: loading,
         getProducts,
         getHotSaleProducts,

@@ -21,6 +21,12 @@
         justify-content: center;
         gap: 8px;
 
+        .username {
+            max-width: 200px;
+            display: block;
+            white-space: nowrap;
+        }
+
         a {
             display: flex;
             align-items: center;

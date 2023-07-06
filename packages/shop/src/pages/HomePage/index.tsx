@@ -1,20 +1,19 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import {
   Category,
   HotSale,
+  Loading,
   Pagination,
   Product,
   ScrollToTop,
   Slider,
 } from "src/components";
-import Image from "src/components/Image";
+import { FETCH_LIMIT } from "src/constants/pagination.constant";
 import useInfiniteScroll from "src/hooks/useInfinityScroll";
 import useProducts from "src/hooks/useProducts";
 import useWindowDimensions from "src/hooks/useWindowSize";
 import { ICategory } from "src/interface/category";
 import "./style.scss";
-import { FETCH_LIMIT } from "src/constants/pagination.constant";
-const Loading = require("src/assets/images/loading.gif").default;
 
 const CATEGORIES = [
   {
@@ -44,26 +43,27 @@ const CATEGORIES = [
 ];
 
 export const HomePage = () => {
-  const { isMobile } = useWindowDimensions();
-
   const [currentPage, setCurrentPage] = useState(1);
   const {
     loading,
     items: products,
     totalPages,
     getProducts,
-    skipCount,
+    hasMore,
   } = useProducts();
   const [categoryId, setCategoryId] = useState("all");
-
-  console.log("HOomepage data@@", products);
+  const { isMobile } = useWindowDimensions();
 
   // init get products
   useEffect(() => {
-    getProducts({
-      skipCount: 0,
-      type: "all",
-    });
+    getProducts(
+      {
+        skipCount: 0,
+        type: "all",
+      },
+      undefined,
+      true
+    );
   }, []);
 
   const handleLoadMore = useCallback(() => {
@@ -82,24 +82,42 @@ export const HomePage = () => {
     });
   }, [getProducts, categoryId]);
 
-  const { isFetching, setIsFetching } = useInfiniteScroll(handleLoadMore);
+  const { isFetching, setIsFetching } = useInfiniteScroll(
+    handleLoadMore,
+    hasMore
+  );
 
   const handleSelectCategory = useCallback((c: ICategory) => {
     setCategoryId(c.id);
     setCurrentPage(1);
-    getProducts({
-      skipCount: 0,
-      type: c.id,
-    });
+    getProducts(
+      {
+        skipCount: 0,
+        type: c.id,
+      },
+      undefined,
+      true
+    );
   }, []);
 
   const handlePageChange = useCallback(
     (page: number) => {
       setCurrentPage(page);
-      getProducts({
-        skipCount: (page - 1) * FETCH_LIMIT,
-        type: categoryId,
-      });
+      getProducts(
+        {
+          skipCount: (page - 1) * FETCH_LIMIT,
+          type: categoryId,
+        },
+        undefined
+      );
+
+      // handle scroll to product section
+      setTimeout(() => {
+        const elemRef = document.getElementById("categoryRef");
+        elemRef?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }, 0);
     },
     [categoryId]
   );
@@ -114,7 +132,7 @@ export const HomePage = () => {
         <HotSale />
       </div>
 
-      <div className="home__category">
+      <div className="home__category" id="categoryRef">
         <Category
           categories={CATEGORIES}
           selectedId={categoryId}
@@ -122,16 +140,14 @@ export const HomePage = () => {
         />
       </div>
 
-      <h1>{products?.length}</h1>
       <div className="home__products">
-        {products?.map((p, i) => (
-          <Product key={p.id + i} product={p} />
+        {products?.map((p) => (
+          <Product key={p.id} product={p} />
         ))}
       </div>
-
       {(loading || isFetching) && (
         <div className="home__loading">
-          <Image src={Loading} width="40px" height="40px" />
+          <Loading />
         </div>
       )}
 

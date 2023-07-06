@@ -1,11 +1,11 @@
 import { useContext } from "react";
-import { IAppContext } from "src/interface/app";
+import { IAppContext, IStore } from "src/interface/app";
 import { ICartItem } from "src/interface/cart";
 import { APP_ACTION } from "./actions";
 import { appContext } from "./context";
 import { IUser } from "src/interface/user";
 
-export const appReducer = (state: any, action: any) => {
+export const appReducer = (state: IStore, action: any) => {
   switch (action.type) {
     case APP_ACTION.ADD_TO_CART:
       const product = action.payload.product;
@@ -36,7 +36,7 @@ export const appReducer = (state: any, action: any) => {
       if (item.quantity < 2) {
         cartItems = cartItems.filter((cartItem) => cartItem.product.id != id);
       } else {
-        --cartItems.find((item) => item.product.id === id).quantity;
+        --cartItems.find((item) => item.product.id === id)!.quantity;
       }
       return { ...state, cartItems };
     }
@@ -63,7 +63,7 @@ export const appReducer = (state: any, action: any) => {
     }
 
     case APP_ACTION.CLEAR_CART:
-      return state;
+      return { ...state, cartItems: [] };
 
     case APP_ACTION.LOGIN:
       {
@@ -101,13 +101,17 @@ export const useAppContext = () => {
     dispatch({ type: APP_ACTION.UPDATE_QUANTITY, payload: { id, quantity } });
   };
 
+  const handleClearCart = () => {
+    dispatch({ type: APP_ACTION.CLEAR_CART });
+  };
+
   // user management
   const handleLogin = (name: string) => {
     dispatch({ type: APP_ACTION.LOGIN, payload: { name } })
   }
 
   const handleLogout = () => {
-    dispatch({ type: APP_ACTION.LOG_OUT,})
+    dispatch({ type: APP_ACTION.LOG_OUT, })
   }
 
   return {
@@ -116,6 +120,7 @@ export const useAppContext = () => {
     handleSubtractFromCart,
     handleRemoveFromCart,
     handleUpdateCartItem,
+    handleClearCart,
     cartItems: (state.cartItems as ICartItem[]) || [],
 
     // user
