@@ -1,13 +1,14 @@
 @import './variables';
 @import './animation.scss';
+@import './font.scss';
 
 * {
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
 
 html,
 body {
-    font-family: Roboto;
     font-size: 16px;
     line-height: 140%;
     margin: 0;

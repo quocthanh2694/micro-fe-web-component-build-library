@@ -5,4 +5,9 @@
          margin-top: 20px;
      }
 
+     &__loading {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
  }

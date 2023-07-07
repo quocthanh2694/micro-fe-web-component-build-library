@@ -1,7 +1,9 @@
 @import './variables';
+@import './font.scss';
 
 * {
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
 
 html,

@@ -3,6 +3,7 @@ import "./styles.scss";
 import { CartIcon } from "src/icons";
 import { useAppContext } from "src/context/reducer";
 import { getCartTotalQty } from "src/utils/cart.utils";
+import classNames from "classnames";
 
 interface ImageProps {}
 
@@ -14,17 +15,20 @@ const ShoppingCart = memo(({}: ImageProps) => {
   const quantity = getCartTotalQty(cartItems);
   const quantityView = quantity > 9 ? "9+" : quantity > 0 ? quantity : "";
 
-  // deal with animation
   useEffect(() => {
+    if (!quantity) return;
     if (quantity > lastCartNumRef.current) {
-      setTriggerAnimation((prev) => prev + 1);
+      setTriggerAnimation(quantity);
     }
     lastCartNumRef.current = quantity;
   }, [quantity, lastCartNumRef.current]);
 
   return (
     <div
-      className="shopping-cart animate-bounce"
+      className={classNames([
+        "shopping-cart",
+        quantity && triggerAnimation ? "animate-bounce" : "",
+      ])}
       key={`shoppingCart_${triggerAnimation}`}
     >
       {quantityView && (

@@ -5,7 +5,7 @@ import SuggestedProduct from "src/components/widgets/SuggestedProduct";
 import "./style.scss";
 import useProductDetail from "src/hooks/useProductDetail";
 import { useEffect } from "react";
-import { ScrollToTop } from "src/components";
+import { Loading, ScrollToTop } from "src/components";
 
 export const ProductPage = () => {
   const params = useParams();
@@ -29,6 +29,12 @@ export const ProductPage = () => {
           },
         ]}
       />
+      {loading && (
+        <div className="product-page__loading">
+          <Loading />
+        </div>
+      )}
+
       {!!product?.id && <ProductDetail product={product} />}
 
       <SuggestedProduct />
