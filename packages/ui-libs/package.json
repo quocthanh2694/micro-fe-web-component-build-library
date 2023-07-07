@@ -1,16 +1,17 @@
 {
   "name": "thanh-pj1-ui-lib",
-  "version": "1.0.17",
+  "version": "1.0.19",
   "description": "",
-  "type":"commonjs",
+  "type": "commonjs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "publish-pj": "npm publish",
-    "link-pj": "tsc && npm link",
+    "npm-login": "npm adduser",
+    "publish:lib": "tsc & yarn publish",
+    "link-pj": "tsc & npm link",
     "pack-pj": "npm pack",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -3,6 +3,7 @@
 	"npmClient": "yarn",
 	"packages": [
 		"packages/container",
-		"packages/shop"
+		"packages/shop",
+		"packages/ui-libs"
 	]
 }

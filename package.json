@@ -1,14 +1,18 @@
 {
-	"private": true,
 	"workspaces": {
 		"packages": [
 			"packages/shop",
-			"packages/container"
+			"packages/container",
+			"packages/ui-libs"
 		]
 	},
 	"scripts": {
 		"start": "lerna run --parallel start",
 		"build": "lerna run build",
+		"lerna-ls": "lerna ls --all",
+		"publish": "cd packages/ui-libs & yarn run publish:lib",
+		"deploy": "lerna run deploy",
+		"deploy:staging": "lerna run deploy:staging",
 		"serve": "lerna run --parallel serve",
 		"clean": "lerna run --parallel clean",
 		"prepare": "lerna run yarn"

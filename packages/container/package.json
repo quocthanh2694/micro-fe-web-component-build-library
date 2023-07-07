@@ -33,7 +33,9 @@
 		"start": "webpack serve",
 		"build": "webpack --mode production",
 		"serve": "serve dist -p 3000",
-		"clean": "rm -rf dist"
+		"clean": "rm -rf dist",
+		"deploy:staging": "webpack & vercel",
+		"deploy": "webpack --mode production & vercel --prod"
 	},
 	"dependencies": {
 		"dotenv": "^14.3.2",

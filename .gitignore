@@ -106,3 +106,5 @@ buildServer
 # TernJS port file
 .tern-port
 /streamed-federation/.s3rver/
+
+.vercel
