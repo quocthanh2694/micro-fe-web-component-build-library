@@ -29,6 +29,12 @@ export const ProductPage = () => {
           },
         ]}
       />
+
+      {!loading && !product?.id && (
+        <div className="product-page__notfound text-danger">
+          <h4 className="text-center">No Product found</h4>
+        </div>
+      )}
       {loading && (
         <div className="product-page__loading">
           <Loading />

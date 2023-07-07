@@ -1,6 +1,6 @@
 import React from "react";
 import { LandingPage } from "./pages/LandingPage";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import "./App.scss";
 import "./styles/global.scss";
@@ -18,7 +18,15 @@ const Router = () => {
           </React.Suspense>
         }
       />
-      <Route path="/shop/*" element={<Shop />} />
+      <Route
+        path="/shop/*"
+        element={
+          <React.Suspense fallback={<></>}>
+            <Shop />
+          </React.Suspense>
+        }
+      />
+      <Route path="*" element={<Navigate replace to="/" />} />
     </Routes>
   );
 };

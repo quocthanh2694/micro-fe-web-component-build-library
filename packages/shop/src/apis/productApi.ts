@@ -27,7 +27,6 @@ const all5000Products = new Array(500).fill(1).reduce((prevArr, p, index) => {
     })));
 }, [])
 
-console.log('@@Dummy Data:', allProducts, all5000Products)
 
 export const getHotSaleProductsAPI = async (): Promise<GetHotSaleProductsResponse> => {
     return new Promise((resolve, reject) => {

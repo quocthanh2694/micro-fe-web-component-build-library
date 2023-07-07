@@ -19,6 +19,7 @@ const Image = memo(({ src, width, height, alt, radius = "0" }: ImageProps) => {
         width={width}
         height={height}
         style={{ borderRadius: radius }}
+        loading="lazy"
       />
     </div>
   );

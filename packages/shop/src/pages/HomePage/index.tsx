@@ -88,16 +88,20 @@ export const HomePage = () => {
   );
 
   const handleSelectCategory = useCallback((c: ICategory) => {
-    setCategoryId(c.id);
-    setCurrentPage(1);
-    getProducts(
-      {
-        skipCount: 0,
-        type: c.id,
-      },
-      undefined,
-      true
-    );
+    setCategoryId((prev) => {
+      if (prev !== c.id) {
+        setCurrentPage(1);
+        getProducts(
+          {
+            skipCount: 0,
+            type: c.id,
+          },
+          undefined,
+          true
+        );
+      }
+      return c.id;
+    });
   }, []);
 
   const handlePageChange = useCallback(

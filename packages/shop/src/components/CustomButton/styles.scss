@@ -9,6 +9,7 @@
         border-radius: map-get($borderRadius, xxs);
         height: 45px;
         font-size: 25px;
+        font-weight: 400;
         color: white;
         outline: none;
 
@@ -18,6 +19,7 @@
         border: none;
 
         cursor: pointer;
+        user-select: none;
     }
 
     // size
