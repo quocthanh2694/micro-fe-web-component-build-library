@@ -10,6 +10,11 @@ import { ModalContext } from "src/Modals/Modal";
 import { useAppContext } from "src/context/reducer";
 import { getPageURI } from "src/utils/route.utils";
 
+const SHOP_URL =
+  process.env.NODE_ENV === "development"
+    ? process.env.DEV_CONTAINER_URL!
+    : process.env.PROD_CONTAINER_URL!;
+
 const AccountSection = memo(() => {
   const { user, handleLogout } = useAppContext();
   const { setToggleShowModal } = useContext<ModalContextType>(ModalContext);
@@ -57,7 +62,7 @@ const DesktopMenu = memo(({ isMobile = false }: Props) => {
       </h4>
 
       <h4 className="desktop-menu__item">
-        <Link to={process.env.DEV_SHOP_URL!}>About Us </Link>
+        <Link to={SHOP_URL}>About Us</Link>
       </h4>
 
       <h4 className="desktop-menu__item">

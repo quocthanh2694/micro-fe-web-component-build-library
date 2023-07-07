@@ -5,14 +5,13 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 import { Footer } from "./components/layout/Footer";
 import { Header } from "./components/layout/Header";
 import { Layout } from "./components/layout/Layout";
-import { URI } from "./constants/constant";
+import { BASE_URL, URI } from "./constants/constant";
 import { HomePage } from "./pages/HomePage";
 import { ProductPage } from "./pages/ProductPage";
 import { validationScheme } from "./validationScheme";
 import CartPage from "./pages/CartPage";
 
 const Router = () => {
-
   const handleInputChange = (e: CustomEvent<string>) => {
     // console.log("@@eee", e);
   };
@@ -96,5 +95,9 @@ const Router = () => {
     </>
   );
 };
+
+if (window.location.pathname === "/") {
+  window.location.replace(BASE_URL);
+}
 
 export default Router;

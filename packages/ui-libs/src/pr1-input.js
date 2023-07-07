@@ -87,12 +87,12 @@ class MyEl extends HTMLElement {
         this._onchangeFn = null;
 
         this.#input = this.shadowRoot.querySelector('input');
-        this.#input.addEventListener('input', () => this.#internals.setFormValue(this.value));
+        this.#input.addEventListener('input', () => this.#internals?.setFormValue(this.value));
 
         // Callback event submit form
         this.inputNode.addEventListener('keypress', (e) => {
             if (e.keyCode === 13 || e.code === 'Enter') {
-                const button = this.#internals.form?.querySelector('button[type="submit"]');
+                const button = this.#internals?.form?.querySelector('button[type="submit"]');
                 if (button && !button?.disabled) {
                     button.click();
                 }
@@ -182,20 +182,20 @@ class MyEl extends HTMLElement {
 
 
     static formAssociated = true;
-    #internals = this.attachInternals();
+    #internals = this.attachInternals ? this.attachInternals() : undefined;
     #input;
 
-    get form() { return this.#internals.form; }
+    get form() { return this.#internals?.form; }
     get name() { return this.getAttribute('name') };
     get type() { return this.localName; }
     get value() { return this.#input.value; }
     set value(v) { this.#input.value = v; }
-    get validity() { return this.#internals.validity; }
-    get validationMessage() { return this.#internals.validationMessage; }
-    get willValidate() { return this.#internals.willValidate; }
+    get validity() { return this.#internals?.validity; }
+    get validationMessage() { return this.#internals?.validationMessage; }
+    get willValidate() { return this.#internals?.willValidate; }
 
-    checkValidity() { return this.#internals.checkValidity(); }
-    reportValidity() { return this.#internals.reportValidity(); }
+    checkValidity() { return this.#internals?.checkValidity(); }
+    reportValidity() { return this.#internals?.reportValidity(); }
 
 }
 

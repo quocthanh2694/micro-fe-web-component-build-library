@@ -91,7 +91,7 @@ module.exports = (env, argv) => {
     },
 
     plugins: [
-      new webpack.EnvironmentPlugin({}),
+      new webpack.EnvironmentPlugin({ ...process.env }),
       new webpack.DefinePlugin({
         "process.env": JSON.stringify(process.env),
       }),

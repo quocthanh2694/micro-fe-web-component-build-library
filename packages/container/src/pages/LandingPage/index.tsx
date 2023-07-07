@@ -11,7 +11,7 @@ import { BookIcon, HomeIcon, MusicIcon, PieIcon } from "src/icons";
 
 const ShoppingNow = () => {
   const handleShoppingNow = () => {
-    window.location.href = "/shop";
+    window.location.href = `/shop`;
   };
 
   return (

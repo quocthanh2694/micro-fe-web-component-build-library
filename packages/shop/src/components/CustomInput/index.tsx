@@ -1,7 +1,8 @@
 import { ChangeEvent, memo, useEffect, useRef } from "react";
 import "./styles.scss";
-// import "thanh-pj1-ui-lib";
-import "../../../../ui-libs/src/pr1-input";
+import "thanh-pj1-ui-lib";
+// debug only
+// import "../../../../ui-libs/src/pr1-input";
 import classNames from "classnames";
 const CustomInputWC: any = "pj1-input";
 

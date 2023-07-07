@@ -4,6 +4,7 @@
 	"private": true,
 	"homepage": ".",
 	"devDependencies": {
+		"@babel/core": "^7.22.8",
 		"@babel/plugin-proposal-class-properties": "^7.16.7",
 		"@babel/plugin-proposal-private-methods": "^7.18.6",
 		"@babel/plugin-proposal-private-property-in-object": "^7.21.11",
@@ -18,6 +19,7 @@
 		"css-loader": "^6.8.1",
 		"file-loader": "^6.2.0",
 		"html-webpack-plugin": "5.3.1 ",
+		"react-hot-loader": "^4.13.1",
 		"sass": "^1.63.5",
 		"sass-loader": "^13.3.2",
 		"serve": "11.3.2",
@@ -32,7 +34,9 @@
 		"start": "webpack serve",
 		"build": "webpack --mode production",
 		"serve": "serve dist -p 3001",
-		"clean": "rm -rf dist"
+		"clean": "rm -rf dist",
+		"deploy:staging": "webpack & vercel",
+		"deploy": "webpack --mode production & vercel --prod"
 	},
 	"dependencies": {
 		"@hookform/resolvers": "^3.1.1",
@@ -42,7 +46,7 @@
 		"react-dom": "^18.2.0",
 		"react-hook-form": "^7.45.0",
 		"react-router-dom": "^6.4.2",
-		"thanh-pj1-ui-lib": "^1.0.17",
+		"thanh-pj1-ui-lib": "^1.0.20",
 		"yup": "^1.2.0"
 	}
 }
