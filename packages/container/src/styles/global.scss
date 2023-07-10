@@ -29,6 +29,26 @@ ul {
     }
 }
 
+
+// scrollbar
+body,
+* {
+    &::-webkit-scrollbar-thumb {
+        background-color: $primary;
+        border-radius: map-get($borderRadius, md);
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: $border;
+        border-radius: map-get($borderRadius, md);
+    }
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+}
+
 h1,
 h2,
 h3,

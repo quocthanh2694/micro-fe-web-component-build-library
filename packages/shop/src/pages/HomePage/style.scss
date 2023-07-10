@@ -18,6 +18,8 @@
          display: grid;
          grid-template-columns: repeat(4, auto);
          row-gap: 10px;
+         padding-left: 7px;
+         padding-right: 7px;
 
          @include media(mobile) {
              grid-template-columns: repeat(1, auto);

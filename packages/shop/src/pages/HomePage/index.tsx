@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import {
   Category,
+  EmptyMessage,
   HotSale,
   Loading,
   Pagination,
@@ -143,6 +144,10 @@ export const HomePage = () => {
           onSelect={handleSelectCategory}
         />
       </div>
+
+      {!(loading || isFetching) && !products?.length && (
+        <EmptyMessage message="Empty products" />
+      )}
 
       <div className="home__products">
         {products?.map((p) => (

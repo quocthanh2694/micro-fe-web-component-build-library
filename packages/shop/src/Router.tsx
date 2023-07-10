@@ -6,8 +6,10 @@ import { BASE_URL, URI } from "./constants/constant";
 import CartPage from "./pages/CartPage";
 import { HomePage } from "./pages/HomePage";
 import { ProductPage } from "./pages/ProductPage";
+import useCurrentResolvedPath from "./hooks/useCurrentResolvedPath";
 
 const Router = () => {
+  const { generateNavPath } = useCurrentResolvedPath();
   return (
     <>
       <Layout>
@@ -17,7 +19,10 @@ const Router = () => {
             <Route index element={<HomePage />} />
             <Route path={URI.product} element={<ProductPage />} />
             <Route path={URI.cart} element={<CartPage />} />
-            <Route path="*" element={<Navigate replace to="/" />} />
+            <Route
+              path="*"
+              element={<Navigate replace to={generateNavPath(URI.shop)} />}
+            />
           </Routes>
         </div>
         <Footer />

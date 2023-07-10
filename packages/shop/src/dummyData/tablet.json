@@ -1,0 +1,72 @@
+[
+    {
+        "id": "tablet1",
+        "name": "APPLE IPAD PRO (2022)",
+        "description": "<div class=\"mt-2 leading-tight md:leading-normal text-xl max-w-5xl \">The M2 chip is nice, but other than that the new 12.9-inch iPad Pro is the same as the last generation.</div><img class=\"w-full border border-gray-100\" src=\"https://helios-i.mashable.com/imagery/reviews/01LwQfpjt0qnJZLNACNk6UB/hero-image.fill.size_1248x702.v1666599334.jpg\" alt=\"Apple iPad Pro\" width=\"1248\" height=\"702\" srcset=\"https://helios-i.mashable.com/imagery/reviews/01LwQfpjt0qnJZLNACNk6UB/hero-image.fill.size_400x225.v1666599334.jpg 400w, https://helios-i.mashable.com/imagery/reviews/01LwQfpjt0qnJZLNACNk6UB/hero-image.fill.size_800x450.v1666599334.jpg 800w, https://helios-i.mashable.com/imagery/reviews/01LwQfpjt0qnJZLNACNk6UB/hero-image.fill.size_1248x702.v1666599334.jpg 1600w\" sizes=\"(max-width: 1280px) 100vw, 1280px\"><p>The sixth-gen 12.9-inch iPad Pro, which <a href=\"https://mashable.com/category/apple\" target=\"_self\">Apple</a> sent me to review last week, is near identical to the fifth-gen iPad Pro in many key aspects. It has the same design, display, cameras, speakers, and battery. It's exactly the same size and weight. It even has a Nano-SIM slot, just like last year's iPad Pro, even though Apple has gone SIM-less on its new <a href=\"https://mashable.com/review/apple-iphone-14-pro-review\" target=\"_self\">iPhone 14</a>. It comes with the same storage options, ranging from 128GB all the way up to 2TB. It once again comes in the Space Gray and Silver colors. It supports the exact same accessories, and Apple hasn't launched any new ones, for now. </p><p>This is not an upgrade for people who want to flaunt their brand new iPad Pro. The major changes are the M2 processor and – if you really stretch the term \"major\" – support for Apple Pencil hover, the tech that makes the tablet's display sense the proximity of Pencil and perform a simple task before you even touch it. </p><img class=\"border border-gray-100\" src=\"https://helios-i.mashable.com/imagery/reviews/01LwQfpjt0qnJZLNACNk6UB/images-3.fill.size_2000x1467.v1666599334.jpg\" alt=\"Apple iPad Pro\" width=\"2000\" height=\"1467\" loading=\"lazy\" srcset=\"https://helios-i.mashable.com/imagery/reviews/01LwQfpjt0qnJZLNACNk6UB/images-3.fill.size_800x587.v1666599334.jpg 800w, https://helios-i.mashable.com/imagery/reviews/01LwQfpjt0qnJZLNACNk6UB/images-3.fill.size_1400x1027.v1666599334.jpg 1400w, https://helios-i.mashable.com/imagery/reviews/01LwQfpjt0qnJZLNACNk6UB/images-3.fill.size_2000x1467.v1666599334.jpg 2000w\" sizes=\"(max-width: 1408px) 100vw, 1408px\"><ul><li><p>The new iPad Pro models now have a sign <a href=\"https://mashable.com/article/ipad-pro-ipad-pro\" target=\"_self\">saying \"iPad Pro\"</a> on the back. Earlier iPad Pro models merely said \"iPad\"</p></li><li><p>The antenna lines on the back appear to be a little less visible than before, especially on the Space Gray variant</p></li><li><p>The rear camera now supports ProRes recording up to 4K at 30fps, and the front camera now supports Smart HDR 4 for photos (the old iPad Pro's front camera only supports Smart HDR 3)</p></li><li><p>Wi-Fi has been upgraded from Wi-Fi 6 to the faster, Wi-Fi 6E standard</p></li></ul><p>The new iPad Pro is powered by Apple's M2 chip. That chip is good enough to power Apple's MacBook Air and the 13-inch MacBook Pro, so the new iPad Pro is basically in the same league as these very capable laptops. Another key aspect is the new iPadOS 16, which launched alongside the new iPads. </p>",
+        "images": [
+            "assets/images/products/tablet1-1.jpg",
+            "assets/images/products/tablet1-2.jpg",
+            "assets/images/products/tablet1-3.jpg"
+        ],
+        "price": "900",
+        "discountPercent": "10",
+        "type": "tablet",
+        "details": [
+            {
+                "key": "Camera",
+                "value": "12MP"
+            },
+            {
+                "key": "Brand",
+                "value": "Apple"
+            },
+            {
+                "key": "Ram",
+                "value": "16GB"
+            },
+            {
+                "key": "Color",
+                "value": "Black"
+            },
+            {
+                "key": "Size",
+                "value": "13 inches"
+            }
+        ]
+    },
+    {
+        "id": "tablet2",
+        "name": "APPLE IPAD MINI 2021",
+        "description": "<img src=\"https://i.insider.com/6266e6bd3ab3160019b374a5?width=700\" srcset=\"https://i.insider.com/6266e6bd3ab3160019b374a5?width=400&amp;format=jpeg&amp;auto=webp 400w, https://i.insider.com/6266e6bd3ab3160019b374a5?width=500&amp;format=jpeg&amp;auto=webp 500w, https://i.insider.com/6266e6bd3ab3160019b374a5?width=700&amp;format=jpeg&amp;auto=webp 700w, https://i.insider.com/6266e6bd3ab3160019b374a5?width=1000&amp;format=jpeg&amp;auto=webp 1000w\" sizes=\"(min-width: 1280px) 900px\" alt=\"Side by side images of The 2021 iPad Mini held in the author’s hands showing the screen on the home screen and The 2021 iPad Mini held in the author’s hands showing the rear metal casing.\" itemprop=\"contentUrl\" decoding=\"async\"><ul class=\"summary-list\">                        <li>The 2021 iPad Mini is a powerful, compact tablet that's less cumbersome than larger iPads.</li>                        <li>It's easier to carry around due to its small size, and its screen is still larger than any phone I know about.</li>                        <li>It's a smaller version of the 2022 iPad Air rather than a smaller version of the standard 2021 iPad.</li>                        </ul>                        <table style=\"border-collapse: collapse; width: 100%; height: 220px;\" border=\"1\" class=\"table-content\"><tbody class=\"table-content-body\"><tr style=\"height: 22px;\"><td style=\"width: 50%; height: 22px;\" class=\"headline-regular headline-bold\"><strong class=\"headline-regular headline-bold\">Specification</strong></td><td style=\"width: 50%; height: 22px;\" class=\"headline-regular headline-bold\"><strong class=\"headline-regular headline-bold\">2021 iPad Mini</strong></td></tr><tr style=\"height: 22px;\"><td style=\"width: 50%; height: 22px;\" class=\"headline-regular headline-bold\"><strong class=\"headline-regular\">Display</strong></td><td style=\"width: 50%; height: 22px;\" class=\"headline-regular\">8.3-inch (2,266 x 1,488) Liquid Retina LED</td></tr><tr style=\"height: 22px;\"><td style=\"width: 50%; height: 22px;\" class=\"headline-regular headline-bold\"><strong class=\"headline-regular\">Processor</strong></td><td style=\"width: 50%; height: 22px;\" class=\"headline-regular\">Apple A15 Bionic</td></tr><tr style=\"height: 22px;\"><td style=\"width: 50%; height: 22px;\" class=\"headline-regular headline-bold\"><strong class=\"headline-regular\">Memory and storage</strong></td><td style=\"width: 50%; height: 22px;\" class=\"headline-regular\">4GB RAM (estimated) / 64GB, 256GB storage</td></tr><tr style=\"height: 22px;\"><td style=\"width: 50%; height: 22px;\" class=\"headline-regular headline-bold\"><strong class=\"headline-regular\">Battery and charging</strong></td><td style=\"width: 50%; height: 22px;\" class=\"headline-regular\">19.3 Wh, 20W charger included</td></tr><tr style=\"height: 22px;\"><td style=\"width: 50%; height: 22px;\" class=\"headline-regular headline-bold\"><strong class=\"headline-regular\">Cameras</strong></td><td style=\"width: 50%; height: 22px;\" class=\"headline-regular\">12MP main camera</td></tr><tr style=\"height: 22px;\"><td style=\"width: 50%; height: 22px;\" class=\"headline-regular headline-bold\"><strong class=\"headline-regular\">Front camera</strong></td><td style=\"width: 50%; height: 22px;\" class=\"headline-regular\">12MP FaceTime HD camera with Center Stage</td></tr><tr style=\"height: 22px;\"><td style=\"width: 50%; height: 22px;\" class=\"headline-regular headline-bold\"><strong class=\"headline-regular\">Audio</strong></td><td style=\"width: 50%; height: 22px;\" class=\"headline-regular\">Stereo speakers</td></tr><tr style=\"height: 22px;\"><td style=\"width: 50%; height: 22px;\" class=\"headline-regular headline-bold\"><strong class=\"headline-regular\">Authentication</strong></td><td style=\"width: 50%; height: 22px;\" class=\"headline-regular\">Touch ID</td></tr><tr style=\"height: 22px;\"><td style=\"width: 50%; height: 22px;\" class=\"headline-regular headline-bold\"><strong class=\"headline-regular\">Price</strong></td><td style=\"width: 50%; height: 22px;\" class=\"headline-regular\">Starting at $500</td></tr></tbody></table>                                                <img class=\"lazy-image js-rendered\" src=\"https://i.insider.com/6266eb1883ca360019f60603?width=700&amp;format=jpeg&amp;auto=webp\" data-content-type=\"image/jpeg\" data-srcs=\"{&quot;https://i.insider.com/6266eb1883ca360019f60603&quot;:{&quot;contentType&quot;:&quot;image/jpeg&quot;,&quot;aspectRatioW&quot;:3305,&quot;aspectRatioH&quot;:2478}}\" alt=\"The 2021 iPad Mini held in the author’s hands showing the screen on the home screen.\" itemprop=\"contentUrl\">                                                                        <p>The 2021 iPad Mini adopts Apple's modern iPad design you'll find on the iPad Air and iPad Pro series. That means the tablet is sleek, thin, and it has flat edges and a flat back. It also has uniform bezels around the display rather than the thicker top and bottom bezels from the classic iPad design.</p>                        <p>The iPad Mini is often known as a pocketable powerhouse, or \"pocket-size,\" and it does fit in my jeans pockets. But it doesn't fit in all the pockets on certain pants and shorts. Your pockets really need to be quite large to fit the iPad Mini, but it's possible — more so than any larger iPad.</p>                                                <p>Running on Apple's latest mobile processor surely counts towards the iPad Mini's $170 premium over the standard iPad, which runs on the two-year-old iPhone 11 A13 Bionic processor. While I wouldn't say there's a noticeable performance difference between these iPads today, I expect that the iPad Mini will remain snappy and responsive for at least two years longer than the iPad, thanks to its processor that's two generations newer.&nbsp;</p>                        <img class=\"lazy-image js-rendered\" src=\"https://i.insider.com/6266ed72fd43020018ca1936?width=700&amp;format=jpeg&amp;auto=webp\" data-content-type=\"image/jpeg\" data-srcs=\"{&quot;https://i.insider.com/6266ed72fd43020018ca1936&quot;:{&quot;contentType&quot;:&quot;image/jpeg&quot;,&quot;aspectRatioW&quot;:3632,&quot;aspectRatioH&quot;:2724}}\" alt=\"The rear of the 2021 iPad Mini shot at an angle resting on a sandstone tile.\" itemprop=\"contentUrl\">                        <img class=\"lazy-image js-rendered\" src=\"https://i.insider.com/6266ee1f0452870018b6c7d3?width=700&amp;format=jpeg&amp;auto=webp\" data-content-type=\"image/jpeg\" data-srcs=\"{&quot;https://i.insider.com/6266ee1f0452870018b6c7d3&quot;:{&quot;contentType&quot;:&quot;image/jpeg&quot;,&quot;aspectRatioW&quot;:3082,&quot;aspectRatioH&quot;:2312}}\" alt=\"The 2021 iPad Mini held in the author’s hand showing the metallic rear of the tablet against a tropical forest background.\" itemprop=\"contentUrl\">                                                <p>The iPad Mini's high $500 price tag may seem overpriced compared to the standard $330 iPad, which also has a larger screen. But the 2021 tablet's design, performance, and features make it more a smaller version of the $600 iPad Air than a smaller version of the standard iPad. Plus, for a $170 premium, you're getting a tablet with longer legs for the future, too.</p>",
+        "images": [
+            "assets/images/products/tablet2-1.jpg",
+            "assets/images/products/tablet2-2.jpg",
+            "assets/images/products/tablet2-3.jpg"
+        ],
+        "price": "600",
+        "discountPercent": "12",
+        "type": "tablet",
+        "details": [
+            {
+                "key": "Display",
+                "value": "Retina"
+            },
+            {
+                "key": "Size",
+                "value": "8.3 inches"
+            },
+            {
+                "key": "Memory",
+                "value": "128GB"
+            },
+            {
+                "key": "Chip",
+                "value": "A15 Bionic"
+            },
+            {
+                "key": "Color",
+                "value": "Silver"
+            }
+        ]
+    }
+]

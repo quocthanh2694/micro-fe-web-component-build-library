@@ -5,7 +5,7 @@ import SuggestedProduct from "src/components/widgets/SuggestedProduct";
 import "./style.scss";
 import useProductDetail from "src/hooks/useProductDetail";
 import { useEffect } from "react";
-import { Loading, ScrollToTop } from "src/components";
+import { EmptyMessage, Loading, ScrollToTop } from "src/components";
 
 export const ProductPage = () => {
   const params = useParams();
@@ -30,11 +30,7 @@ export const ProductPage = () => {
         ]}
       />
 
-      {!loading && !product?.id && (
-        <div className="product-page__notfound text-danger">
-          <h4 className="text-center">No Product found</h4>
-        </div>
-      )}
+      {!loading && !product?.id && <EmptyMessage message="No Product found" />}
       {loading && (
         <div className="product-page__loading">
           <Loading />

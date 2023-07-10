@@ -4,10 +4,11 @@ import { GetHotSaleProductsResponse, GetProductByIdResponse, GetProductsRequest,
 
 const watchesJson: IProduct[] = require('../dummyData/watches.json');
 const phonesJson: IProduct[] = require('../dummyData/phones.json');
+const macbookJson: IProduct[] = require('../dummyData/macbook.json');
+const tabletJson: IProduct[] = require('../dummyData/tablet.json');
 
 // all products
-// TODO:
-const allProducts = watchesJson.concat(phonesJson).map((x, i) => ({
+const allProducts = watchesJson.concat(phonesJson).concat(macbookJson).concat(tabletJson).map((x, i) => ({
     ...x,
     id: `H${i}_${x.id}`,
     name: `#${i + 1} ${x.name}`,
@@ -15,11 +16,11 @@ const allProducts = watchesJson.concat(phonesJson).map((x, i) => ({
 
 
 // suggested products
-// TODO:
 const suggestedProducts = allProducts.slice(0, 4);
 
-// all 5000 products = 500 * 10 products
-const all5000Products = new Array(500).fill(1).reduce((prevArr, p, index) => {
+// all 5600 products = 700 * 8 products
+// 5600/12 467 pages
+const all5000Products = new Array(700).fill(1).reduce((prevArr, p, index) => {
     return prevArr.concat(allProducts.map((item, i) => ({
         ...item,
         id: `${index}_${i}_${item.id}`,

@@ -11,6 +11,7 @@ import Product from "./widgets/Product";
 import Slider from "./widgets/Slider";
 import CustomDropdown from "./CustomDropdown";
 import Loading from "./Loading";
+import EmptyMessage from "./EmptyMessage";
 
 export {
     CustomInput,
@@ -26,4 +27,5 @@ export {
     Pagination,
     CustomDropdown,
     Loading,
+    EmptyMessage,
 } 
