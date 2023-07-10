@@ -25,7 +25,7 @@ export const ProductPage = () => {
             title: "Products",
           },
           {
-            title: "productName",
+            title: product?.name || 'Product detail',
           },
         ]}
       />
