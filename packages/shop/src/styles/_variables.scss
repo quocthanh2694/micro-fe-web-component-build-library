@@ -8,20 +8,15 @@ $danger: #DE3535;
 $white: #FFFFFF;
 $backdropColor: rgba(0, 0, 0, 0.20);
 
-// break points
-$screenMobile: 390px;
-$screenTablet: 1024px;
-$screenDesktop: 1440px;
-
 // max container
 $containerMobile: 358px;
 $containerTablet: 874px;
 $containerDesktop: 1100px;
 
 $media_queries: (
-    'mobile': unquote("(max-width: 1024px)"),
-    'tablet': unquote("(min-width: 1025px) and (max-width: 1440px)"),
-    'desktop': unquote("(min-width: 1441px)")
+    'mobile': unquote("(max-width: 1023px)"),
+    'tablet': unquote("(min-width: 1024px) and (max-width: 1439px)"),
+    'desktop': unquote("(min-width: 1440px)")
 );
 
 @mixin media($breakpoints) {

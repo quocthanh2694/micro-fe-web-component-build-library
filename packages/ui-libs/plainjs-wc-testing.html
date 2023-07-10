@@ -1,81 +1,37 @@
 <!DOCTYPE html>
 <html>
 <style>
-    div {
-        background: green
-    }
 </style>
 
 <head>
     <meta charset="utf-8">
-    <title>On-Event Test</title>
-    <script>
-        function onchangeHandler(event) {
-            console.log('xuat sac onchangeHandler: %O', event.detail.target.value);
-
-        }
-
-        function eventListener(event) {
-            console.log('eventListener: %O', event);
-        }
-
-        (function () {
-            var template = `<input />`;
-            class MyEl extends HTMLElement {
-                constructor() {
-                    super();
-
-                    var rootEl = this.attachShadow({ mode: 'open' });
-                    rootEl.innerHTML = template;
-                    rootEl.firstChild.addEventListener('input', (e) => {
-                        var changeEvent = new CustomEvent("onchange", { detail: e, bubbles: true, cancelable: true });
-                        if (this.dispatchEvent(changeEvent)) {
-                            // Do default operation here
-                            // console.log('Performing default operation');
-                        }
-                    });
-                    this._onchangeFn = null;
-                }
-
-                static get observedAttributes() {
-                    return ['onchange'];
-                }
-
-                attributeChangedCallback(attrName, oldVal, newVal) {
-                    if (attrName === 'onchange' && oldVal !== newVal) {
-                        if (newVal === null) {
-                            this.onchange = null;
-                        }
-                        else {
-                            this.onchange = Function(`return function onchange(event) {\n\t${newVal};\n};`)();
-                        }
-                    }
-                }
-
-                get onchange() {
-                    return this._onchangeFn;
-                }
-                set onchange(handler) {
-                    if (this._onchangeFn) {
-                        this.removeEventListener('onchange', this._onchangeFn);
-                        this._onchangeFn = null;
-                    }
-
-                    if (typeof handler === 'function') {
-                        this._onchangeFn = handler;
-                        this.addEventListener('onchange', this._onchangeFn);
-                    }
-                }
-            }
-
-            // Define our web component
-            customElements.define('my-el', MyEl);
-        })();
-    </script>
+    <title>Vanilla js WC input</title>
 </head>
 
 <body>
-    <my-el onchange="onchangeHandler(event)"></my-el>
+    <h2>Vanillajs Demo Input Web Component</h2>
+
+    <form name="myForm" onsubmit="onSubmit(); return false" method="post">
+        <pj1-input name="testValue" onchange="onchangeHandler(event)" required="true"></pj1-input>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="./src/pr1-input.js"></script>
+    <script>
+        function onSubmit() {
+            var x = document.forms["myForm"]["testValue"].value;
+            alert(x)
+        }
+
+        function onchangeHandler(event) {
+            console.log('@@OnchangeHandler: %O', event.detail.target.value);
+        }
+
+        function eventListener(event) {
+            console.log('@@eventListener: %O', event);
+        }
+    </script>
 </body>
 
 </html>

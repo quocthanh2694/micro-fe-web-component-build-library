@@ -2,6 +2,7 @@
 
 .product-image {
     position: relative;
+    overflow: hidden;
     @include media(mobile) {
         height: 561px;
         &__preview {

@@ -1,17 +1,20 @@
+<h2>Angular Demo Input Web Component</h2>
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
-  <!-- <input id="username" type="text" formControlName="username" required /> -->
   <div>
-    <pj1-input formControlName="username" id="username" ngDefaultControl />
-    <div class="error"
-      *ngIf="form.controls.username.invalid && (form.controls.username.dirty || form.controls.username.touched)">
-      Required</div>
+    <pj1-input ngDefaultControl formControlName="name" id="name"
+      [attr.error]="(form.controls.name.invalid && (form.controls.name.dirty || form.controls.name.touched)) ? 'Required' : ''" />
+    <!-- <div class="error"
+      *ngIf="form.controls.name.invalid && (form.controls.name.dirty || form.controls.name.touched)">
+      Required</div> -->
   </div>
-  <button class="button" type="submit" [disabled]="form.invalid">submit</button>
+  <br>
+  <button class="button" type="submit" [disabled]="form.invalid">Submit form</button>
 </form>
 
+<!-- <br>
+=============================
 <br>
-
 <div>
   <pj1-input [value]="pj1Input" (onchange)="onChangeInputWC($event)" />
   <div>WC Input value: {{pj1Input}}</div>
-</div>
+</div> -->

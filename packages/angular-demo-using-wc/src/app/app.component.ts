@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import '../../../ui-libs/src/index'
 
 @Component({
   selector: 'app-root',
@@ -9,20 +10,18 @@ import { FormBuilder, Validators } from '@angular/forms';
 export class AppComponent {
   pj1Input = 'Default value';
 
-
   form = this.formBuilder.group({
-    username: [null, Validators.required],
+    name: [null, Validators.required],
   });
-
-
 
   constructor(
     private formBuilder: FormBuilder,
   ) { }
 
   onSubmit(): void {
-    this.form.controls.username.markAsTouched();
+    this.form.controls.name.markAsTouched();
     console.warn('Your order has been submitted', this.form.value);
+    alert(this.form.value?.name)
     // this.form.reset();
   }
 
