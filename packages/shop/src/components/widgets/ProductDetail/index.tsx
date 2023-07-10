@@ -27,7 +27,7 @@ const ProductDetail = memo(({ product }: Props) => {
         </div>
         <div className="product-detail__wrap-info">
           <h4 className="text-center">{name}</h4>
-          <h3 className="text-secondary text-center">{`$${numberWithComma(
+          <h3 className="text-secondary text-center line-break">{`$${numberWithComma(
             price
           )} (${discountPercent}%off)`}</h3>
           <div className="line-2 product-detail__wrap-info-first-line"></div>
@@ -43,7 +43,12 @@ const ProductDetail = memo(({ product }: Props) => {
                 className="product-detail__wrap-info-more-row"
               >
                 <div>{detail.key}</div>
-                <div className="text-primary">{detail.value}</div>
+                <div
+                  className="product-detail__wrap-info-more-row-value text-primary line-break"
+                  title={detail.value}
+                >
+                  {detail.value}
+                </div>
               </div>
             ))}
           </div>

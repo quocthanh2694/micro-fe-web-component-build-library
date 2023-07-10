@@ -24,8 +24,8 @@ const CartPayment = memo(() => {
           <span className="text-primary">+${DELIVERY_FEE}</span>
         </div>
         <div className="cart-payment__wrap-total">
-          <span>Total:</span>
-          <h4 className="text-secondary">${numberWithComma(total)}</h4>
+          <span>Total:&nbsp;</span>
+          <h4 className="text-secondary text-right line-break">${numberWithComma(total)}</h4>
         </div>
         <div className="cart-payment__wrap-submit">
           <CustomButton

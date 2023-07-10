@@ -54,7 +54,7 @@ const Product = memo(({ product }: Props) => {
               className="product__info-detail-row text-xs text-primary"
             >{`${detail.key}: ${detail.value}`}</div>
           ))}
-          <div className="product__info-detail-row text-xs text-primary">{`Price: ${CURRENCY}${numberWithComma(
+          <div className="product__info-detail-row text-xs text-primary line-break">{`Price: ${CURRENCY}${numberWithComma(
             product.price
           )}`}</div>
         </div>

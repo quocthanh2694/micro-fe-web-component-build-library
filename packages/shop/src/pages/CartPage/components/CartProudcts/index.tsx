@@ -23,7 +23,7 @@ const CartProduct = () => {
       </div>
 
       <div className="cart-product__subtotal">
-        <h5 className="text-primary text-right">{`Subtotal: ${CURRENCY}${numberWithComma(
+        <h5 className="text-primary text-right line-break">{`Subtotal: ${CURRENCY}${numberWithComma(
           subTotal
         )}`}</h5>
       </div>

@@ -78,7 +78,7 @@ const CartItem = memo(({ cartItem }: Props) => {
             onPlus={handlePlus}
             inputOnly
           />
-          <span className="text-primary text-xs">
+          <span className="text-primary text-xs line-break">
             ${numberWithComma(product?.price)}
           </span>
         </div>

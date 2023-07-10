@@ -3,6 +3,7 @@
  .cart-item {
      display: flex;
      align-items: center;
+     gap: 10px;
 
      padding: 10px 0;
      border-bottom: 1px solid $border;
@@ -10,6 +11,7 @@
 
      &__image {
          cursor: pointer;
+
      }
 
      &__info {
