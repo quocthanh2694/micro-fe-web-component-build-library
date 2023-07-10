@@ -1,8 +1,31 @@
 @import '../../../styles/variables';
 
 .product-image {
+    position: relative;
+    @include media(mobile) {
+        height: 561px;
+        &__preview {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__images {
+            padding-top: 451px !important;
+        }
+    }
     &__preview {
         margin-bottom: 10px;
+        width: 456px;
+        height: 451px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-left: auto;
+        margin-right: auto;
+
+       
     }
 
     &__images {

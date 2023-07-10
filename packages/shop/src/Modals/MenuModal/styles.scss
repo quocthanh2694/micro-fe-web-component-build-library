@@ -1,6 +1,7 @@
 @import '../../styles/variables';
 
 .menu-modal {
+    user-select: none;
     &__menu {
         background-color: $primary;
         height: 321px;

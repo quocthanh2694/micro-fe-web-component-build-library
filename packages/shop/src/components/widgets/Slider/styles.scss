@@ -17,13 +17,17 @@
     margin: auto;
 
     &__item {
-        display: none;
+        opacity: 0;
         height: 100%;
         width: 100%;
         border-radius: 4px;
 
+        position: absolute;
+
+        transition: opacity linear 0.5s;
+
         &.show {
-            display: initial;
+            opacity: 1;
         }
     }
 
@@ -37,6 +41,7 @@
             margin-top: 1px;
             display: flex;
             padding: 16px;
+            user-select: none;
         }
 
         &-prev {
