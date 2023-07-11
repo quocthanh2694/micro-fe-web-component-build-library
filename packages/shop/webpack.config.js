@@ -106,7 +106,6 @@ module.exports = {
       name: "shop",
       filename: "js/remoteEntry.js",
       exposes: {
-        "./CounterAppOne": "./src/components/CounterAppOne",
         "./Shop": "./src/App",
       },
       shared: {
