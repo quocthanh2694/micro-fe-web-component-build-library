@@ -28,6 +28,11 @@
                 margin-right: 0;
             }
 
+            &-data {
+                ul li>span {
+                    left: 3px;
+                }
+            }
         }
     }
 }

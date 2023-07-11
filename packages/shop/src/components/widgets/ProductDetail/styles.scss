@@ -57,7 +57,15 @@
     }
 
     &__body {
-        margin-top: 20px;
+        margin-top: 10px;
+        padding: 10px;
+
+        @include media(tablet) {
+            margin-top: 0;
+        }
+        @include media(mobile) {
+            margin-top: 10px;
+        }
 
         iframe {
             width: 100%;

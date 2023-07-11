@@ -161,7 +161,7 @@ export const HomePage = () => {
       )}
 
       {!isMobile && (
-        <div className="home__pagination">
+        <div className="home__pagination" key={`pagination_${categoryId}`}>
           <Pagination
             currentPage={currentPage}
             onChangePage={handlePageChange}

@@ -49,9 +49,13 @@
 
 .desktop-menu.is-mobile {
     flex-direction: column;
+    gap: 20px;
+    height: auto;
 
     .desktop-menu__item {
-        margin-top: 20px;
+        &:first-child {
+            margin-top: 20px;
+        }
         margin-right: 0;
     }
 }

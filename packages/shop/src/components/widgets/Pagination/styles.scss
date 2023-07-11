@@ -5,6 +5,7 @@
     button {
         padding: 0 8px;
         min-width: 23px;
+        user-select: none;
 
         &:disabled {
             min-width: 26px;

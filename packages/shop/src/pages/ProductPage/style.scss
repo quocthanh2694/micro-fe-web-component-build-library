@@ -3,6 +3,12 @@
  .product-page {
      &>* {
          margin-top: 20px;
+         &:first-child {
+            margin-top: 0;
+         }
+         &:nth-child(2) {
+            margin-top: 10px;
+         }
      }
 
      &__notfound {

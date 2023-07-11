@@ -9,9 +9,13 @@
      border-bottom: 1px solid $border;
      min-height: 118px;
 
+     &__image,
+     &__info {
+         margin-bottom: 4px;
+     }
+
      &__image {
          cursor: pointer;
-
      }
 
      &__info {

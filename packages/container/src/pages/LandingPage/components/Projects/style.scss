@@ -22,6 +22,12 @@
             &-title {
                 font-weight: 700;
             }
+            ul {
+                padding-left: 21px;
+                li.highlight {
+                    color: $secondary;
+                }
+            }
         }
     }
 

@@ -64,7 +64,7 @@ export const Projects = React.forwardRef<HTMLDivElement, {}>(
                   </span>
                 </li>
                 {!!prj.ref && (
-                  <li>
+                  <li className="highlight">
                     <span className="text-secondary text-xxs">
                       Ref:&nbsp;
                       <a href={prj.ref} target="_blank">
