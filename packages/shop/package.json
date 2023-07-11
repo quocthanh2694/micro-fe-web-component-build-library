@@ -46,7 +46,7 @@
 		"react-dom": "^18.2.0",
 		"react-hook-form": "^7.45.0",
 		"react-router-dom": "^6.4.2",
-		"thanh-pj1-ui-lib": "^1.0.20",
+		"thanh-pj1-ui-lib": "^1.0.21",
 		"yup": "^1.2.0"
 	}
 }
