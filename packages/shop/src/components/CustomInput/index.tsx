@@ -1,4 +1,4 @@
-import { ChangeEvent, memo, useEffect, useRef } from "react";
+import { ChangeEvent, forwardRef, memo, useEffect, useRef } from "react";
 import "./styles.scss";
 import "thanh-pj1-ui-lib";
 // debug only
@@ -26,20 +26,23 @@ interface CustomInputProps {
   tabIndex?: number;
 }
 
-const CustomInput = memo(
-  ({
-    value,
-    onChange,
-    errors,
-    error,
-    name = "",
-    pattern,
-    label,
-    className,
-    required,
-    disabled = false,
-    ...props
-  }: CustomInputProps) => {
+const CustomInput = forwardRef(
+  (
+    {
+      value,
+      onChange,
+      errors,
+      error,
+      name = "",
+      pattern,
+      label,
+      className,
+      required,
+      disabled = false,
+      ...props
+    }: CustomInputProps,
+    fRef
+  ) => {
     const errMsg = errors?.[name]?.message || error;
     const ref = useRef<HTMLInputElement>();
 
@@ -54,6 +57,10 @@ const CustomInput = memo(
         inputRef.removeEventListener("onchange", handleChange);
       };
     }, [onChange]);
+
+    useEffect(() => {
+      fRef = ref;
+    }, [ref]);
 
     return (
       <div className={classNames(["input-wrapper", className])}>
@@ -75,4 +82,4 @@ const CustomInput = memo(
   }
 );
 
-export default CustomInput;
+export default memo(CustomInput);

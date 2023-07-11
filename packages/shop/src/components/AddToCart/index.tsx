@@ -1,4 +1,4 @@
-import { ChangeEvent, memo, useCallback, useState } from "react";
+import { ChangeEvent, memo, useCallback, useMemo, useState } from "react";
 import "./styles.scss";
 import CustomButton from "../CustomButton";
 import CustomInput from "../CustomInput";
@@ -22,7 +22,7 @@ const AddToCart = ({
 }: Props) => {
   const [value, setValue] = useState(defaultQty?.toString());
 
-  const isValid = value && Number(value) > 0;
+  const isValid = useMemo(() => value && Number(value) > 0, [value]);
 
   const handleBlurInput = useCallback(() => {
     if (!isValid) {
@@ -45,7 +45,9 @@ const AddToCart = ({
       if (next < 1) {
         return "1";
       } else {
-        !!onMinus && onMinus(-1);
+        setTimeout(() => {
+          !!onMinus && onMinus(-1);
+        });
         return next?.toString();
       }
     });

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import '../../ui-libs/src/index';
 </script>
 
 <template>
@@ -8,9 +7,8 @@ import '../../ui-libs/src/index';
     <div>
       <form @submit.prevent="submitForm">
         <!-- <input v-model="formValue" type="text" placeholder="Enter your name" required /> -->
-        <pj1-input v-model="formValue" @onchange="onChange" type="text" placeholder="Place holder for input" required />
-        <br>
-        <input type="submit" value="Submit" />
+        <pj1-input :value="formValue" @onchange="onChange" type="text" required="true" />
+        <input type="submit" value="Submit" :disabled="!formValue" />
       </form>
       <br>
       <code>Form value: {{ formValue }}</code>
@@ -31,8 +29,9 @@ export default {
       this.formSubmitted = true;
       alert(this.formValue);
     },
-    onChange: (e: any) => {
-      console.log('@@onChange', e?.detail?.target?.value)
+    onChange: function (e: any) {
+      console.log('@@onChange', e?.detail?.target?.value);
+      this.formValue = e?.detail?.target?.value || '';
     }
   },
 };

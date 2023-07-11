@@ -7,7 +7,14 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
+    vue({
+      template: {
+        compilerOptions: {
+          // i am ignoring my custom '<pj1-input>' tag
+          isCustomElement: (tag) => ['pj1-input'].includes(tag)
+        }
+      }
+    }),
     vueJsx(),
   ],
   resolve: {
