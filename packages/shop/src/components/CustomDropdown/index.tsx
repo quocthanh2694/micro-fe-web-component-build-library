@@ -63,6 +63,23 @@ const CustomDropdown = forwardRef<HTMLDivElement, Props>(
     const [isOpen, setIsOpen] = useState(false);
     const wrapperRef = useRef<HTMLDivElement | null>(null);
 
+    // handle onBlur wrapper
+    useEffect(() => {
+      if (!wrapperRef?.current) return;
+      const handleFocusOut = (e: FocusEvent) => {
+        setTimeout(() => {
+          if (!wrapperRef.current?.contains(document.activeElement)) {
+            !!onBlur && onBlur(e);
+          }
+        });
+      };
+      wrapperRef.current.addEventListener("focusout", handleFocusOut);
+      return () => {
+        if (!wrapperRef?.current) return;
+        wrapperRef.current.removeEventListener("focusout", handleFocusOut);
+      };
+    }, [wrapperRef?.current, onBlur]);
+
     useEffect(() => {
       const found = options?.find((x) => x.id === value);
       setSelectedOption(found || null);
@@ -105,10 +122,6 @@ const CustomDropdown = forwardRef<HTMLDivElement, Props>(
       }
     };
 
-    const handleBlur = useCallback((e: any) => {
-      !!onBlur && onBlur(e);
-    }, []);
-
     return (
       <div className={classNames(["dropdown", className])} ref={wrapperRef}>
         {!!label && (
@@ -122,7 +135,6 @@ const CustomDropdown = forwardRef<HTMLDivElement, Props>(
           ref={fRef}
           className={classNames(["dropdown__wrap"])}
           tabIndex={tabIndex}
-          onBlur={handleBlur}
         >
           <div
             className={classNames([
@@ -164,6 +176,7 @@ const CustomDropdown = forwardRef<HTMLDivElement, Props>(
                 placeholder="Filter..."
                 value={searchTerm}
                 onChange={handleInputChange}
+                autoFocus
               />
               <ul className="dropdown__options-list">
                 {filteredOptions.map((option) => (
