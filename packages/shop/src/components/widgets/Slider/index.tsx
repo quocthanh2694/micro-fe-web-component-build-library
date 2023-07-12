@@ -1,42 +1,25 @@
 import classNames from "classnames";
-import { memo, useCallback, useState } from "react";
-
+import { memo, useCallback, useEffect, useRef, useState } from "react";
+import { getSliderApi } from "src/apis/sliderApi";
+import { SLIDER_DELAY } from "src/constants/constant";
 import useInterval from "src/hooks/useInterval";
 import SliderArrowIcon from "src/icons/SliderArrowIcon";
+import { unifyEvent } from "src/utils/utils";
 import Image from "../../Image";
 import "./styles.scss";
 
-const Banner1 = require("src/assets/images/banner1.jpg").default;
-const Banner2 = require("src/assets/images/banner2.jpg").default;
-const Banner3 = require("src/assets/images/banner3.jpg").default;
-const Banner4 = require("src/assets/images/banner4.jpg").default;
+const sliders = getSliderApi();
 
 interface Props {}
 
 const Slider = memo(({}: Props) => {
+  const sliderRef = useRef<HTMLDivElement>(null);
+
   const [slideIndex, setSlideIndex] = useState(1);
-  const sliders = [
-    {
-      id: 1,
-      image: Banner1,
-    },
-    {
-      id: 2,
-      image: Banner2,
-    },
-    {
-      id: 3,
-      image: Banner3,
-    },
-    {
-      id: 4,
-      image: Banner4,
-    },
-  ];
 
   const { reset } = useInterval(() => {
     nextSlide(1);
-  }, 3000);
+  }, SLIDER_DELAY);
 
   const nextSlide = useCallback(
     (n = 0) => {
@@ -55,8 +38,62 @@ const Slider = memo(({}: Props) => {
     [reset]
   );
 
+  useEffect(() => {
+    let locked = false;
+    let x0 = -1;
+
+    function start(e: MouseEvent | TouchEvent) {
+      x0 = unifyEvent(e).clientX;
+      locked = true;
+    }
+
+    function move(e: MouseEvent | TouchEvent) {
+      if (locked) {
+        // stop vertical scroll event
+        e.preventDefault();
+      }
+    }
+
+    function end(e: MouseEvent | TouchEvent) {
+      if (!locked) return;
+      locked = false;
+
+      let x1 = unifyEvent(e).clientX;
+      const swipeLength = x1 - x0;
+
+      if (swipeLength > 0) {
+        // swipe left
+        nextSlide(-1);
+      } else {
+        // swipe right
+        nextSlide(1);
+      }
+    }
+    if (!sliderRef?.current) return;
+    sliderRef.current.addEventListener("mousedown", start, false);
+    sliderRef.current.addEventListener("touchstart", start, false);
+
+    sliderRef.current.addEventListener("mousemove", move, false);
+    sliderRef.current.addEventListener("touchmove", move, false);
+
+    sliderRef.current.addEventListener("mouseup", end, false);
+    sliderRef.current.addEventListener("touchend", end, false);
+
+    return () => {
+      if (!sliderRef?.current) return;
+      sliderRef.current.removeEventListener("mousedown", start, false);
+      sliderRef.current.removeEventListener("touchstart", start, false);
+
+      sliderRef.current.removeEventListener("mousemove", move, false);
+      sliderRef.current.removeEventListener("touchmove", move, false);
+
+      sliderRef.current.removeEventListener("mouseup", end, false);
+      sliderRef.current.removeEventListener("touchend", end, false);
+    };
+  }, [nextSlide, sliderRef?.current]);
+
   return (
-    <section className="slider">
+    <section className="slider" ref={sliderRef}>
       {sliders.map((item, index) => (
         <div
           key={item.id}

@@ -3,7 +3,7 @@ import Router from "./Router";
 import "./App.scss";
 import "./styles/global.scss";
 
-console.log("@@Container v1.0.1");
+console.log("@@Container v1.0.2");
 
 const App = () => {
   return <Router />;

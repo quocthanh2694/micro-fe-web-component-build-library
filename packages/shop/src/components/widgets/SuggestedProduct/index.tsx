@@ -3,8 +3,6 @@ import useSuggestedProduct from "src/hooks/useSuggestedProduct";
 import Product from "../Product";
 import "./styles.scss";
 
-const Watch = require("src/assets/images/watch.png").default;
-
 interface Props {}
 const SuggestedProduct = memo(({}: Props) => {
   const { getSuggestedProducts, items: products } = useSuggestedProduct();

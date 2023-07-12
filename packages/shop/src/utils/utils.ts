@@ -10,3 +10,7 @@ export const dummyData = (dataJson: any[], key: string, quantity: number) => {
         };
     })
 };
+
+export const unifyEvent = (e: any) => {
+    return e?.changedTouches ? e?.changedTouches[0] : e;
+}

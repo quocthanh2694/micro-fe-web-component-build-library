@@ -9,6 +9,8 @@ export enum URI {
 
 export const DELAY_API = 500;
 
+export const SLIDER_DELAY = 3000;
+
 export const SCREEN_BREAKPOINTS = {
     mobile: 390,
     tablet: 1024,

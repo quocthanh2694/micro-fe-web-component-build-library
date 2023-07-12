@@ -1,7 +1,7 @@
 import classNames from "classnames";
-import { memo, useCallback, useState } from "react";
-import "./styles.scss";
+import { memo, useState } from "react";
 import Image from "../../Image";
+import "./styles.scss";
 
 interface Props {
   images: string[];

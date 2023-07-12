@@ -6,7 +6,7 @@ import "./styles/global.scss";
 import { ModalContextType, ModalKey } from "./Modals/type";
 import { AppProvider } from "./context/provider";
 
-console.log('@@Shop v1.0.1');
+console.log('@@Shop v1.0.2');
 
 const App = () => {
   const [modalData, setModalData] = useState<ModalContextType>(
