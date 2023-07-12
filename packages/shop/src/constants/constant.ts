@@ -18,3 +18,30 @@ export const SCREEN_BREAKPOINTS = {
 export const CURRENCY = '$';
 export const DELIVERY_FEE = 10;
 
+export const CATEGORIES = [
+    {
+        id: "all",
+        name: "All Products",
+    },
+    {
+        id: "watch",
+        name: "Watch",
+    },
+    {
+        id: "phone",
+        name: "Phone",
+    },
+    {
+        id: "laptop",
+        name: "Laptop",
+    },
+    {
+        id: "tablet",
+        name: "Tablet",
+    },
+    {
+        id: "camera",
+        name: "Camera",
+    },
+];
+

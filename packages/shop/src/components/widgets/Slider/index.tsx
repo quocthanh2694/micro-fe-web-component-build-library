@@ -6,10 +6,10 @@ import SliderArrowIcon from "src/icons/SliderArrowIcon";
 import Image from "../../Image";
 import "./styles.scss";
 
-const Banner1 = require("src/assets/images/banner1.png").default;
-const Banner2 = require("src/assets/images/banner2.png").default;
-const Banner3 = require("src/assets/images/banner3.png").default;
-const Banner4 = require("src/assets/images/banner4.png").default;
+const Banner1 = require("src/assets/images/banner1.jpg").default;
+const Banner2 = require("src/assets/images/banner2.jpg").default;
+const Banner3 = require("src/assets/images/banner3.jpg").default;
+const Banner4 = require("src/assets/images/banner4.jpg").default;
 
 interface Props {}
 

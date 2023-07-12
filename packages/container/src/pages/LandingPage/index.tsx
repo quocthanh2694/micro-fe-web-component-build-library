@@ -8,10 +8,11 @@ import CustomButton from "src/components/CustomButton";
 import { NavigationBar } from "src/components/layout/NavigationBar";
 import React, { useRef } from "react";
 import { BookIcon, HomeIcon, MusicIcon, PieIcon } from "src/icons";
+import { URI } from "src/constant/constant";
 
 const ShoppingNow = () => {
   const handleShoppingNow = () => {
-    window.location.href = `/shop`;
+    window.location.href = URI.SHOP;
   };
 
   return (

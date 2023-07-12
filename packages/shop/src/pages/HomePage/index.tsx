@@ -15,33 +15,7 @@ import useProducts from "src/hooks/useProducts";
 import useWindowDimensions from "src/hooks/useWindowSize";
 import { ICategory } from "src/interface/category";
 import "./style.scss";
-
-const CATEGORIES = [
-  {
-    id: "all",
-    name: "All Products",
-  },
-  {
-    id: "watch",
-    name: "Watch",
-  },
-  {
-    id: "phone",
-    name: "Phone",
-  },
-  {
-    id: "laptop",
-    name: "Laptop",
-  },
-  {
-    id: "tablet",
-    name: "Tablet",
-  },
-  {
-    id: "camera",
-    name: "Camera",
-  },
-];
+import { CATEGORIES } from "src/constants/constant";
 
 export const HomePage = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -115,14 +89,6 @@ export const HomePage = () => {
         },
         undefined
       );
-
-      // handle scroll to product section
-      setTimeout(() => {
-        const elemRef = document.getElementById("categoryRef");
-        elemRef?.scrollIntoView({
-          behavior: "smooth",
-        });
-      }, 0);
     },
     [categoryId]
   );

@@ -1,6 +1,6 @@
 @import '../../../styles/variables';
 
-.desktop-menu {
+.menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,16 +43,20 @@
         &:last-child {
             margin-right: 0;
         }
+
+        .active {
+            color: $secondary;
+        }
     }
 
 }
 
-.desktop-menu.is-mobile {
+.menu.is-mobile {
     flex-direction: column;
     gap: 20px;
     height: auto;
 
-    .desktop-menu__item {
+    .menu__item {
         &:first-child {
             margin-top: 20px;
         }

@@ -1,6 +1,6 @@
 import CustomButton from "./CustomButton";
 import CustomInput from "./CustomInput";
-import DesktopMenu from "./widgets/DesktopMenu";
+import DesktopMenu from "./widgets/Menu";
 import MobileMenu from "./widgets/MobileMenu";
 import Pagination from "./widgets/Pagination";
 import ScrollToTop from "./widgets/ScrollToTop";

@@ -7,11 +7,15 @@ const Watch = require("src/assets/images/watch.png").default;
 
 interface Props {}
 const HotSale = memo(({}: Props) => {
-  const { getHotSaleProducts, items: products } = useHotSaleProduct();
+  const { getHotSaleProducts, items: products, loading } = useHotSaleProduct();
 
   useEffect(() => {
     getHotSaleProducts();
   }, []);
+
+  if (!loading && !products?.length) {
+    return <></>;
+  }
 
   return (
     <div className="hot-sale">

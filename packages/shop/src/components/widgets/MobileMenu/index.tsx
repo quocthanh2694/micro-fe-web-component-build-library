@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import { ModalContext } from "src/Modals/Modal";
 import { ModalContextType } from "src/Modals/type";
 import { URI } from "src/constants/constant";
+import useCurrentResolvedPath from "src/hooks/useCurrentResolvedPath";
 import { MenuIcon } from "src/icons";
-import { getPageURI } from "src/utils/route.utils";
 import ShoppingCart from "../ShoppingCart";
 import "./styles.scss";
 
 interface Props {}
 const MobileMenu = memo(({}: Props) => {
+  const { generateNavPath } = useCurrentResolvedPath();
   const { setToggleShowModal } = useContext<ModalContextType>(ModalContext);
 
   const handleOpenMenu = () => {
@@ -19,7 +20,7 @@ const MobileMenu = memo(({}: Props) => {
   return (
     <div className="mobile-menu">
       <h4 className="mobile-menu__item">
-        <Link to={getPageURI(URI.cart)}>
+        <Link to={generateNavPath(URI.cart)}>
           <ShoppingCart />
         </Link>
       </h4>

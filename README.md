@@ -1,13 +1,11 @@
 ## Welcome to Thanh Tran's project 1 at Simpson Strong tie Viet Nam
 This is a mini project in which you will need to build your own application, to demonstrate your technical skills and power skills. You will be working as a Full-Stack Frontend Engineer, including Design, Implementation, Deployment, and Demonstration. The specific requirements will be given below.
-Software Development Process:
-- Analysis requirement
-- Design
-- Config project
-- Implement features
-- Build & deploy
-- Live on production
-- Enhance & bug fixing
+Software Development Lifecycle
+- Discovery
+- Requirements Gathering
+- Prototyping
+- Development
+- Acceptances
 
 ## Requirements
 ### General
@@ -84,9 +82,12 @@ The application needs the following:
 - `container` This is host page includes Shopping center (also is a Landing page)
 
 ## Tech
-- Micro front-end ( includes nested route) using webpack module federation
+- Micro front-end ( includes nested route and be able to run independent) using webpack module federation
 - Web component - input (support VanillaJs, ReactJs, Angular, Vue)
-- Reactjs
+- Reactjs / react router dom v6
+
+## Figma Design
+- https://www.figma.com/file/GMZUTl4NBoWYj3Gmrrq10s/Simpson-Thanh-Project1?type=design&node-id=0%3A1&mode=dev
 
 ## Running
 
@@ -106,11 +107,16 @@ Lerna will start all projects parallelly and open in the browser.
 
 ## Library web component
 - https://www.npmjs.com/package/thanh-pj1-ui-lib
+- You can test web component with vanilla js by run `packages\ui-libs\plainjs-wc-testing.html` on your browser
 - You can either test (Angular/Vue) by start `yarn start` in `packages\vuejs-demo-using-wc` or `packages\angular-demo-using-wc`.
 
 ## Demo link prod:
 - Container: https://simpson-thanh-pj1-host.vercel.app/
 - Shop: https://simpson-thanh-pj1-shopping-center.vercel.app/
 
+## License 
+- None
+  
+## Powered by Thanh Tran
 
 ### Thank you!

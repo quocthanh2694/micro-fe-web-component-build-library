@@ -1,7 +1,7 @@
 import Image from "src/components/Image";
 import "./style.scss";
 import React from "react";
-const banner = require("src/assets/images/worktable.png");
+const banner = require("src/assets/images/worktable.jpg");
 
 interface Props {}
 
