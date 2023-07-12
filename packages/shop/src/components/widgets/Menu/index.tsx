@@ -19,12 +19,15 @@ const DesktopMenu = memo(({ isMobile = false }: Props) => {
   const { generateNavPath } = useCurrentResolvedPath();
   const location = useLocation();
 
-  const getActiveState = useCallback((uri: URI) => {
-    return location?.pathname === generateNavPath(uri) ||
-      `${location?.pathname}/` === generateNavPath(uri)
-      ? "active"
-      : undefined;
-  }, []);
+  const getActiveState = useCallback(
+    (uri: URI) => {
+      return location?.pathname === generateNavPath(uri) ||
+        `${location?.pathname}/` === generateNavPath(uri)
+        ? "active"
+        : undefined;
+    },
+    [location?.pathname, generateNavPath]
+  );
 
   return (
     <div
