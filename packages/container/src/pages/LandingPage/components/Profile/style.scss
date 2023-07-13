@@ -30,6 +30,20 @@
 
     &__welcome {
         flex: 1;
+
+        @mixin titleCenter {
+            h4 {
+                text-align: center;
+            }
+        }
+
+        @include media(mobile) {
+            @include titleCenter;
+        }
+
+        @include media(tablet) {
+            @include titleCenter;
+        }
     }
 }
 
