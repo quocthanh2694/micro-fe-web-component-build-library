@@ -10,7 +10,7 @@ interface CustomInputProps {
   value?: string;
   onChange?: (v: string, e?: ChangeEvent<Element>) => void;
   onBlur?: (event: any) => void;
-  type?: string;
+  type?: 'text' | 'tel' | 'number';
   placeholder?: string;
   errors?: any; // error object depend on yup validator
   error?: string | false;

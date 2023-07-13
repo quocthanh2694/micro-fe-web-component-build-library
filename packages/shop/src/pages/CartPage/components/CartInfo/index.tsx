@@ -84,6 +84,7 @@ const CartInfo = memo(({ userInfo }: Props) => {
                     required
                     errors={errors}
                     tabIndex={2}
+                    type="tel"
                   />
                 );
               }}
