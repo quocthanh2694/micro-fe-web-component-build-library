@@ -1,7 +1,7 @@
 import { ChangeEvent, forwardRef, memo, useEffect, useRef } from "react";
 import "./styles.scss";
 import "thanh-pj1-ui-lib";
-// debug only
+// // debug only
 // import "../../../../ui-libs/src/pr1-input";
 import classNames from "classnames";
 const CustomInputWC: any = "pj1-input";
@@ -24,6 +24,7 @@ interface CustomInputProps {
   required?: boolean;
   disabled?: boolean;
   tabIndex?: number;
+  integer?: boolean;
 }
 
 const CustomInput = forwardRef(
@@ -39,6 +40,7 @@ const CustomInput = forwardRef(
       className,
       required,
       disabled = false,
+      integer = false,
       ...props
     }: CustomInputProps,
     fRef
@@ -74,6 +76,7 @@ const CustomInput = forwardRef(
           ref={ref}
           value={value}
           {...props}
+          {...(integer ? { integer } : undefined)}
           {...(disabled ? { disabled } : undefined)}
           error={errMsg}
         ></CustomInputWC>

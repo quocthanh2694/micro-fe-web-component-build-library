@@ -9,7 +9,7 @@
 	"scripts": {
 		"start": "lerna run --parallel start",
 		"build": "lerna run build",
-		"publish": "cd packages/ui-libs & yarn run publish:lib",
+		"publish:lib": "cd packages/ui-libs & yarn run publish:lib",
 		"lerna-ls": "lerna ls --all",
 		"deploy": "lerna run deploy",
 		"deploy:staging": "lerna run deploy:staging",

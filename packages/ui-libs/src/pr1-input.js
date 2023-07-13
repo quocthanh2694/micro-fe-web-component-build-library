@@ -54,7 +54,21 @@ class MyEl extends HTMLElement {
   #input;
 
   static get observedAttributes() {
-    return ['placeholder', 'value', 'size', 'name', 'onchange', 'error', 'required', 'pattern', 'type', 'width', 'align', 'disabled'];
+    return [
+      'placeholder',
+      'value',
+      'size',
+      'name',
+      'onchange',
+      'error',
+      'required',
+      'pattern',
+      'type',
+      'width',
+      'align',
+      'disabled',
+      'integer'
+    ];
   }
 
   constructor() {
@@ -96,6 +110,13 @@ class MyEl extends HTMLElement {
   }
 
   _onInput = (e) => {
+    // input integer only for type = number
+    if (this.#input.integer && this.#input.type === 'text') {
+      const newVal = e.target.value.replace(/[^0-9]/g, "");
+      e.target.value = newVal;
+      // this.#input.selectionStart = this.#input.selectionEnd = this.#input.value.length;
+    }
+
     this.#internals?.setFormValue(this.value);
     // emit event onchange
     var changeEvent = new CustomEvent("onchange", {
@@ -182,6 +203,13 @@ class MyEl extends HTMLElement {
         this.#input[attrName] = newVal;
         if (this.#internals) {
           this.#internals.ariaRequired = newVal;
+        }
+        break;
+      case attrName === 'type':
+        if (newVal === 'number') {
+          this.#input.type = 'text';
+        } else {
+          this.#input[attrName] = newVal;
         }
         break;
       default:

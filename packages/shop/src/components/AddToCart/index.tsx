@@ -32,9 +32,9 @@ const AddToCart = ({
 
   const handleChangeInput = useCallback(
     (value: string, e?: ChangeEvent<Element>) => {
-      const newVal = Math.abs(Number(value));
+      const newVal = value === "" ? "" : Math.abs(parseInt(value));
       setValue(newVal.toString());
-      !!onChangeQuantity && onChangeQuantity(newVal);
+      !!onChangeQuantity && newVal !== "" && onChangeQuantity(newVal);
     },
     []
   );
@@ -82,6 +82,7 @@ const AddToCart = ({
             type="number"
             onChange={handleChangeInput}
             onBlur={handleBlurInput}
+            integer
             error={!isValid ? "Invalid value" : undefined}
           />
         </div>
