@@ -1,17 +1,15 @@
+import classNames from "classnames";
 import {
   ChangeEvent,
-  LegacyRef,
   forwardRef,
   memo,
-  useCallback,
   useEffect,
   useRef,
   useState,
 } from "react";
-import "./styles.scss";
-import classNames from "classnames";
-import { DropdownIcon } from "src/icons";
 import { useClickOutside } from "src/hooks/useClickOutside";
+import { DropdownIcon } from "src/icons";
+import "./styles.scss";
 
 interface Option {
   id: string;

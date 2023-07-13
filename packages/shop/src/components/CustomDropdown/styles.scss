@@ -17,6 +17,10 @@
 
     &__wrap {
         position: relative;
+
+        &:focus {
+            outline-color: $backdropColor;
+        }
     }
 
     &__wrap-input {
