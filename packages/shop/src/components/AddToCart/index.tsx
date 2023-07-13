@@ -62,6 +62,7 @@ const AddToCart = ({
 
   const handleAddToCart = useCallback(() => {
     !!onAddToCart && onAddToCart(Number(value));
+    setValue("1");
   }, [value]);
 
   return (

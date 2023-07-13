@@ -1,6 +1,7 @@
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useEffect } from "react";
 import { FormProvider, useForm } from "react-hook-form";
+import { EmptyMessage } from "src/components";
 import Breadcrumb from "src/components/Breadcrumb";
 import { URI } from "src/constants/constant";
 import { useAppContext } from "src/context/reducer";
@@ -11,7 +12,6 @@ import CartPayment from "./components/CartPayment";
 import CartProduct from "./components/CartProudcts";
 import "./style.scss";
 import { validationScheme } from "./validationScheme";
-import { EmptyMessage } from "src/components";
 
 const CartPage = () => {
   const { navigateTo } = useNavigateMFA();
@@ -50,6 +50,7 @@ const CartPage = () => {
             list={[
               {
                 title: "Products",
+                uri: URI.shop,
               },
               {
                 title: "Cart",

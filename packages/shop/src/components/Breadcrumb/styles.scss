@@ -3,5 +3,9 @@
 .breadcrumb {
     display: flex;
 
-    &__item {}
+    &__item {
+        &.clickable {
+            cursor: pointer;
+        }
+    }
 }

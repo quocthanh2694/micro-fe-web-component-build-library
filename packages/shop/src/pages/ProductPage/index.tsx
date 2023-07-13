@@ -1,11 +1,12 @@
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { EmptyMessage, Loading, ScrollToTop } from "src/components";
 import Breadcrumb from "src/components/Breadcrumb";
 import ProductDetail from "src/components/widgets/ProductDetail";
 import SuggestedProduct from "src/components/widgets/SuggestedProduct";
-import "./style.scss";
+import { URI } from "src/constants/constant";
 import useProductDetail from "src/hooks/useProductDetail";
-import { useEffect } from "react";
-import { EmptyMessage, Loading, ScrollToTop } from "src/components";
+import "./style.scss";
 
 export const ProductPage = () => {
   const params = useParams();
@@ -23,9 +24,10 @@ export const ProductPage = () => {
         list={[
           {
             title: "Products",
+            uri: URI.shop,
           },
           {
-            title: product?.name || 'Product detail',
+            title: product?.name || "Product detail",
           },
         ]}
       />
