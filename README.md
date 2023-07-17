@@ -1,17 +1,20 @@
 ## Technology
-- Micro front-end ( includes nested route and be able to run independent) using webpack module federation with react
+- Demo (Example) below.
+- Design with Figma
+- Micro front-end ( includes nested route and is able to run independently) using Webpack module federation with react
 - Web component - input (support VanillaJs, ReactJs, Angular, Vue and publish to node package management)
 - ReactJs / react router dom v6
 - Monorepo project using Lerna (Config build & deploy)
 - Publish a library to npm (web component)
+- Deploy on production using Vercel
 
-- Carousel - slider support swipe on mobile device
-- Pagination for over 5,000 products, have load more on mobile
+- Carousel - slider support swipe on a mobile device
+- Pagination for over 5,000 products, have load-more on mobile
 - Cart management by useContext React
 - Support Adaptive screen: 1490 - desktop, 1040 - Tablet, 390 - Mobile
   
-- ## Welcome to Thanh Tran project 1 at Simpson Strong tie Viet Nam
-This is a mini project in which you will need to build your own application, to demonstrate your technical skills and power skills. You will be working as a Full-Stack Frontend Engineer, including Design, Implementation, Deployment, and Demonstration. The specific requirements will be given below.
+- ## Welcome to Thanh Tran Project 1 at Simpson Strong-tie Viet Nam
+This is a mini project in which you will need to build your own application, to demonstrate your technical and power skills. You will work as a Full-Stack Frontend Engineer, including Design, Implementation, Deployment, and Demonstration. The specific requirements will be given below.
 Software Development Lifecycle
 - Discovery
 - Requirements Gathering
@@ -29,11 +32,11 @@ The application needs the following:
 - Has to be either responsive or adaptive.
 - Has to be able to run on a browser.
 - Has no third-party CSS/Design System/Component Library.
-- Has to be deployed to Docker and hosted on your local machine. Or deployed on Vercel, Netlify.
+- Has to be deployed to Docker and hosted on your local machine. Or deployed on Vercel, or Netlify.
 
 ### Detail requirement
 #### Landing Page
-- The image(s) ratio should be implemented appropriately. In another word, there shouldn’t be any shrunk or stretched image.
+- The image(s) ratio should be implemented appropriately. In other words, there shouldn’t be any shrunk or stretched images.
 - Shows projects with a brief description, and a link to demo (if applicable).
 - Must have 4 sections:
   - Introduce yourself
@@ -42,33 +45,33 @@ The application needs the following:
   - Hobbies
   - Anything interesting about yourself that you want to share (Nice to Have)
 #### Shopping center
-- User can add items into cart and cart will be updated immediately (CRUD products in cart).
+- User can add items to the cart and the cart will be updated immediately (CRUD products in cart).
 - Allow pagination for product catalog (minimum 5000 records).
-- Apply infinite scroll (Nice to have on the mobile version of product catalog).
-- Checkout page has to show single item price and total price.
-- System should handle error gracefully if items are not fetched properly.
+- Apply infinite scroll (Nice to have on the mobile version of the product catalog).
+- The checkout page has to show the single item price and the total price.
+- System should handle errors gracefully if items are not fetched properly.
 - Able to keep cart data for each user’s session.
 - Must have features/pages:
   - Product Catalog
-  - Product’s Detail
+  - Product Detail
   - Login
   - Order/Checkout Page
   - Payment Page (Nice to Have)
 
 #### Demonstration
 - Micro-Frontend
-  - Setup source structures.
+  - Set up source structures.
   - Applications can run independently and also run inside the main Application.
-  - Setup buildable/reusable libraries.
+  - Set up buildable/reusable libraries.
   - No iframe allowed.
   - Include sub-repo/submodule (Nice to have)
 - Routing
   - Setup Routes across applications (Micro-Frontend Architecture).
-  - Routes of each application works independently and also able to run inside the main application.
+  - Routes of each application works independently and are also able to run inside the main application.
   - Include Nested Routes.
 - Input Component
-  - Create input component from scratch using Web Component.
-  - The component has to be run across multiple technologies (including React, Angular, PlainJS, Vue)
+  - Create input components from scratch using Web Component.
+  - The component has to be run across multiple technologies (including React, Angular, PlainJS, and Vue)
 
 ## Timeline
 - Week 1: Analyst requirement & design in Figma
@@ -89,9 +92,9 @@ The application needs the following:
 
 
 
-## Project overview
+## Project Overview
 - `shop` Shopping center (also is remote and included inside host - container)
-- `container` This is host page includes Shopping center (also is a Landing page)
+- `container` This is the host page that includes the Shopping center (also a Landing page)
 - `ui-libs` is a library Input web component published to npm (have test with vanillaJs)
 - `angular-demo-using-wc` Test using input web component with Angular
 - `vuejs-demo-using-wc` Test using input web component with Vue
@@ -109,7 +112,7 @@ yarn
 yarn start
 ```
 
-Lerna will start all projects parallelly and open in the browser.
+Lerna will start all projects parallelly and open them in the browser.
 
 - Container: http://localhost:3000/
 - Shop: http://localhost:3001/
@@ -117,8 +120,8 @@ Lerna will start all projects parallelly and open in the browser.
 
 ## Library web component
 - https://www.npmjs.com/package/thanh-pj1-ui-lib
-- You can test web component with vanilla js by run `packages\ui-libs\plainjs-wc-testing.html` on your browser
-- You can either test (Angular/Vue) by start `yarn start` in `packages\vuejs-demo-using-wc` or `packages\angular-demo-using-wc`.
+- You can test web component with vanilla js by running `packages\ui-libs\plainjs-wc-testing.html` on your browser
+- You can either test (Angular/Vue) by starting `yarn start` in `packages\vuejs-demo-using-wc` or `packages\angular-demo-using-wc`.
 
 ## Demo link prod:
 - Container: https://simpson-thanh-pj1-host.vercel.app/
@@ -126,6 +129,6 @@ Lerna will start all projects parallelly and open in the browser.
 
 ## License: GNU
   
-## Powered by Thanh Tran
+## Powered by Thanh Tran (quocthanh2694@gmail.com)
 
 ### Thank you!
