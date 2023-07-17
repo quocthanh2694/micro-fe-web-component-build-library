@@ -1,4 +1,16 @@
-## Welcome to Thanh Tran's project 1 at Simpson Strong tie Viet Nam
+## Technology
+- Micro front-end ( includes nested route and be able to run independent) using webpack module federation with react
+- Web component - input (support VanillaJs, ReactJs, Angular, Vue and publish to node package management)
+- ReactJs / react router dom v6
+- Monorepo project using Lerna (Config build & deploy)
+- Publish a library to npm (web component)
+
+- Carousel - slider support swipe on mobile device
+- Pagination for over 5,000 products, have load more on mobile
+- Cart management by useContext React
+- Support Adaptive screen: 1490 - desktop, 1040 - Tablet, 390 - Mobile
+  
+- ## Welcome to Thanh Tran project 1 at Simpson Strong tie Viet Nam
 This is a mini project in which you will need to build your own application, to demonstrate your technical skills and power skills. You will be working as a Full-Stack Frontend Engineer, including Design, Implementation, Deployment, and Demonstration. The specific requirements will be given below.
 Software Development Lifecycle
 - Discovery
@@ -78,13 +90,11 @@ The application needs the following:
 
 
 ## Project overview
-- `shop` Shopping center
+- `shop` Shopping center (also is remote and included inside host - container)
 - `container` This is host page includes Shopping center (also is a Landing page)
-
-## Tech
-- Micro front-end ( includes nested route and be able to run independent) using webpack module federation
-- Web component - input (support VanillaJs, ReactJs, Angular, Vue)
-- Reactjs / react router dom v6
+- `ui-libs` is a library Input web component published to npm (have test with vanillaJs)
+- `angular-demo-using-wc` Test using input web component with Angular
+- `vuejs-demo-using-wc` Test using input web component with Vue
 
 ## Figma Design
 - https://www.figma.com/file/GMZUTl4NBoWYj3Gmrrq10s/Simpson-Thanh-Project1?type=design&node-id=0%3A1&mode=dev
@@ -114,8 +124,7 @@ Lerna will start all projects parallelly and open in the browser.
 - Container: https://simpson-thanh-pj1-host.vercel.app/
 - Shop: https://simpson-thanh-pj1-shopping-center.vercel.app/
 
-## License 
-- None
+## License: GNU
   
 ## Powered by Thanh Tran
 
