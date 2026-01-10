@@ -1,134 +1,90 @@
-## Technology
-- Demo (Example) below.
-- Design with Figma
-- Micro front-end ( includes nested route and is able to run independently) using Webpack module federation with react
-- Web component - input (support VanillaJs, ReactJs, Angular, Vue and publish to node package management)
-- ReactJs / react router dom v6
-- Monorepo project using Lerna (Config build & deploy)
-- Publish a library to npm (web component)
-- Deploy on production using Vercel
+# Micro-Frontend Shopping Platform
 
-- Carousel - slider support swipe on a mobile device
-- Pagination for over 5,000 products, have load-more on mobile
-- Cart management by useContext React
-- Support Adaptive screen: 1490 - desktop, 1040 - Tablet, 390 - Mobile
-  
-- ## Welcome to Thanh Tran Project 1 at Simpson Strong-tie Viet Nam
-This is a mini project in which you will need to build your own application, to demonstrate your technical and power skills. You will work as a Full-Stack Frontend Engineer, including Design, Implementation, Deployment, and Demonstration. The specific requirements will be given below.
-Software Development Lifecycle
-- Discovery
-- Requirements Gathering
-- Prototyping
-- Development
-- Acceptances
+A production-ready micro-frontend e-commerce platform built with React, Module Federation and a shared Web Component UI library.
 
-## Requirements
-### General
-The application needs the following:
-- Has a defined design (using Figma) before the actual implementation.
-- Has to be built with React.
-- Has a navigation bar to browse through different sections.
-- Has a consistent header and footer.
-- Has to be either responsive or adaptive.
-- Has to be able to run on a browser.
-- Has no third-party CSS/Design System/Component Library.
-- Has to be deployed to Docker and hosted on your local machine. Or deployed on Vercel, or Netlify.
+This project demonstrates how to build scalable, independently deployable frontend applications with shared UI components, real-world routing, state management and performance handling for large datasets.
 
-### Detail requirement
-#### Landing Page
-- The image(s) ratio should be implemented appropriately. In other words, there shouldn’t be any shrunk or stretched images.
-- Shows projects with a brief description, and a link to demo (if applicable).
-- Must have 4 sections:
-  - Introduce yourself
-  - Experience
-  - Previous Project(s) Information
-  - Hobbies
-  - Anything interesting about yourself that you want to share (Nice to Have)
-#### Shopping center
-- User can add items to the cart and the cart will be updated immediately (CRUD products in cart).
-- Allow pagination for product catalog (minimum 5000 records).
-- Apply infinite scroll (Nice to have on the mobile version of the product catalog).
-- The checkout page has to show the single item price and the total price.
-- System should handle errors gracefully if items are not fetched properly.
-- Able to keep cart data for each user’s session.
-- Must have features/pages:
-  - Product Catalog
-  - Product Detail
-  - Login
-  - Order/Checkout Page
-  - Payment Page (Nice to Have)
+Live Demo  
+Host (Container): https://simpson-thanh-pj1-host.vercel.app  
+Shop (Remote App): https://simpson-thanh-pj1-shopping-center.vercel.app
 
-#### Demonstration
-- Micro-Frontend
-  - Set up source structures.
-  - Applications can run independently and also run inside the main Application.
-  - Set up buildable/reusable libraries.
-  - No iframe allowed.
-  - Include sub-repo/submodule (Nice to have)
-- Routing
-  - Setup Routes across applications (Micro-Frontend Architecture).
-  - Routes of each application works independently and are also able to run inside the main application.
-  - Include Nested Routes.
-- Input Component
-  - Create input components from scratch using Web Component.
-  - The component has to be run across multiple technologies (including React, Angular, PlainJS, and Vue)
+---
 
-## Timeline
-- Week 1: Analyst requirement & design in Figma
-- Week 2+3: Implementation
-- Week 4: Deploy & enhance.
-  
-## Notes
-- The Design Process has to be taken place and be completed before Implementation Process, and when the Design for the application is marked as “Completed”, you can’t make any further changes to the Design. Any difference between the Implementations and the Design will be considered a bug(s).
-- At the end of the Design Project and the end of the Project, you will be required to schedule a meeting to present your work to the team, which follows the below structure:
-  - Introduce your work to the audience.
-  - Give a demonstration of your work to the audience.
-  - Show and explain the application/code's structures (the end of the Project).
-  - Sharing your opinion about the works.
-  - Q&A
-  - Discuss and share anything you want with the team.
-- Feedback will be given based on your outputs.
-- If you encounter any difficulty, please contact your supervisors or the team as soon as possible.
+## Screenshots
 
+| Desktop                                | Mobile                                |
+| -------------------------------------- | ------------------------------------- |
+| ![](./screenshots/profile-desktop.png) | ![](./screenshots/profile-mobile.png) |
+| ![](./screenshots/shop-desktop.png)    | ![](./screenshots/shop-mobile.png)    |
 
+---
 
-## Project Overview
-- `shop` Shopping center (also is remote and included inside host - container)
-- `container` This is the host page that includes the Shopping center (also a Landing page)
-- `ui-libs` is a library Input web component published to npm (have test with vanillaJs)
-- `angular-demo-using-wc` Test using input web component with Angular
-- `vuejs-demo-using-wc` Test using input web component with Vue
+## Key Features
 
-## Figma Design
-- https://www.figma.com/file/GMZUTl4NBoWYj3Gmrrq10s/Simpson-Thanh-Project1?type=design&node-id=0%3A1&mode=dev
+- Micro-frontend architecture using Webpack Module Federation
+- Independently deployable applications (Host & Remote)
+- Shared Web Component UI library published to npm
+- Product catalog with 5,000+ records, pagination & infinite scroll
+- Cart & checkout flow with persistent session state
+- Mobile-first adaptive layout
+- Production deployment on Vercel
 
-## Running
+---
+
+## Architecture Overview
+
+```
+container/      → Host application (landing + shell)
+shop/           → Remote shopping center (micro-frontend)
+ui-libs/        → Shared Web Component UI library (published to npm)
+vuejs-demo/     → Vue integration demo
+angular-demo/   → Angular integration demo
+```
+
+## Tech Stack
+
+- React 18
+- Webpack Module Federation
+- React Router v6
+- Web Components (Custom Elements)
+- Lerna Monorepo
+- Tailwind CSS
+- Vercel
+
+---
+
+## UI Library (npm)
+
+Shared Web Component Input Library (my lib)  
+https://www.npmjs.com/package/thanh-pj1-ui-lib
+
+The component works seamlessly with:
+
+- Vanilla JS
+- React
+- Angular
+- Vue
+
+---
+
+## Local Development
 
 ```bash
 yarn
-```
-
-```bash
 yarn start
 ```
 
-Lerna will start all projects parallelly and open them in the browser.
+Host: http://localhost:3000
+Shop: http://localhost:3001
 
-- Container: http://localhost:3000/
-- Shop: http://localhost:3001/
+## What This Project Demonstrates
 
+- Large-scale frontend architecture
+- Cross-framework component interoperability
+- Performance handling for large datasets
+- Independent deployment pipelines
+- Real-world product workflows (catalog → cart → checkout)
 
-## Library web component
-- https://www.npmjs.com/package/thanh-pj1-ui-lib
-- You can test web component with vanilla js by running `packages\ui-libs\plainjs-wc-testing.html` on your browser
-- You can either test (Angular/Vue) by starting `yarn start` in `packages\vuejs-demo-using-wc` or `packages\angular-demo-using-wc`.
+## Figma Design
 
-## Demo link prod:
-- Container: https://simpson-thanh-pj1-host.vercel.app/
-- Shop: https://simpson-thanh-pj1-shopping-center.vercel.app/
-
-## License: GNU
-  
-## Powered by Thanh Tran (quocthanh2694@gmail.com)
-
-### Thank you!
+- https://www.figma.com/file/GMZUTl4NBoWYj3Gmrrq10s/Simpson-Thanh-Project1?type=design&node-id=0%3A1&mode=dev
