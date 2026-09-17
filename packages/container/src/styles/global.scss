@@ -1,5 +1,6 @@
-@import './variables';
-@import './font.scss';
+@use './variables' as *;
+@use 'sass:map';
+@use './font.scss';
 
 * {
     box-sizing: border-box;
@@ -35,12 +36,12 @@ body,
 * {
     &::-webkit-scrollbar-thumb {
         background-color: $primary;
-        border-radius: map-get($borderRadius, md);
+        border-radius: map.get($borderRadius, md);
     }
 
     &::-webkit-scrollbar-track {
         background-color: $border;
-        border-radius: map-get($borderRadius, md);
+        border-radius: map.get($borderRadius, md);
     }
 
     &::-webkit-scrollbar {
@@ -62,44 +63,44 @@ h6 {
 
 // typo
 h1 {
-    font-size: map-get($fontSize, h1);
+    font-size: map.get($fontSize, h1);
 }
 
 h2 {
-    font-size: map-get($fontSize, h2);
+    font-size: map.get($fontSize, h2);
 }
 
 
 h3 {
-    font-size: map-get($fontSize, h3);
+    font-size: map.get($fontSize, h3);
 }
 
 
 h4 {
-    font-size: map-get($fontSize, h4);
+    font-size: map.get($fontSize, h4);
 }
 
 h5 {
-    font-size: map-get($fontSize, h5);
+    font-size: map.get($fontSize, h5);
 }
 
 h6 {
-    font-size: map-get($fontSize, h6);
+    font-size: map.get($fontSize, h6);
 }
 
 // body text
 span {
-    font-size: map-get($fontSize, span);
+    font-size: map.get($fontSize, span);
     line-height: 140%;
 }
 
 span.text-xs {
-    font-size: map-get($fontSize, text-xs);
+    font-size: map.get($fontSize, text-xs);
     line-height: 140%;
 }
 
 span.text-xxs {
-    font-size: map-get($fontSize, text-xxs);
+    font-size: map.get($fontSize, text-xxs);
     line-height: 140%;
 }
 
@@ -160,7 +161,7 @@ span.text-xxs {
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.20);
     padding: $p20;
     background-color: $white;
-    border-radius: map-get($borderRadius, md);
+    border-radius: map.get($borderRadius, md);
     margin-top: 40px;
 }
 

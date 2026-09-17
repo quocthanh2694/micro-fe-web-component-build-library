@@ -1,4 +1,4 @@
- @import '../../../../styles/variables';
+ @use '../../../../styles/variables' as *;
 
  .cart-info {
      padding: 20px;

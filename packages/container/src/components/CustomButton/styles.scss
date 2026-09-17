@@ -1,4 +1,5 @@
-@import '../../styles/variables';
+@use '../../styles/variables' as *;
+@use 'sass:map';
 
 .button-wrapper {
     &>button {
@@ -6,7 +7,7 @@
         justify-content: center;
         align-items: center;
 
-        border-radius: map-get($borderRadius, xxs);
+        border-radius: map.get($borderRadius, xxs);
         height: 45px;
         font-size: 25px;
         color: white;

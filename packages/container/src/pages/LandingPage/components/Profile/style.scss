@@ -1,4 +1,4 @@
-@import '~src/styles/variables';
+@use '~src/styles/variables' as *;
 
 .profile {
     margin-top: 40px;

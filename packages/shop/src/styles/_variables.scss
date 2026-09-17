@@ -1,3 +1,8 @@
+@use 'sass:string';
+@use 'sass:list';
+@use 'sass:map';
+@use 'sass:meta';
+
 $primary: #4A5568;
 $secondary: #ED8936;
 $link: #2B6CB0;
@@ -14,9 +19,9 @@ $containerTablet: 874px;
 $containerDesktop: 1060px;
 
 $media_queries: (
-    'mobile': unquote("(max-width: 1023px)"),
-    'tablet': unquote("(min-width: 1024px) and (max-width: 1439px)"),
-    'desktop': unquote("(min-width: 1440px)")
+    'mobile': string.unquote("(max-width: 1023px)"),
+    'tablet': string.unquote("(min-width: 1024px) and (max-width: 1439px)"),
+    'desktop': string.unquote("(min-width: 1440px)")
 );
 
 @mixin media($breakpoints) {
@@ -24,8 +29,8 @@ $media_queries: (
 
     @each $breakpoint in $breakpoints {
         // If the key exists in the map
-        $conditions: append($conditions,
-            #{inspect(map-get($media_queries, $breakpoint))},
+        $conditions: list.append($conditions,
+            #{meta.inspect(map.get($media_queries, $breakpoint))},
             comma);
     }
 
