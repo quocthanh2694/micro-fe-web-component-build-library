@@ -108,3 +108,6 @@ buildServer
 /streamed-federation/.s3rver/
 
 .vercel
+
+# Playwright MCP session output
+.playwright-mcp/
