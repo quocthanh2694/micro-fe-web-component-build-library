@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "src/components/Image";
 import "./style.scss";
-const swimming = require("src/assets/images/swimming.png").default;
+// TODO: replace with a badminton image
+const badminton = require("src/assets/images/bmt.jpeg").default;
 const traveling = require("src/assets/images/travel.png").default;
-const walking = require("src/assets/images/walking.png").default;
 
 interface Props {}
 
@@ -12,18 +12,13 @@ export const Hobbies = React.forwardRef<HTMLDivElement, {}>(
     const hobbies = [
       {
         id: 1,
-        label: "Swimming",
-        image: swimming,
+        label: "Badminton",
+        image: badminton,
       },
       {
         id: 2,
         label: "Traveling",
         image: traveling,
-      },
-      {
-        id: 3,
-        label: "Walking",
-        image: walking,
       },
     ];
     return (
@@ -41,6 +36,7 @@ export const Hobbies = React.forwardRef<HTMLDivElement, {}>(
                   src={item.image}
                   width="120px"
                   height="120px"
+                  alt={item.label}
                 />
               </div>
               <div className="hobbies__item-label text-primary">

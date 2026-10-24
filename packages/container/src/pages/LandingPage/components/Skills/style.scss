@@ -1,0 +1,38 @@
+@use '~src/styles/variables' as *;
+
+.skills {
+    &__title {
+        margin-bottom: $p10;
+    }
+
+    &__content {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__groups {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__group h6,
+    &__certificates h6 {
+        font-weight: 700;
+        margin-bottom: 6px;
+    }
+
+    &__certificates {
+        flex: 2;
+    }
+}
+
+@include media(mobile) {
+    .skills {
+        &__content {
+            flex-direction: column;
+            gap: $p20;
+        }
+    }
+}

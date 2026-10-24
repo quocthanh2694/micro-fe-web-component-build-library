@@ -40,7 +40,7 @@ module.exports = (env, argv) => {
     module: {
       rules: [
         {
-          test: /\.(png|jpe?g|gif|jpg)$/i,
+          test: /\.(png|jpe?g|gif|jpg|svg)$/i,
           use: [
             {
               loader: 'file-loader',
