@@ -1,0 +1,60 @@
+@use '~src/styles/variables' as *;
+
+.about-site {
+    &__title {
+        margin-bottom: $p10;
+    }
+
+    &__diagram {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        gap: 12px;
+        max-width: 640px;
+        margin: 0 auto $p20;
+    }
+
+    &__node {
+        border: 2px solid $primary;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+        color: $primary;
+
+        strong,
+        span {
+            display: block;
+        }
+
+        &--lib {
+            grid-column: 1 / -1;
+            border-color: $secondary;
+            border-style: dashed;
+            color: $secondary;
+        }
+    }
+
+    &__arrow {
+        color: $primary;
+        text-align: center;
+    }
+
+    &__points {
+        margin-bottom: $p20;
+    }
+
+    &__actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: $p20;
+    }
+}
+
+@include media(mobile) {
+    .about-site {
+        &__diagram {
+            grid-template-columns: 1fr;
+        }
+    }
+}

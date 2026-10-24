@@ -14,5 +14,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 16px;
 
+    a {
+        color: $white;
+        font-size: 0.75rem;
+    }
 }

@@ -16,10 +16,19 @@
             margin-right: $p20;
             width: 130px;
             height: 130px;
+            img {
+                object-fit: cover;
+            }
         }
 
         &-info-contact-info {
             min-width: 318px;
+        }
+
+        &-info-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 6px;
         }
 
         &-info-title {

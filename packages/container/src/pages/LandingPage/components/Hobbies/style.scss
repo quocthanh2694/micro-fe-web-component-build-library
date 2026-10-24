@@ -14,7 +14,11 @@
             margin: 20px;
         }
 
-        &-image {}
+        &-image {
+            img {
+                object-fit: cover;
+            }
+        }
 
         &-label {
             text-align: center;

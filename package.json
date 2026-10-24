@@ -18,6 +18,7 @@
 		"clean": "lerna run --parallel clean"
 	},
 	"devDependencies": {
+		"@types/node": "^26.6.5",
 		"lerna": "7.0.2"
 	},
 	"dependencies": {

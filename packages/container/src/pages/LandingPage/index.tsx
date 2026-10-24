@@ -3,11 +3,13 @@ import { Hobbies } from "./components/Hobbies";
 import { Profile } from "./components/Profile";
 import { Projects } from "./components/Projects";
 import { WorkExperience } from "./components/WorkExperience";
+import { Skills } from "./components/Skills";
+import { AboutSite } from "./components/AboutSite";
 import "./style.scss";
 import CustomButton from "src/components/CustomButton";
 import { NavigationBar } from "src/components/layout/NavigationBar";
 import React, { useRef } from "react";
-import { BookIcon, HomeIcon, MusicIcon, PieIcon } from "src/icons";
+import { BookIcon, CodeIcon, HomeIcon, MusicIcon, PieIcon } from "src/icons";
 import { URI } from "src/constant/constant";
 
 const ShoppingNow = () => {
@@ -18,7 +20,7 @@ const ShoppingNow = () => {
   return (
     <div className="container">
       <div className="layout__header">
-        <CustomButton onClick={handleShoppingNow}>Shopping Now</CustomButton>
+        <CustomButton onClick={handleShoppingNow}>Live demo →</CustomButton>
       </div>
     </div>
   );
@@ -32,6 +34,7 @@ export const LandingPage = () => {
   const headerRef = useRef<HTMLDivElement>(null);
   const workExpRef = useRef<HTMLDivElement>(null);
   const projectRef = useRef<HTMLDivElement>(null);
+  const skillsRef = useRef<HTMLDivElement>(null);
   const hobbyRef = useRef<HTMLDivElement>(null);
 
   const handleScroll = (element: HTMLDivElement | null) => {
@@ -62,9 +65,14 @@ export const LandingPage = () => {
       icon: <PieIcon />,
       onClick: () => handleScroll(projectRef.current),
     },
-
     {
       id: 4,
+      label: "Skills",
+      icon: <CodeIcon />,
+      onClick: () => handleScroll(skillsRef.current),
+    },
+    {
+      id: 5,
       label: "Hobby",
       icon: <MusicIcon />,
       onClick: () => handleScroll(hobbyRef.current),
@@ -81,6 +89,8 @@ export const LandingPage = () => {
       <Profile />
       <WorkExperience ref={workExpRef} />
       <Projects ref={projectRef} />
+      <Skills ref={skillsRef} />
+      <AboutSite />
       <Hobbies ref={hobbyRef} />
 
       <Footer />

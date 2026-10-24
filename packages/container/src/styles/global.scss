@@ -169,6 +169,23 @@ span.text-xxs {
     border-bottom: 1px solid $border;
 }
 
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.chip {
+    display: inline-block;
+    padding: 2px 8px;
+    border: 1px solid $border;
+    border-radius: map.get($borderRadius, lg);
+    color: $primary;
+    background-color: $white;
+    font-size: map.get($fontSize, text-xxs);
+    line-height: 140%;
+}
+
 // media queries
 @include media(mobile) {
     .container {
